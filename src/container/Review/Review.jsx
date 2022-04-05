@@ -4,7 +4,7 @@ import './Review.css';
 
 const Review = () => (
     <div>
-      Review
+      Review22
     </div>
 );
 
