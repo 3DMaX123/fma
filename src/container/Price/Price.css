@@ -1,0 +1,299 @@
+.app__price{
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    width: 100%;
+    height: 117vh;
+    background: white;
+}
+
+.app__price-leftline{
+    width: 2%;
+    height: 100%;
+    
+    margin-right: 3.5vw;
+    background-color: var(--color-pink);
+    box-shadow: 7px 0px 40px rgba(112, 144, 176, 0.2);
+}
+
+.app__price-information{
+    display: flex;
+    height: 100%;
+    
+    margin-top: 4vw;
+    flex-direction: column;
+}
+
+.ProductInformation{
+    display: flex;
+    
+    align-items:flex-start;
+    flex-direction: column;
+    
+    margin-left: 3vw;
+    margin-top: 6.5vw;
+}
+
+.ProductSign{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8vw;
+    
+    
+    color: rgba(52, 52, 52, 0.62);
+}
+
+.ProductName{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6vw;
+    
+    margin-bottom: 0.3vw;
+    color: var(--color-black);
+}
+
+.ProductPrice{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    
+    margin-bottom: 1.1vw;
+    color: rgba(52, 52, 52, 0.7);
+}
+
+.ProductDescription{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    
+    margin-bottom: 1.2vw;
+    color: var(--color-black);
+}
+
+.ProductPropose{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.15vw;
+    
+    margin-bottom: 0.7vw;
+    color: var(--color-black);
+}
+
+.ProductPropose-list{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    
+    margin-left: 0.5vw;
+}
+
+.ProductListElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0.6vw;
+}
+
+.ListNumber{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.52vw;
+    
+    margin-top: 0.2vw;
+    color: var(--color-black);
+}
+
+.ListDash{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    
+    margin-right: 0.5vw;
+    color: var(--color-black);
+}
+
+.ListDescription{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.15vw;
+    
+    color: var(--color-black);
+}
+
+.DateUs{
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.72vw;
+    
+    padding: 0.8vw 1.25vw;
+    margin-top: 2.6vw;
+    color: whitesmoke;
+    box-shadow: 0px 16px 40px rgba( 52, 52, 52, 0.3);
+    background: var(--color-black);
+    
+    cursor: pointer;
+}
+
+.arrowfour{
+    display: flex;
+    position: absolute;
+
+    height: 117vh;
+    right: 3.64vw;
+
+
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.arrowfour img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__price-products{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    right: -12vw;
+    height: 100%;
+}
+
+.Web-Maxima{
+    display: flex;
+    justify-content: center;
+    margin-right: 3.9vw;
+    flex-direction: column;
+}
+
+.Web-Maxima img{
+    width: 16.3vw;
+    height: 24.42vw;
+
+
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+    object-fit: cover;
+    filter: drop-shadow(0px 16px 20px rgba(112, 144, 176, 0.2));
+}
+
+.Web-Optima{
+    display: flex;
+    justify-content: center;
+    margin-right: 3.9vw;
+
+    flex-direction: column;
+}
+
+.Web-Optima img{
+    width: 14.21vw;
+    height: 21.45vw;
+
+
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+    object-fit: cover;
+    filter: drop-shadow(0px 16px 20px rgba(112, 144, 176, 0.2));
+}
+
+.Web-Limitless{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Web-Limitless img{
+    width: 14.21vw;
+    height: 21.45vw;
+
+
+    object-fit: cover;
+    filter: drop-shadow(0px 16px 20px rgba(255, 255, 255, 0.2));
+}
+
+.ProductListName{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.88vw;
+    /* identical to box height */
+
+    color: rgba(52, 52, 52, 0.9);
+    margin-top: 1.35vw;
+}
+
+.ProductListPrice{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.78vw;
+
+    color: rgba(52, 52, 52, 0.7);
+    margin-top: 0.41vw;
+}
+
+.ProductListNameDecreased{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.68vw;
+    /* identical to box height */
+
+    color: rgba(52, 52, 52, 0.7);
+    margin-top: 1.35vw;
+}
+
+.ProductListPriceDecreased{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.62vw;
+
+    color: rgba(52, 52, 52, 0.5);
+    margin-top: 0.42vw;
+}
+
+.ProductListNameWhite{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.68vw;
+    /* identical to box height */
+
+    color: white;
+    margin-top: 1.35vw;
+}
+
+.ProductListPriceWhite{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.62vw;
+
+    color: white;
+    margin-top: 0.42vw;
+}
