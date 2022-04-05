@@ -1,7 +1,7 @@
 {
   "name": "fma",
   "version": "0.1.0",
-  "homepage": "https://3DMaX123.github.io/FeedMotionADS",
+  "homepage": "https://3DMaX123.github.io/FeedMotionADS", 
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
