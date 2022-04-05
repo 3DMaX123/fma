@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/FeedMotionADS/static/css/main.0d83eaf2.css",
-    "main.js": "/FeedMotionADS/static/js/main.eaadd7f0.js",
-    "static/media/Web-Optima.jpg": "/FeedMotionADS/static/media/Web-Optima.9e449beafe5af2f30494.jpg",
-    "static/media/Web-Limitless.jpg": "/FeedMotionADS/static/media/Web-Limitless.cfe7c74e157bce93dc7d.jpg",
-    "static/media/Spinned_Stairs.jpg": "/FeedMotionADS/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
-    "static/media/Web-Maxima.jpg": "/FeedMotionADS/static/media/Web-Maxima.1451077160367b63fab9.jpg",
-    "static/media/Bench_With_CHair.jpg": "/FeedMotionADS/static/media/Bench_With_CHair.95c8b2541357bd9136fb.jpg",
-    "static/media/Sakura.jpg": "/FeedMotionADS/static/media/Sakura.59c6905a468f14e4581f.jpg",
-    "static/media/Palm.jpg": "/FeedMotionADS/static/media/Palm.c17f265e149d6f9fa9cc.jpg",
-    "static/media/Hell_Circle.jpg": "/FeedMotionADS/static/media/Hell_Circle.e0bdb5ad6d0014063e78.jpg",
-    "static/media/White_Tree.jpg": "/FeedMotionADS/static/media/White_Tree.e2c085548f549002a68b.jpg",
-    "static/media/Price_Arrow4.png": "/FeedMotionADS/static/media/Price_Arrow4.8f87ef5646619d666ee0.png",
-    "index.html": "/FeedMotionADS/index.html",
-    "main.0d83eaf2.css.map": "/FeedMotionADS/static/css/main.0d83eaf2.css.map",
-    "main.eaadd7f0.js.map": "/FeedMotionADS/static/js/main.eaadd7f0.js.map"
+    "main.css": "/fma/static/css/main.0d83eaf2.css",
+    "main.js": "/fma/static/js/main.8ca0d556.js",
+    "static/media/Web-Optima.jpg": "/fma/static/media/Web-Optima.9e449beafe5af2f30494.jpg",
+    "static/media/Web-Limitless.jpg": "/fma/static/media/Web-Limitless.cfe7c74e157bce93dc7d.jpg",
+    "static/media/Spinned_Stairs.jpg": "/fma/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
+    "static/media/Web-Maxima.jpg": "/fma/static/media/Web-Maxima.1451077160367b63fab9.jpg",
+    "static/media/Bench_With_CHair.jpg": "/fma/static/media/Bench_With_CHair.95c8b2541357bd9136fb.jpg",
+    "static/media/Sakura.jpg": "/fma/static/media/Sakura.59c6905a468f14e4581f.jpg",
+    "static/media/Palm.jpg": "/fma/static/media/Palm.c17f265e149d6f9fa9cc.jpg",
+    "static/media/Hell_Circle.jpg": "/fma/static/media/Hell_Circle.e0bdb5ad6d0014063e78.jpg",
+    "static/media/White_Tree.jpg": "/fma/static/media/White_Tree.e2c085548f549002a68b.jpg",
+    "static/media/Price_Arrow4.png": "/fma/static/media/Price_Arrow4.8f87ef5646619d666ee0.png",
+    "index.html": "/fma/index.html",
+    "main.0d83eaf2.css.map": "/fma/static/css/main.0d83eaf2.css.map",
+    "main.8ca0d556.js.map": "/fma/static/js/main.8ca0d556.js.map"
   },
   "entrypoints": [
     "static/css/main.0d83eaf2.css",
-    "static/js/main.eaadd7f0.js"
+    "static/js/main.8ca0d556.js"
   ]
 }
