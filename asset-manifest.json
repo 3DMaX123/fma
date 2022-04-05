@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fma/static/css/main.0d83eaf2.css",
-    "main.js": "/fma/static/js/main.6087f674.js",
+    "main.js": "/fma/static/js/main.8ca0d556.js",
     "static/media/Web-Optima.jpg": "/fma/static/media/Web-Optima.9e449beafe5af2f30494.jpg",
     "static/media/Web-Limitless.jpg": "/fma/static/media/Web-Limitless.cfe7c74e157bce93dc7d.jpg",
     "static/media/Spinned_Stairs.jpg": "/fma/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
@@ -14,10 +14,10 @@
     "static/media/Price_Arrow4.png": "/fma/static/media/Price_Arrow4.8f87ef5646619d666ee0.png",
     "index.html": "/fma/index.html",
     "main.0d83eaf2.css.map": "/fma/static/css/main.0d83eaf2.css.map",
-    "main.6087f674.js.map": "/fma/static/js/main.6087f674.js.map"
+    "main.8ca0d556.js.map": "/fma/static/js/main.8ca0d556.js.map"
   },
   "entrypoints": [
     "static/css/main.0d83eaf2.css",
-    "static/js/main.6087f674.js"
+    "static/js/main.8ca0d556.js"
   ]
 }
