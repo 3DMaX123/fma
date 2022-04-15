@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fma/static/css/main.0d83eaf2.css",
-    "main.js": "/fma/static/js/main.38b9dc64.js",
+    "main.css": "/fma/static/css/main.fd601d3b.css",
+    "main.js": "/fma/static/js/main.1ca6c2c0.js",
     "static/media/Web-Optima.jpg": "/fma/static/media/Web-Optima.9e449beafe5af2f30494.jpg",
     "static/media/Web-Limitless.jpg": "/fma/static/media/Web-Limitless.cfe7c74e157bce93dc7d.jpg",
     "static/media/Spinned_Stairs.jpg": "/fma/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
@@ -11,13 +11,16 @@
     "static/media/Palm.jpg": "/fma/static/media/Palm.c17f265e149d6f9fa9cc.jpg",
     "static/media/Hell_Circle.jpg": "/fma/static/media/Hell_Circle.e0bdb5ad6d0014063e78.jpg",
     "static/media/White_Tree.jpg": "/fma/static/media/White_Tree.e2c085548f549002a68b.jpg",
+    "static/media/Review_Arrow6.png": "/fma/static/media/Review_Arrow6.d46401f747deb9b5783e.png",
     "static/media/Price_Arrow4.png": "/fma/static/media/Price_Arrow4.8f87ef5646619d666ee0.png",
+    "static/media/Review_StarRate.svg": "/fma/static/media/Review_StarRate.780b92fb78932344d52968ebc3dbfcf7.svg",
+    "static/media/Review_StarRate_Grey.svg": "/fma/static/media/Review_StarRate_Grey.2b0de19a13138e094507f7a8adf6aeb5.svg",
     "index.html": "/fma/index.html",
-    "main.0d83eaf2.css.map": "/fma/static/css/main.0d83eaf2.css.map",
-    "main.38b9dc64.js.map": "/fma/static/js/main.38b9dc64.js.map"
+    "main.fd601d3b.css.map": "/fma/static/css/main.fd601d3b.css.map",
+    "main.1ca6c2c0.js.map": "/fma/static/js/main.1ca6c2c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d83eaf2.css",
-    "static/js/main.38b9dc64.js"
+    "static/css/main.fd601d3b.css",
+    "static/js/main.1ca6c2c0.js"
   ]
 }
