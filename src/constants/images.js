@@ -14,8 +14,14 @@ import web_maxima from '../assets/Web-Maxima.jpg';
 import web_optima from '../assets/Web-Optima.jpg';
 import web_limitless from '../assets/Web-Limitless.jpg';
 import arrowfife from '../assets/AboutUs_Arrow5.png';
+import starrate from '../assets/Review_StarRate.svg';
+import greystarrate from '../assets/Review_StarRate_Grey.svg';
+import arrowsix from '../assets/Review_Arrow6.png';
 
 export default{
+    arrowsix,
+    greystarrate,
+    starrate,
     arrowfife,
     web_limitless,
     web_optima,
