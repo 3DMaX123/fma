@@ -5,7 +5,7 @@ import ShortErrorBoundary from './ErrorsBoundary/shortErrorBoundary';
 const ReviewData = React.createContext();
 
 
-function Stars(props){
+function Stars(){
 
   const { stars } = useContext(ReviewData);
 
@@ -116,10 +116,10 @@ class userReviews extends React.Component {
 
   render(){
 
-    const reviewsDatareview = {
+    const reviewsData = {
       name: this.props.Name,
       positionSign: this.props.PositionSign,
-      nameOfCompany: this.props.NameOfcompany,
+      nameOfCompany: this.props.NameOfCompany,
       stars: this.props.Stars,
       review: this.props.Review
       }
@@ -127,7 +127,7 @@ class userReviews extends React.Component {
     return (
       <div className='review'>
       <div className='ReviewContent'>
-        <ReviewData.Provider value={reviewsDatareview}>
+        <ReviewData.Provider value={reviewsData}>
           <NamePositionCompanyAndStars />
           <ShortErrorBoundary>
               <UserReview />
