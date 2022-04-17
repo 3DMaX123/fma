@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fma/static/css/main.fd601d3b.css",
-    "main.js": "/fma/static/js/main.1ca6c2c0.js",
+    "main.js": "/fma/static/js/main.a6dc01c2.js",
     "static/media/Web-Optima.jpg": "/fma/static/media/Web-Optima.9e449beafe5af2f30494.jpg",
     "static/media/Web-Limitless.jpg": "/fma/static/media/Web-Limitless.cfe7c74e157bce93dc7d.jpg",
     "static/media/Spinned_Stairs.jpg": "/fma/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
@@ -17,10 +17,10 @@
     "static/media/Review_StarRate_Grey.svg": "/fma/static/media/Review_StarRate_Grey.2b0de19a13138e094507f7a8adf6aeb5.svg",
     "index.html": "/fma/index.html",
     "main.fd601d3b.css.map": "/fma/static/css/main.fd601d3b.css.map",
-    "main.1ca6c2c0.js.map": "/fma/static/js/main.1ca6c2c0.js.map"
+    "main.a6dc01c2.js.map": "/fma/static/js/main.a6dc01c2.js.map"
   },
   "entrypoints": [
     "static/css/main.fd601d3b.css",
-    "static/js/main.1ca6c2c0.js"
+    "static/js/main.a6dc01c2.js"
   ]
 }
