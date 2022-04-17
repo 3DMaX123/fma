@@ -43,14 +43,14 @@ return(
           Name="Олександр"
           PositionSign="Co-Ceo" 
           NameOfCompany="Feed Motion ADS" 
-          Stars="4"
+          Stars="5"
           Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
         />
         <ReviewForm 
           Name="Олександр"
           PositionSign="Co-Ceo" 
           NameOfCompany="Feed Motion ADS" 
-          Stars="3"
+          Stars="0"
           Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
         />
         </div>

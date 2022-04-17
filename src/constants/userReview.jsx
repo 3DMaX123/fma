@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, Fragment } from 'react'
 import images from './images';
 import ShortErrorBoundary from './ErrorsBoundary/shortErrorBoundary';
 
@@ -9,8 +9,8 @@ function Stars(){
 
   const { stars } = useContext(ReviewData);
 
-  const yellowstars = <img src={images.starrate} alt="Stars rate" />;
-  const greyStars = <img className='GreyStars' src={images.greystarrate} alt="Stars rate"/>
+  const yellowstars = <img src={images.starrate} alt="Stars rate(Yellow)" />;
+  const greyStars = <img src={images.greystarrate} alt="Stars rate(Grey)"/>
   const countYellowStars = [];
   const countGreyStars = [];
 
@@ -28,7 +28,7 @@ function Stars(){
     }
   }
   else if(stars === 5){
-    countGreyStars = null;
+    countGreyStars[0] = [null];
   }
   else if(stars > 5){
     for (let index = 0; index < 5; index++) {
@@ -38,13 +38,20 @@ function Stars(){
 
 
 
+  // !!!! ATTENTION !!!!                                                                                                                              // !!!! ATTENTION !!!!
+  //                                                                                                                                                                      // 
+  //              countYellowStars, countGreyStars is an array !AND! they both non-reorder array 'cause !!!!key prop!!!! is random and can't be identified
+  //                                                                                                                                                                      //
+  // !!!! ATTENTION !!!!                                                                                                                              // !!!! ATTENTION !!!!
+
   return(
     <div className='Stars'>
-      {countYellowStars}
-      {countGreyStars}
+      {countYellowStars.map( (countYellowStars, index) => (<Fragment key={index}>{countYellowStars}</Fragment>))}
+      {countGreyStars.map( (countGreyStars, index) => (<Fragment key={index}>{countGreyStars}</Fragment>))}
     </div>
   )
 }
+
 
 function NamePositionCompanyAndStars(){
   return (

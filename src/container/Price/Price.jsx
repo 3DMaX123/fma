@@ -52,7 +52,7 @@ const Price = () => {
               <p className='ListDescription'>Тісний взаємозв'язок з командою напортязі місяця</p>
             </div>
           </div>
-          <a className='DateUs' onclick={ () => {}}>Назначити зустріч</a>
+          <a href="/#" className='DateUs'>Назначити зустріч</a>
         </div>
 
       </div>
