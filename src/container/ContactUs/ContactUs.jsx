@@ -5,6 +5,7 @@ import './ContactUs.css';
 const CotactUs = () => (
     <div>
       CotactUs
+      
     </div>
 );
 
