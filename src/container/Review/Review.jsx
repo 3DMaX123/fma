@@ -50,7 +50,7 @@ return(
           Name="Олександр"
           PositionSign="Co-Ceo" 
           NameOfCompany="Feed Motion ADS" 
-          Stars="0"
+          Stars="2"
           Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
         />
         </div>
