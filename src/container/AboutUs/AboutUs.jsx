@@ -19,7 +19,7 @@ const AboutUs = () => (
       </div>
       <div className='app__aboutus-greysubstrate'></div>
       <div className='app__aboutus-stairsimage'>
-        <img src={images.stairs} alt="Spinned Stairs Image" />
+        <img src={images.stairs} alt="Spinned Stairs" />
       </div>
     </div>
 );

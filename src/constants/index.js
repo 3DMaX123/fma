@@ -1,7 +1,5 @@
-import images from './image.js';
-import dragToScroll from './DragToScroll';
+import images from './images.js';
 
 export{
-    dragToScroll,
     images
 };
