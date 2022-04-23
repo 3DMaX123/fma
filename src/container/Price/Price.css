@@ -5,7 +5,7 @@
     overflow: hidden;
     width: 100%;
     height: 117vh;
-    background: white;
+    background: var(--color-white);
 }
 
 .app__price-leftline{
@@ -14,7 +14,7 @@
     
     margin-right: 3.5vw;
     background-color: var(--color-pink);
-    box-shadow: 7px 0px 40px rgba(112, 144, 176, 0.2);
+    box-shadow: var(--box-shadow);
 }
 
 .app__price-information{
@@ -36,17 +36,17 @@
 }
 
 .ProductSign{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.8vw;
     
     
-    color: rgba(52, 52, 52, 0.62);
+    color: var(--color-nameofsections);
 }
 
 .ProductName{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 3.6vw;
@@ -56,17 +56,17 @@
 }
 
 .ProductPrice{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.5vw;
     
     margin-bottom: 1.1vw;
-    color: rgba(52, 52, 52, 0.7);
+    color: var(--color-namepriceinothersequence);
 }
 
 .ProductDescription{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.25vw;
@@ -76,7 +76,7 @@
 }
 
 .ProductPropose{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.15vw;
@@ -103,7 +103,7 @@
 }
 
 .ListNumber{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.52vw;
@@ -113,7 +113,7 @@
 }
 
 .ListDash{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.3vw;
@@ -123,7 +123,7 @@
 }
 
 .ListDescription{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.15vw;
@@ -132,15 +132,15 @@
 }
 
 .DateUs{
-    font-family: var(--font-base);
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.72vw;
     
     padding: 0.8vw 1.9vw;
     margin-top: 2.6vw;
-    color: whitesmoke;
-    box-shadow: 0px 16px 40px rgba( 52, 52, 52, 0.3);
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
     background: var(--color-black);
     
     cursor: pointer;
@@ -194,7 +194,7 @@
     -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 
     object-fit: cover;
-    filter: drop-shadow(0px 16px 20px rgba(112, 144, 176, 0.2));
+    filter: drop-shadow(var(--box-shadowforpicturesprice));
 }
 
 .Web-Optima{
@@ -217,7 +217,7 @@
     -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 
     object-fit: cover;
-    filter: drop-shadow(0px 16px 20px rgba(112, 144, 176, 0.2));
+    filter: drop-shadow(var(--box-shadowforpicturesprice));
 }
 
 .Web-Limitless{
@@ -232,68 +232,68 @@
 
 
     object-fit: cover;
-    filter: drop-shadow(0px 16px 20px rgba(255, 255, 255, 0.2));
+    filter: drop-shadow(var(--box-shadowforunactivepicture));
 }
 
 .ProductListName{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.88vw;
     /* identical to box height */
 
-    color: rgba(52, 52, 52, 0.9);
+    color: var(--color-nameactiveproductinsequence);
     margin-top: 1.35vw;
 }
 
 .ProductListPrice{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.78vw;
 
-    color: rgba(52, 52, 52, 0.7);
+    color: var(--color-namepriceinothersequence);
     margin-top: 0.41vw;
 }
 
 .ProductListNameDecreased{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.68vw;
     /* identical to box height */
 
-    color: rgba(52, 52, 52, 0.7);
+    color: var(--color-namepriceinothersequence);
     margin-top: 1.35vw;
 }
 
 .ProductListPriceDecreased{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.62vw;
 
-    color: rgba(52, 52, 52, 0.5);
+    color: var(--color-priceinothersequenceprice);
     margin-top: 0.42vw;
 }
 
 .ProductListNameWhite{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.68vw;
     /* identical to box height */
 
-    color: white;
+    color: var(--color-white);
     margin-top: 1.35vw;
 }
 
 .ProductListPriceWhite{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.62vw;
 
-    color: white;
+    color: var(--color-white);
     margin-top: 0.42vw;
 }

@@ -8,11 +8,11 @@ import './TypeReview.css';
 function Number(props){
   if(props.isRed){
     return(
-      <div className='number numberone' style={{ color: '#FF5C5C'}}>{props.number}</div>
+      <div className='number numberone' style={{ color: 'var(--color-red)'}}>{props.number}</div>
     )
   }else{
     return(
-      <div className='number numberone' style={{ color: '#343434'}}>{props.number}</div>
+      <div className='number numberone' style={{ color: 'var(--color-black)'}}>{props.number}</div>
     )
   }
 }
@@ -60,9 +60,9 @@ class TypeReview extends React.Component {
       isRedCN: false,
       isRedR: false,
       wasClicked: 0,
-      selectRate: 0,
-      hoveredRate: 0,
-      starsIsRed: ''
+      selectRate: null,
+      hoveredRate: null,
+      starsIsRed: 'var(--color-bigfmasignandgreystars)'
     }
 
 
@@ -118,7 +118,7 @@ class TypeReview extends React.Component {
       this.setState({isRedR: true});
     }
     if(this.state.selectRate === null){
-      this.setState({starsIsRed: '#FF5C5C'})
+      this.setState({starsIsRed: 'var(--color-red)'})
       this.setState({wasClicked: 0});
     }
   }
@@ -135,7 +135,7 @@ class TypeReview extends React.Component {
           key={rate}
           onClick={() => {this.setState({selectRate: rate}); this.setState({wasClicked: rate})}}
           style={{fill: this.state.starsIsRed}}
-          onMouseEnter={() => {this.setState({hoveredRate: rate}); this.setState({selectRate: null}); this.setState({starsIsRed: '#DBDBDB'})}}
+          onMouseEnter={() => {this.setState({hoveredRate: rate}); this.setState({selectRate: null}); this.setState({starsIsRed: 'var(--color-bigfmasignandgreystars)'})}}
           onMouseLeave={() => this.setState({hoveredRate: null})}>
         <path d="M18.23,2.01c0.71-2.2,3.82-2.2,4.54,0l3.09,9.5c0.32,0.98,1.24,1.65,2.27,1.65h9.99c2.31,0,3.27,2.96,1.4,4.31
         l-8.08,5.87c-0.84,0.61-1.19,1.68-0.87,2.67l3.09,9.5c0.71,2.2-1.8,4.02-3.67,2.67L21.9,32.3c-0.84-0.61-1.97-0.61-2.8,0l-8.08,5.87

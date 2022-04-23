@@ -11,8 +11,8 @@
     height: 110vh;
     margin: 3rem 0 5rem 0;
 
-    background: #EEEBEB;
-    box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.2);
+    background: var(--color-pink);
+    box-shadow: var(--box-shadow);
 
 }
 
@@ -29,7 +29,7 @@
     height: 35.5vw;
     margin: 5% 0% 0% 38%;
 
-    background: #FFFFFF;
+    background: var(--color-white);
 }
 
 .app__header_firstlayer-arrowthree{
@@ -86,7 +86,7 @@
 }
 
 .app__header_secondlayer-firstsection li{
-    font-family: 'Source Serif Pro';
+    font-family: var(--font-header);
     font-style: normal;
     font-weight: 400;
     font-size: 2.4vw;
@@ -98,7 +98,7 @@
 }
 
 .app__header_secondlayer-firstsection ol{
-    font-family: 'Source Serif Pro';
+    font-family: var(--font-header);
     font-style: normal;
     font-weight: 600;
     font-size: 2.4vw;
@@ -119,7 +119,7 @@
 }
 
 .rotatedtext{
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 2.5vw;
@@ -127,7 +127,7 @@
     /* identical to box height */
 
 
-    color: #343434;
+    color: var(--color-black);
     border: var(--color-black) solid 0.15rem;
     padding: 1.4vw 2.93vw;
     margin-top: 1.3vw;
@@ -158,7 +158,7 @@
 }
 
 .secondlayer-secondsection-utpsign {
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 2vw;
@@ -170,7 +170,7 @@
 }
 
 .secondlayer-secondsection-utp p{
-    font-family: 'Source Serif Pro';
+    font-family: var(--font-header);
     font-style: normal;
     font-weight: 400;
     font-size: 1.6vw;
