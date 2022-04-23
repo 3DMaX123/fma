@@ -70,25 +70,6 @@
     font-size: 23px;
   }
   
-  .p__serif {
-    font-family: var(--font-base);
-    color: var(--color-black);
-    font-style: normal;
-    font-weight: normal;
-    text-transform: capitalize;
-    font-size: 13px;
-    line-height: 25px;
-  }
-
-  .p__serifoverlay{
-    font-family: Prata;
-    font-style: var(--font-base);
-    color: var(--color-black);
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 47px;
-    letter-spacing: 0.29em;
-  }
   
   .headtext__cormorant {
     font-family: var(--font-base);
@@ -109,10 +90,7 @@
       font-size: 37px;
       line-height: 67px;
     }
-  
-    .p__serif {
-      font-size: 16px;
-    }
+
   
     .headtext__cormorant {
       font-size: 150px;
@@ -148,9 +126,6 @@
       padding: 4rem;
     }
 
-    .p__serifoverlay{
-      font-size: 27px;
-    }
   }
   
   @media screen and (max-width: 650px) {
@@ -161,17 +136,11 @@
     .p__cormorant {
       font-size: 21px;
     }
-  
-    .p__serif {
-      font-size: 14px;
-    }
+
   }
   
   @media screen and (max-width: 450px) {
-    .p__serifoverlay{
-      font-size: 25px;
-      letter-spacing: 0.18em;
-    }
+
   
     .p__cormorant {
       font-size: 19px;

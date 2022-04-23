@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
+    padding: 1.4vw 1.9vw;
 }
 
 .app__navbar-logo{
@@ -14,7 +14,7 @@
 }
 
 .app__navbar-logo img{
-    width: 150px;
+    width: 8.854vw;
 }
 
 .app__navbar-links{
@@ -25,14 +25,25 @@
     list-style: none;
 }
 
+.p__serif{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.833vw;
+    /* identical to box height */
+
+
+    color: var(--color-black);
+}
+
 .app__navbar-links li{
-    margin: 0 1.9rem;
+    margin: 0 1.219vw;
     cursor: pointer;
 }
 
 .app__navbar-links ol{
     cursor: pointer;
-    margin-left: 1.9rem;
+    margin-left: 1.219vw;
 }
 
 .app__navbar-smallscreen{
@@ -67,14 +78,14 @@
 }
 
 .app__navbar-smallscreen-links-1150 li{
-    margin-left: 8rem;
+    margin-left: 6.667vw;
 
     list-style: none;
-    margin-bottom: 27px;
+    margin-bottom: 1.406vw;
 }
 
 .app__navbar-smallscreen-links-1150 ol{
-    margin-left: 8rem;
+    margin-left: 6.667vw;
 
     list-style: none;
 }
@@ -111,7 +122,7 @@
 
 .app__navbar-smallscreen-links-850 li{
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 1.042vw;
 }
 
 .app__navbar-smallscreen-curveimage{

@@ -9,7 +9,7 @@
 .app__header_undercontent{
     width: 93%;
     height: 110vh;
-    margin: 3rem 0 5rem 0;
+    margin: 2.500vw 0 4.167vw 0;
 
     background: var(--color-pink);
     box-shadow: var(--box-shadow);

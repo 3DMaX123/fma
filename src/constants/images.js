@@ -3,7 +3,7 @@ import palm from '../assets/Palm.jpg';
 import circle from '../assets/Hell_Circle.jpg';
 import sakura from '../assets/Sakura.jpg';
 import stairs from '../assets/Spinned_Stairs.jpg';
-import logo from '../assets/Logo.png';
+import logo from '../assets/Logo.svg';
 import arrowthree from '../assets/Head_Arrow3.png';
 import toggle_curve from '../assets/ToggleMenu_Curve.png';
 import arrowone from '../assets/Head_Arrow1.png';
