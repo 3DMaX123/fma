@@ -3,7 +3,7 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => (
-  <div className='app_footer_mainSubstrate'>    
+  <div className='app_footer_mainSubstrate' id="footer">    
   <div className='mainSubstrate-divs'>
       <div className='selection-column'>
       <div className='mainSusbstrate-content-ads'>
