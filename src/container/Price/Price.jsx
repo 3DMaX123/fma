@@ -6,7 +6,7 @@ import images from '../../constants/images';
 const Price = () => {
 
   return(
-    <div className="app__price">
+    <div className="app__price" id='services'>
       <div className="app__price-leftline"></div>
       <div className='app__price-information'>
         <p className='ProductSign'>Послуги</p>

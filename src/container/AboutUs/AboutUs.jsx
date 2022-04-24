@@ -6,7 +6,7 @@ import images from '../../constants/images';
 const AboutUs = () => (
     <div className='app__aboutus'>
       <div className='app__aboutus-textdecoratives'>
-        <div className='pinksubstrate'>
+        <div className='pinksubstrate' id='about-us'>
           <div className='ArrowFife'>
             <img src={images.arrowfife} alt="Arrow fife, about us sign" />
           </div>

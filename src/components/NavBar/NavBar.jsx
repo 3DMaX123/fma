@@ -10,15 +10,15 @@ const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className='app__navbar'>
+    <nav className='app__navbar' id='main-page'>
       <div className='app__navbar-logo'>
         <img src={images.logo} alt="Feed Motion Advertising Logo" />
       </div>
       <ul className='app__navbar-links'>
-        <li className='p__serif'><a href="#">Послуги</a></li>
-        <li className='p__serif'><a href="#">Про нас</a></li>
-        <li className='p__serif'><a href="#">Відгуки</a></li>
-        <ol className='p__serif'><a href="#">Контакти</a></ol>
+        <li className='p__serif'><a href="#services">Послуги</a></li>
+        <li className='p__serif'><a href="#about-us">Про нас</a></li>
+        <li className='p__serif'><a href="#reviews">Відгуки</a></li>
+        <ol className='p__serif'><a href="#contacts">Контакти</a></ol>
       </ul>
       <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu className="overlay__open" color='#343434' fontSize={18} onClick={() => setToggleMenu(true)}/>

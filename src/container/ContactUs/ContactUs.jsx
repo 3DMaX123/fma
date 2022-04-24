@@ -16,7 +16,7 @@ class CotactUs extends React.Component {
 
   render(){
     return(
-      <div className='app__contactUs' style={{backgroundImage: "url(" + this.state.backgroundImage + ")"}} >
+      <div className='app__contactUs' id='contacts' style={{backgroundImage: "url(" + this.state.backgroundImage + ")"}} >
         
       </div>
     )

@@ -36,7 +36,7 @@ const Review = () => {
 
   return(
     
-    <div className='app__review'>
+    <div className='app__review' id='reviews'>
       <div className='app__review-content'>
         <div className='topbar'>
           <button className='topbar-createreview' onClick={() => setIsOpen(true)}>Написати відгук</button>
