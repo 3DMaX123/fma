@@ -1,14 +1,22 @@
 .app_footer_mainSubstrate{
     display: flex;
+    flex-direction: column;
+
     background-color: #112021;
-    /* height: 492px; */
-    height: 24.167vw;
+    width: 100%;
+    height: 44.5297vh;   
+}
+.mainSubstrate-divs{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+    padding: 4.688vw 5.573vw;
 }
 .mainSusbstrate-content-ads{
     display: flex;
-    /* margin: 50px 150px 0px 80px; */
-    margin: 4.688vh  7.473vw 0vh 3.986vw;
 }
 .selection-column{
     flex-direction: column;
@@ -16,102 +24,93 @@
 } 
 
 .phone-label-phone{
-    /* width: 168px; */
-    width: 8.750vw;
-    flex-direction: column;
-    /* position: absolute; */
-}
-.tr-try{
-    /* width: 100px; */
-    width: 5.208vw;
-}
-.phone-label-phone table{
     display: flex;
-    flex-direction: row;
+    margin-top: 3.073vw;
+}
+.phone-label-phone-label{
+    margin-right: 1.615vw;
 }
 .mainSusbstrate-content-ads p{
-    margin-top: 1.439vh;
-    font-family: 'Prata';
+    margin-bottom: 1.042vw;
+
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.146vw;
-    line-height: 1.563vw;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 .mainSusbstrate-content-one{
     display: flex;
     /* margin: 19px 150px 0px 80px; */
-    margin: 1.823vh 7.473vw 0vh 3.986vw;
+    justify-content: space-between;
+    /* margin: 1.823vh 7.473vw 0vh 3.986vw; */
     /* width: 389px; */
     width: 20.260vw;
 }
 .mainSusbstrate-content-phone-label{
     display: flex;
-    margin: 6.046vh 7.473vw 0vh 3.986vw;
+    /* margin: 6.046vh 7.473vw 0vh 3.986vw; */
 }
-.mainSusbstrate-content-phone-label p, .mainSusbstrate-content-mail-label p{
+.mainSusbstrate-content-phone-label, .mainSusbstrate-content-mail-label{
     display: flex;
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.885vw;
-    line-height: 1.198vw;
-    color: white;
+    color: var(--color-white);
     
 }
 .mainSusbstrate-content-phone{
     display: flex;
-    margin: 0.671vh 7.473vw 0px 3.986vw;
+    /* margin: 0.671vh 7.473vw 0px 3.986vw; */
     /* width: 187px; */
-    width: 9.740vw;
+    /* width: 9.740vw; */
 }
-.mainSusbstrate-content-phone p, .mainSusbstrate-content-mail p, .mainSusbstrate-content-one p{
+.mainSusbstrate-content-phone, .mainSusbstrate-content-mail, .mainSusbstrate-content-one p{
     display: flex;
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 0.885vw;
-    line-height: 1.198vw;
-    color: rgba(255, 255, 255, 0.69);
+    color: var(--color-footersections);
     
 }
 .mainSusbstrate-content-mail-label{
+    /* 11.3602vw */
     display: flex;
-    margin: 6.046vh 7.473vw 0vh 11.3602vw;
-    width: 9.740vw;
 }
 .mainSusbstrate-content-mail{
     display: flex;
-    margin: 0.671vh 7.473vw 0vh 11.3602vw;
-    width: 9.740vw;
+    /* margin: 0.671vh 0vw 0vh -4.0vw;
+    width: 9.740vw; */
 }
 
 .mainSusbstrate-content-about, .mainSusbstrate-content-support,
  .mainSusbstrate-content-social, .mainSusbstrate-content-product{
     display: flex;
-    margin: 4.688vh 7.473vw 0vh 0vw;
+   
     
 }
 .mainSubstrate-content-side-p{
-    margin-top: 1.439vh;
-    font-family: 'Prata';
+    font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
     font-size: 1.146vw;
-    line-height: 1.563vw;
-    color: #FFFFFF;
+    color: var(--color-white);
+    margin-bottom: 1.042vw;
+   
 }
 .mainSusbstrate-content-about li, .mainSusbstrate-content-support li,
  .mainSusbstrate-content-social li, .mainSusbstrate-content-product li{
     list-style-type: none;
-    margin-top: 1.439vh;
-    font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 0.885vw;
-line-height:1.198vw;
+    /* margin-top: 1.439vh; */
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.885vw;
+    margin-bottom: 0.781vw;
 /* identical to box height */
 
 
-color: rgba(255, 255, 255, 0.69);
+    color: var(--color-footersections);
 }

@@ -4,6 +4,7 @@ import './Footer.css';
 
 const Footer = () => (
   <div className='app_footer_mainSubstrate'>    
+  <div className='mainSubstrate-divs'>
       <div className='selection-column'>
       <div className='mainSusbstrate-content-ads'>
         <p>Feed motion ADS</p>
@@ -13,16 +14,14 @@ const Footer = () => (
       </p>
       </div>     
       <div className='phone-label-phone'>
-        <table>
-        <tr className='tr-try'>
-          <td className='mainSusbstrate-content-phone-label'><p>Телефон</p></td>
-          <td className='mainSusbstrate-content-phone'><p>+38(095)-620-1283</p></td>
-        </tr>
-        <tr className='tr-try'>
-        <td className='mainSusbstrate-content-mail-label'><p>E-mail</p></td>
-          <td className='mainSusbstrate-content-mail'><p>fma@gmail.com</p></td>
-        </tr>
-        </table>
+        <div className='phone-label-phone-label'>
+          <p className='mainSusbstrate-content-phone-label'>Телефон</p>
+          <a className='mainSusbstrate-content-phone'>+38(095)-620-1283</a>
+          </div>
+          <div>
+          <p className='mainSusbstrate-content-mail-label'>E-mail</p>
+          <a className='mainSusbstrate-content-mail'>fma@gmail.com</a>
+          </div>        
         </div>      
       </div>
       <div className='mainSusbstrate-content-about'>
@@ -59,6 +58,7 @@ const Footer = () => (
           <li>Web - Optimal</li>
           <li>Web - Limitless</li>
         </ul>
+      </div>
       </div>
   </div>
 );
