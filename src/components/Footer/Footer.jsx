@@ -68,12 +68,10 @@ const Footer = () => {
       </div>
 
       {isOpenTypeError && (
-        <div className='app__review_typereview-blurSubstrate' onClick={() => setIsOpenTypeError(false)}>
-          <TypeError />
-        </div>  
-      )
-
-
+          <div className='app__review_typereview-blurSubstrate' onClick={() => setIsOpenTypeError(false)}>
+            <TypeError />
+          </div>  
+        )
       }
   </div>
 

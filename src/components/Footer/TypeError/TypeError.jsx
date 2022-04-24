@@ -100,7 +100,7 @@ class TypeError extends React.Component {
               <div className='form-field'>
                 <Number number='02' isRed={this.state.isRedP}/>
                 <form className='form-form'>
-                  <input type='text' title="Тут вашу посаду" onClick={this.isRedFalseP} className='PositionInput' value={this.state.positionInput} onChange={this.handleChangesPosition} required></input>
+                  <textarea type='text' title="Тут вашу посаду" onClick={this.isRedFalseP} className='PositionTextArea' value={this.state.positionInput} onChange={this.handleChangesPosition} required></textarea>
                   <LabelP isRedP={this.state.isRedP} />
                 </form>
               </div>
