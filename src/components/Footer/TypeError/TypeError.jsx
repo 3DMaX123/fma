@@ -107,8 +107,8 @@ class TypeError extends React.Component {
           </div>
           <div className='content-buttonandbutton'>
             <div className='buttonandbutton-filebutton'>
-                <button>
-                    
+                <button >
+                    Додати Фото
                 </button>
             </div>
             <button className='buttonandbutton-commitbutton' onClick={this.useClickOnButton}>Відправити</button>
