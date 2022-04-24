@@ -225,7 +225,7 @@
     -ms-interpolation-mode: nearest-neighbor;
 }
 
-.content-starandbutton{
+.content-buttonandbutton{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -233,21 +233,13 @@
     margin-top: 0.781vw;
 }
 
-.starandbutton-starrate svg{
-    width: 1.1vw;
-    margin-right: 0.625vw;
-
-    fill: var(--color-bigfmasignandgreystars);
-    transition: all 0.3s ease;
-}
-
-.starandbutton-starrate{
+.buttonandbutton-filebutton{
     display: flex;
 }
 
 
 
-.starandbutton-button{
+.buttonandbutton-commitbutton{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -257,7 +249,7 @@
     
     padding: 0.885vw 0.625vw 0.885vw 5.469vw;
     margin-left: 1.302vw;
-    background: #343434;
+    background: var(--color-black);
     box-shadow: var(--box-shadow);
 
     

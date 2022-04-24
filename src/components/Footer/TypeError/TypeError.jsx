@@ -105,13 +105,13 @@ class TypeError extends React.Component {
                 </form>
               </div>
           </div>
-          <div className='content-starandbutton'>
-            <div className='starandbutton-starrate'>
+          <div className='content-buttonandbutton'>
+            <div className='buttonandbutton-filebutton'>
                 <button>
                     
                 </button>
             </div>
-            <button className='starandbutton-button' onClick={this.useClickOnButton}>Відправити</button>
+            <button className='buttonandbutton-commitbutton' onClick={this.useClickOnButton}>Відправити</button>
           </div>
         </div>
           <div className='content-image'>
