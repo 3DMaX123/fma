@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import TypeError from './TypeError/TypeError';
+
 
 import './Footer.css';
 
-const Footer = () => (
+const Footer = () => {
+
+  const [ isOpenTypeError, setIsOpenTypeError] = useState(false);
+
+  return(
   <div className='app_footer_mainSubstrate' id="footer">    
   <div className='mainSubstrate-divs'>
       <div className='selection-column'>
@@ -25,42 +31,53 @@ const Footer = () => (
         </div>      
       </div>
       <div className='mainSusbstrate-content-about'>
-        <ul>
+        
           <p className='mainSubstrate-content-side-p'>Мапа сайту</p>
-          <li>Головна сторінка</li>
-          <li>Послуги</li>
-          <li>Про нас</li>
-          <li>Відгуки</li>
-          <li>Контакти</li>
-        </ul>
+          <a>Головна сторінка</a>
+          <a>Послуги</a>
+          <a>Про нас</a>
+          <a>Відгуки</a>
+          <a>Контакти</a>
+        
       </div>
       <div className='mainSusbstrate-content-support'>
-      <ul>
+      
           <p className='mainSubstrate-content-side-p'>Підтримка</p>
-          <li>Написати відгук</li>
-          <li>Зателефонувати</li>
-          <li>Повідомити про проблему</li>
-          <li>Є пропозиція</li>
-        </ul>
+          <a>Написати відгук</a>
+          <a>Зателефонувати</a>
+          <a onClick={() => setIsOpenTypeError(true)}>Повідомити про проблему</a>
+          <a>Є пропозиція</a>
+        
       </div>
       <div className='mainSusbstrate-content-social'>
-      <ul>
+     
           <p className='mainSubstrate-content-side-p'>Соціальні мережі</p>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Twitter</li>
-        </ul>
+          <a>Facebook</a>
+          <a>Instagram</a>
+          <a>Twitter</a>
+        
       </div>
       <div className='mainSusbstrate-content-product'>
-      <ul>
+     
           <p className='mainSubstrate-content-side-p'>Продукти</p>
-          <li>Web - Maxima</li>
-          <li>Web - Optimal</li>
-          <li>Web - Limitless</li>
-        </ul>
+          <a>Web - Maxima</a>
+          <a>Web - Optimal</a>
+          <a>Web - amitless</a>
+     
       </div>
       </div>
+
+      {isOpenTypeError && (
+        <div className='app__review_typereview-blurSubstrate' onClick={() => setIsOpenTypeError(false)}>
+          <TypeError />
+        </div>  
+      )
+
+
+      }
   </div>
-);
+
+      )
+  }
 
 export default Footer;
