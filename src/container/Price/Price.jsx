@@ -1,9 +1,110 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Price.css';
 import images from '../../constants/images';
 
+function Web_Maxima(){
+
+  return(
+    <div className='Text-Web-Maxima'>
+      <p className='ProductName'>Web-Maxima</p>
+      <p className='ProductPrice'>₴ 10,000</p>
+      <p className='ProductDescriptionBR'>Це той самий випадок, коли довіритися професіоналам та розслабитися є найкращим з варіантів</p>
+      <p className='ProductPropose'>Ми пропонуємо :</p>
+      <div className='ProductPropose-list'>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>1</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>Аудит сайту та рекламного кабінету</p>
+        </div>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>2</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>Розробка портрету цільової аудиторії, Mind-карта</p>
+        </div>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>3</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>SEO оптимізація сайту</p>
+        </div>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>4</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>Налаштування контекстної реклами</p>
+        </div>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>5</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>Налаштування аналітики відстежування</p>
+        </div>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>6</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>Детальний аудит кожний тиждень протягом місяця</p>
+        </div>
+        <div className='ProductListElement'>
+          <p className='ListNumber'>7</p>
+          <p className='ListDash'>-</p>
+          <p className='ListDescription'>Тісний взаємозв'язок з командою напортязі місяця</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Web_Optima(){
+
+  return(
+    <div className='Text-Web-Optima'>
+    <div className='animationDiv NameDiv'><p className='ProductName'>Web-Optima</p></div>
+    <div className='animationDiv PriceDiv'><p className='ProductPrice'>₴ 4,000</p></div>
+    <div className='animationDiv DescriptionDiv'><p className='ProductDescription'>Створено спеціально для вас. Це ж у вас є сумніви щодо вже</p></div>
+    <div className='animationDiv DescriptionBRDiv'><p className='ProductDescriptionBR'> наявної рекламної кампанії ?</p></div>
+    <div className='animationDiv ProposeDiv'><p className='ProductPropose'>Ми пропонуємо :</p></div>
+    <div className='ProductPropose-list'>
+      <div className='ProductListElement ListZero animationDiv'>
+        <p className='ListNumber'>1</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription'>Аудит сайту та рекламного кабінету</p>
+      </div>
+      <div className='ProductListElement ListOne animationDiv'>
+        <p className='ListNumber'>2</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription anim'>Фахові рекомендації</p>
+      </div>
+      <div className='ProductListElement ListTwo animationDiv'>
+        <p className='ListNumber'>3</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription'>Ручна чистка трафіку</p>
+      </div>
+      <div className='ProductListElement ListThree animationDiv'>
+        <p className='ListNumber'>4</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription'>Конткретні рекомендації SEO оптимізації сайту</p>
+      </div>
+      <div className='ProductListElement ListFour animationDiv'>
+        <p className='ListNumber'>5</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription'>Плавне зниження Ціни За Клік</p>
+      </div>
+      <div className='ProductListElement ListFife animationDiv'>
+        <p className='ListNumber'>6</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription'>Детальний аудит кожні два тижні протягом місяця</p>
+      </div>
+      <div className='ProductListElement ListSix animationDiv'>
+        <p className='ListNumber'>7</p>
+        <p className='ListDash'>-</p>
+        <p className='ListDescription'>Налаштування аналітики</p>
+      </div>
+    </div>
+  </div>
+  )
+}
+
 const Price = () => {
+
+  const [ whichOne, setWhichOne ] = useState('web-optima');
 
   return(
     <div className="app__price" id='services'>
@@ -11,48 +112,13 @@ const Price = () => {
       <div className='app__price-information'>
         <p className='ProductSign'>Послуги</p>
         <div className='ProductInformation'>
-          <p className='ProductName'>Web-Maxima</p>
-          <p className='ProductPrice'>₴ 10,000</p>
-          <p className='ProductDescription'>Це той самий випадок, коли довіритися професіоналам та <br /> розслабитися є найкращим з варіантів</p>
-          <p className='ProductPropose'>Ми пропонуємо :</p>
-          <div className='ProductPropose-list'>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>1</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>Аудит сайту та рекламного кабінету</p>
-            </div>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>2</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>Розробка портрету цільової аудиторії, Mind-карта</p>
-            </div>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>3</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>SEO оптимізація рейтингу сайту</p>
-            </div>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>4</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>Налаштування контекстної реклами</p>
-            </div>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>5</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>Налаштування аналітики відстежування</p>
-            </div>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>6</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>Щотижневі звіти</p>
-            </div>
-            <div className='ProductListElement'>
-              <p className='ListNumber'>7</p>
-              <p className='ListDash'>-</p>
-              <p className='ListDescription'>Тісний взаємозв'язок з командою напортязі місяця</p>
-            </div>
-          </div>
-          <a href="/#" className='DateUs'>Назначити зустріч</a>
+          {whichOne === 'web-maxima' &&
+            <Web_Maxima />
+          }
+          {whichOne === 'web-optima' &&
+            <Web_Optima />
+          }
+          <button onClick={() => whichOne === 'web-optima' ? setWhichOne('web-maxima') : setWhichOne('web-optima')} className='DateUs'>Назначити зустріч</button>
         </div>
 
       </div>
@@ -60,7 +126,7 @@ const Price = () => {
             <img src={images.arrowfour} alt="Arrow four" />
           </div>
       <div className='app__price-products'>
-          <div className='Web-Maxima'>
+          <div className='Web-Maxima' >
             <img src={images.web_maxima} alt="Web-Maxima logo" />
             <p className='ProductListName'>Web-Maxima</p>
             <p className='ProductListPrice'>₴ 10,000</p>

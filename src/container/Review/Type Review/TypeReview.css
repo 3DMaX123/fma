@@ -159,35 +159,23 @@
 
 }
 
-.animOne{
-    animation: slideUp .8s ease both;
-}
-.animTwo{
-    animation: slideUp .8s ease both;
-}
-.animThree{
-    animation: slideUp .8s ease both;
-}
-.animFour{
-    animation: slideUp .8s ease both;
-}
 
-.animOneNo{
-    animation: slideDown .7s ease both;
-}
-.animTwoNo{
+.animSlideDownOne{
     animation: slideDown .7s ease both;
     animation-delay: .2s;
 }
-.animThreeNo{
+.animSlideDownTwo{
     animation: slideDown .7s ease both;
     animation-delay: .4s;
 }
-.animFourNo{
+.animSlideDownThree{
     animation: slideDown .7s ease both;
     animation-delay: .6s;
 }
-
+.animSlideDownFour{
+    animation: slideDown .7s ease both;
+    animation-delay: .8s;
+}
 
 @keyframes slideUp {
     0% {transform: translateY(2.083vw);}
@@ -198,7 +186,6 @@
     0% {transform: translateY(-2.083vw);}
     100% {transform: translateY(0);opacity:1;}
 }
-
 
 .content-image{
     display: flex;

@@ -71,6 +71,15 @@
     font-weight: 400;
     font-size: 1.25vw;
     
+    color: var(--color-black);
+}
+
+.ProductDescriptionBR{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    
     margin-bottom: 1.2vw;
     color: var(--color-black);
 }
@@ -175,11 +184,20 @@
     height: 100%;
 }
 
-.Web-Maxima{
+.Web-Maxima,
+.Web-Optima{
     display: flex;
     justify-content: center;
     margin-right: 3.9vw;
     flex-direction: column;
+}
+
+.Text-Web-Maxima,
+.Text-Web-Optima{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .Web-Maxima img{
@@ -296,4 +314,114 @@
 
     color: var(--color-white);
     margin-top: 0.42vw;
+}
+
+/* A LOT OF KEY FRAMES !!!!!!*/
+
+.NameDiv{
+    animation: slideLeftName 1.4s ease-in-out both;
+}
+
+.NameDiv p{
+    white-space: nowrap;
+}
+
+.PriceDiv{
+    animation: slideLeftPrice .3s ease-in-out both;
+    animation-delay: .4s;
+}
+
+.PriceDiv p{
+    white-space: nowrap;
+}
+
+.DescriptionDiv{
+    animation: slideLeftDescription 1s ease-in-out both;
+    animation-delay: .6s;
+}
+
+.DescriptionDiv p{
+    white-space: nowrap;
+}
+
+.DescriptionBRDiv{
+    animation: slideLeftDescriptionBR 1s ease-in-out both;
+    animation-delay: .8s;
+}
+
+.DescriptionBRDiv p{
+    white-space: nowrap;
+}
+
+.ProposeDiv{
+    animation: slideLeftPropose 1s ease-in-out both;
+    animation-delay: 1s;
+}
+
+.ProposeDiv p{
+    white-space: nowrap;
+}
+
+.ProductListElement{
+    animation: slideLeftList 1s ease-in-out both;
+    animation-delay: 1.2s;
+}
+
+.ProductListElement p{
+    white-space: nowrap;
+}
+
+.ListZero{ animation-delay: 1.2s; }
+.ListOne{ animation-delay: 1.4s; }
+.ListTwo{ animation-delay: 1.6s; }
+.ListThree{ animation-delay: 1.8s; }
+.ListFour{ animation-delay: 2s; }
+.ListFife{ animation-delay: 2s; }
+.ListSix{ animation-delay: 2.4s; }
+
+@keyframes slideLeftName {
+    0%{
+        width: 0px;
+    }100%{
+        width: 60%;
+    }
+}
+@keyframes slideLeftPrice {
+    0%{
+        width: 0px;
+    }100%{
+        width: 16%;
+    }
+}
+
+@keyframes slideLeftDescription {
+    0%{
+        width: 0px;
+    }100%{
+        width: 100%;
+    } 
+}
+
+@keyframes slideLeftDescriptionBR {
+    0%{
+        width: 0px;
+    }100%{
+        width: 50%;
+    } 
+}
+
+@keyframes slideLeftPropose {
+    0%{
+        width: 0px;
+    }100%{
+        width: 50%;
+    } 
+}
+
+@keyframes slideLeftList {
+    0%{
+        width: 0px;
+    }100%{
+        width: 100%;
+    } 
 }

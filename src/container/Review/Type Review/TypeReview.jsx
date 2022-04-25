@@ -20,30 +20,30 @@ function Number(props){
 
 function LabelN(props){
   if(!props.isRedN){
-    return <div className='field-lable'><p className='animOneNo'>Ваше ім'я</p></div>
+    return <div className='field-lable'><p className='animSlideDownOne'>Ваше ім'я</p></div>
   }else{
-    return <div className='field-lable-error'><p className='animOne'>Не соромтесь</p></div>
+    return <div className='field-lable-error'><p className='animSlideUp'>Не соромтесь</p></div>
   }
 }
 function LabelP(props){
   if(!props.isRedP){
-    return <div className='field-lable'><p className='animTwoNo'>Ваша посада</p></div>
+    return <div className='field-lable'><p className='animSlideDownTwo'>Ваша посада</p></div>
   }else{
-    return <div className='field-lable-error'><p className='animTwo'>Ні, ми не з СБУ</p></div>
+    return <div className='field-lable-error'><p className='animSlideUp'>Ні, ми не з СБУ</p></div>
   }
 }
 function LabelCN(props){
   if(!props.isRedCN){
-    return <div className='field-lable'><p className='animThreeNo'>Назва вашої компанії</p></div>
+    return <div className='field-lable'><p className='animSlideDownThree'>Назва вашої компанії</p></div>
   }else{
-    return <div className='field-lable-error'><p className='animThree'>Навіщо? А вам скажи</p></div>
+    return <div className='field-lable-error'><p className='animSlideUp'>Навіщо? А вам скажи</p></div>
   }
 }
 function LabelR(props){
   if(!props.isRedR){
-    return <div className='field-lable'><p className='animFourNo'>Ваш відгук</p></div>
+    return <div className='field-lable'><p className='animSlideDownFour'>Ваш відгук</p></div>
   }else{
-    return <div className='field-lable-error'><p className='animFour'>Давайте, ми витрамаємо</p></div>
+    return <div className='field-lable-error'><p className='animSlideUp'>Давайте, ми витрамаємо</p></div>
   }
 }
 
