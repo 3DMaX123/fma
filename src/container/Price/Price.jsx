@@ -7,42 +7,43 @@ function Web_Maxima(){
 
   return(
     <div className='Text-Web-Maxima'>
-      <p className='ProductName'>Web-Maxima</p>
-      <p className='ProductPrice'>₴ 10,000</p>
-      <p className='ProductDescriptionBR'>Це той самий випадок, коли довіритися професіоналам та розслабитися є найкращим з варіантів</p>
-      <p className='ProductPropose'>Ми пропонуємо :</p>
+      <div className='animationDiv NameDiv-max'><p className='ProductName'>Web-Maxima</p></div>
+      <div className='animationDiv PriceDiv-max'><p className='ProductPrice'>₴ 10,000</p></div>
+      <div className='animationDiv DescriptionDiv'><p className='ProductDescription'>Це той самий випадок, коли довіритися професіоналам та </p></div>
+      <div className='animationDiv DescriptionBRDiv-max'><p className='ProductDescriptionBR'> розслабитися є найкращим з варіантів !</p></div>
+      <div className='animationDiv ProposeDiv'><p className='ProductPropose'>Ми пропонуємо :</p></div>
       <div className='ProductPropose-list'>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListZero animationDiv'>
           <p className='ListNumber'>1</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>Аудит сайту та рекламного кабінету</p>
         </div>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListOne animationDiv'>
           <p className='ListNumber'>2</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>Розробка портрету цільової аудиторії, Mind-карта</p>
         </div>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListTwo animationDiv'>
           <p className='ListNumber'>3</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>SEO оптимізація сайту</p>
         </div>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListThree animationDiv'>
           <p className='ListNumber'>4</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>Налаштування контекстної реклами</p>
         </div>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListFour animationDiv'>
           <p className='ListNumber'>5</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>Налаштування аналітики відстежування</p>
         </div>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListFife animationDiv'>
           <p className='ListNumber'>6</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>Детальний аудит кожний тиждень протягом місяця</p>
         </div>
-        <div className='ProductListElement'>
+        <div className='ProductListElement ListSix animationDiv'>
           <p className='ListNumber'>7</p>
           <p className='ListDash'>-</p>
           <p className='ListDescription'>Тісний взаємозв'язок з командою напортязі місяця</p>
