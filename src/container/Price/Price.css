@@ -365,7 +365,7 @@
 }
 
 .DescriptionDiv{
-    animation: slideLeftDescription .2s ease-in-out both;
+    animation: slideLeftDescription .4s ease-in-out both;
     animation-delay: .3s;
 }
 
