@@ -99,7 +99,7 @@
 
     grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: column;
-    overflow: scroll;
+    overflow: auto;
     gap: 1.042vw;
 
 
