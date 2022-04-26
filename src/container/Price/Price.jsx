@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './Price.css';
 import images from '../../constants/images';
 
-function Web_Maxima(){
+function WebMaxima(){
 
   return(
     <div className='Text-Web-Maxima'>
@@ -53,7 +53,7 @@ function Web_Maxima(){
   )
 }
 
-function Web_Optima(){
+function WebOptima(){
 
   return(
     <div className='Text-Web-Optima'>
@@ -103,6 +103,41 @@ function Web_Optima(){
   )
 }
 
+function FirstPanel(props){
+  if(props.whichOne === 'web-maxima'){
+    return(
+      <>
+        <div className='Web-Maxima Main' >
+          <img src={images.web_maxima} alt="Web-Maxima logo" />
+          <p className='ProductListName'>Web-Maxima</p>
+          <p className='ProductListPrice'>₴ 10,000</p>
+        </div>
+        <div className='Web-Optima Additional'>
+          <img src={images.web_optima} alt="Web-Optima logo" />
+          <p className='ProductListNameDecreased'>Web-Optima</p>
+          <p className='ProductListPriceDecreased'>₴ 4,000</p>
+        </div>
+      </>
+    )
+    }
+    if (props.whichOne === 'web-optima'){
+      return(
+        <>
+          <div className='Web-Optima Main'>
+            <img src={images.web_optima} alt="Web-Optima logo" />
+            <p className='ProductListName'>Web-Optima</p>
+            <p className='ProductListPrice  '>₴ 4,000</p>
+          </div>
+          <div className='Web-Maxima Additional' >
+            <img src={images.web_maxima} alt="Web-Maxima logo" />
+            <p className='ProductListNameDecreased'>Web-Maxima</p>
+            <p className='ProductListPriceDecreased'>₴ 10,000</p>
+          </div>
+        </>
+      )
+    }
+}
+
 const Price = () => {
 
   const [ whichOne, setWhichOne ] = useState('web-optima');
@@ -114,10 +149,10 @@ const Price = () => {
         <p className='ProductSign'>Послуги</p>
         <div className='ProductInformation'>
           {whichOne === 'web-maxima' &&
-            <Web_Maxima />
+            <WebMaxima />
           }
           {whichOne === 'web-optima' &&
-            <Web_Optima />
+            <WebOptima />
           }
           <button onClick={() => whichOne === 'web-optima' ? setWhichOne('web-maxima') : setWhichOne('web-optima')} className='DateUs'>Назначити зустріч</button>
         </div>
@@ -127,16 +162,7 @@ const Price = () => {
             <img src={images.arrowfour} alt="Arrow four" />
           </div>
       <div className='app__price-products'>
-          <div className='Web-Maxima' >
-            <img src={images.web_maxima} alt="Web-Maxima logo" />
-            <p className='ProductListName'>Web-Maxima</p>
-            <p className='ProductListPrice'>₴ 10,000</p>
-          </div>
-          <div className='Web-Optima'>
-            <img src={images.web_optima} alt="Web-Optima logo" />
-            <p className='ProductListNameDecreased'>Web-Optima</p>
-            <p className='ProductListPriceDecreased'>₴ 4,000</p>
-          </div>
+            <FirstPanel whichOne={whichOne} />
           <div className='Web-Limitless'>
             <img src={images.web_limitless} alt="Web-Limitless logo" />
             <p className='ProductListNameWhite'>Web-Limitless</p>

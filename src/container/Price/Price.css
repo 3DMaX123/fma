@@ -203,8 +203,8 @@
     height: 100%;
 }
 
-.Web-Maxima,
-.Web-Optima{
+.Main,
+.Additional{
     display: flex;
     justify-content: center;
     margin-right: 3.9vw;
@@ -219,7 +219,7 @@
     align-items: flex-start;
 }
 
-.Web-Maxima img{
+.Main img{
     width: 16.3vw;
     height: 24.42vw;
 
@@ -234,15 +234,8 @@
     filter: drop-shadow(var(--box-shadowforpicturesprice));
 }
 
-.Web-Optima{
-    display: flex;
-    justify-content: center;
-    margin-right: 3.9vw;
 
-    flex-direction: column;
-}
-
-.Web-Optima img{
+.Additional img{
     width: 14.21vw;
     height: 21.45vw;
 
