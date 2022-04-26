@@ -186,7 +186,7 @@
 
 .UserReview{
     max-height: 12.396vw;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .UserReview p{

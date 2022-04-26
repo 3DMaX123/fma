@@ -59,6 +59,34 @@ const Review = () => {
           Stars="2"
           Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
         />
+        <ReviewForm 
+          Name="Олександр"
+          PositionSign="Co-Ceo" 
+          NameOfCompany="Feed Motion ADS" 
+          Stars="2"
+          Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+        />
+        <ReviewForm 
+          Name="Олександр"
+          PositionSign="Co-Ceo" 
+          NameOfCompany="Feed Motion ADS" 
+          Stars="2"
+          Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+        />
+        <ReviewForm 
+          Name="Олександр"
+          PositionSign="Co-Ceo" 
+          NameOfCompany="Feed Motion ADS" 
+          Stars="2"
+          Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+        />
+        <ReviewForm 
+          Name="Олександр"
+          PositionSign="Co-Ceo" 
+          NameOfCompany="Feed Motion ADS" 
+          Stars="2"
+          Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+        />
         </div>
       </div>
       <div className='Arrowsix'>
