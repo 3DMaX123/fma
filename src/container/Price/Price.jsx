@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import './Price.css';
 import images from '../../constants/images';
+import PricePhone from './PricePhone/PricePhone';
 
 function WebMaxima(){
 
@@ -143,33 +144,36 @@ const Price = () => {
   const [ whichOne, setWhichOne ] = useState('web-optima');
 
   return(
-    <div className="app__price" id='services'>
-      <div className="app__price-leftline"></div>
-      <div className='app__price-information'>
-        <p className='ProductSign'>Послуги</p>
-        <div className='ProductInformation'>
-          {whichOne === 'web-maxima' &&
-            <WebMaxima />
-          }
-          {whichOne === 'web-optima' &&
-            <WebOptima />
-          }
-          <button onClick={() => whichOne === 'web-optima' ? setWhichOne('web-maxima') : setWhichOne('web-optima')} className='DateUs'>Назначити зустріч</button>
-        </div>
+    <>
+      <div className="app__price" id='services'>
+        <div className="app__price-leftline"></div>
+        <div className='app__price-information'>
+          <p className='ProductSign'>Послуги</p>
+          <div className='ProductInformation'>
+            {whichOne === 'web-maxima' &&
+              <WebMaxima />
+            }
+            {whichOne === 'web-optima' &&
+              <WebOptima />
+            }
+            <button onClick={() => whichOne === 'web-optima' ? setWhichOne('web-maxima') : setWhichOne('web-optima')} className='DateUs'>Назначити зустріч</button>
+          </div>
 
+        </div>
+            <div className='arrowfour'>
+              <img src={images.arrowfour} alt="Arrow four" />
+            </div>
+        <div className='app__price-products'>
+              <FirstPanel whichOne={whichOne} />
+            <div className='Web-Limitless'>
+              <img src={images.web_limitless} alt="Web-Limitless logo" />
+              <p className='ProductListNameWhite'>Web-Limitless</p>
+              <p className='ProductListPriceWhite'>Від ₴ 10,000</p>
+            </div>
+        </div>
       </div>
-          <div className='arrowfour'>
-            <img src={images.arrowfour} alt="Arrow four" />
-          </div>
-      <div className='app__price-products'>
-            <FirstPanel whichOne={whichOne} />
-          <div className='Web-Limitless'>
-            <img src={images.web_limitless} alt="Web-Limitless logo" />
-            <p className='ProductListNameWhite'>Web-Limitless</p>
-            <p className='ProductListPriceWhite'>Від ₴ 10,000</p>
-          </div>
-      </div>
-    </div>
+      <PricePhone />
+    </>
   )
 }
 

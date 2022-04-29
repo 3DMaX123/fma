@@ -489,3 +489,13 @@
         width: 100%;
     } 
 }
+
+@media screen and (max-width: 480px) {
+    .app__price{
+        display: none;
+    }
+
+    .app__pricephone{
+        display: flex!important;
+    }
+}

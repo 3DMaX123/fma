@@ -41,7 +41,7 @@
 }
 
 .app__header_firstlayer-arrowthree img{
-    width: 1.9v;
+    height: 21.5vw;
 }
 
 .app__header_secondlayer{
@@ -196,4 +196,14 @@
     margin-right: 15px;
 
     background-color: var(--color-black);
+}
+
+@media screen and (max-width: 480px) {
+    .app__header{
+        display: none;
+    }
+
+    .app__headerphone{
+        display: flex!important;
+    }
 }

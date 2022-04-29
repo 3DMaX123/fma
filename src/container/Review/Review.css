@@ -213,3 +213,13 @@
     /* Note: backdrop-filter has minimal browser support */
     z-index: 10;
 }
+
+@media screen and (max-width: 480px) {
+    .app__review{
+        display: none;
+    }
+
+    .app__reviewphone{
+        display: flex!important;
+    }
+}

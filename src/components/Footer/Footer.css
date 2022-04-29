@@ -130,4 +130,12 @@
     z-index: 10;
 }
 
+@media screen and (max-width: 450px) {
+    .app_footer_mainSubstrate{
+        display: none;
+    }
 
+    .app__footerphone{
+        display: flex!important;
+    }
+}

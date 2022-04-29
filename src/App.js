@@ -4,6 +4,8 @@ import { Header, Price, AboutUs, Review, ContactUs} from './container';
 import {NavBar, Footer} from './components';
 import './App.css';
 
+
+
 const App = () => (
     <div>
         <NavBar /> 
@@ -12,7 +14,7 @@ const App = () => (
         <AboutUs />    
         <Review />    
         <ContactUs />     
-        <Footer />         
+        <Footer />        
     </div>
 );
 

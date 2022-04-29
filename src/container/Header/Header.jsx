@@ -2,8 +2,10 @@ import React from 'react'
 
 import images from '../../constants/images';
 import './Header.css';
+import HeaderPhone from './HeaderPhone/HeaderPhone';
 
 const Header = () => (
+  <div>
     <div className="app__header">
       <div className="app__header_undercontent">
       <div className='app__header_secondlayer'>
@@ -49,6 +51,8 @@ const Header = () => (
         </div>
       </div>
     </div>
+    <HeaderPhone />
+  </div>
 );
 
 export default Header
