@@ -18,8 +18,12 @@ import greystarrate from '../assets/Review_StarRate_Grey.svg';
 import arrowsix from '../assets/Review_Arrow6.png';
 import tree from '../assets/White_Tree.jpg';
 import arrowseven from '../assets/TypeReview_Arrow7.svg';
+import cutpalm from '../assets/CutPalm.webp';
+import cutfullpalm from '../assets/CutPalmFull.webp';
 
 export default{
+    cutfullpalm,
+    cutpalm,
     arrowseven,
     tree,
     arrowsix,
