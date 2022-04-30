@@ -5,8 +5,8 @@ import './Header.css';
 import HeaderPhone from './HeaderPhone/HeaderPhone';
 
 const Header = () => (
-  <div>
-    <div className="app__header">
+  <>
+    <div className="app__header" id='header'>
       <div className="app__header_undercontent">
       <div className='app__header_secondlayer'>
           <div className="secondlayer-frstsection">
@@ -52,7 +52,7 @@ const Header = () => (
       </div>
     </div>
     <HeaderPhone />
-  </div>
+  </>
 );
 
 export default Header

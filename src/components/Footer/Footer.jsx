@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TypeError from './TypeError/TypeError';
 import FooterPhone from './FooterPhone/FooterPhone';
+import { Link } from 'react-scroll';
 
 import './Footer.css';
 
@@ -34,11 +35,11 @@ const Footer = () => {
           <div className='mainSusbstrate-content-about'>
             
               <p className='mainSubstrate-content-side-p'>Мапа сайту</p>
-              <a>Головна сторінка</a>
-              <a>Послуги</a>
-              <a>Про нас</a>
-              <a>Відгуки</a>
-              <a>Контакти</a>
+              <Link to='header'>Головна сторінка</Link>
+              <Link to='services'>Послуги</Link>
+              <Link to='about-us'>Про нас</Link>
+              <Link to='reviews'>Відгуки</Link>
+              <Link to='contacts'>Контакти</Link>
             
           </div>
           <div className='mainSusbstrate-content-support'>
