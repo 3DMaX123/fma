@@ -20,8 +20,18 @@ import tree from '../assets/White_Tree.jpg';
 import arrowseven from '../assets/TypeReview_Arrow7.svg';
 import cutpalm from '../assets/CutPalm.webp';
 import cutfullpalm from '../assets/CutPalmFull.webp';
+import phonearrowone from '../assets/Phone_Arrow1.svg';
+import phonearrowtwo from '../assets/Phone_Arrow2.svg';
+import phonearrowthree from '../assets/Phone_Arrow3.svg';
+import phonearrowfour from '../assets/Phone_Arrow4.svg';
+import phonearrowfife from '../assets/Phone_Arrow5.svg';
 
 export default{
+    phonearrowone,
+    phonearrowtwo,
+    phonearrowthree,
+    phonearrowfour,
+    phonearrowfife,
     cutfullpalm,
     cutpalm,
     arrowseven,
