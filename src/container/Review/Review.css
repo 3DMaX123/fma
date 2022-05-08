@@ -99,7 +99,7 @@
 
     grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: column;
-    overflow: scroll;
+    overflow: auto;
     gap: 1.042vw;
 
 
@@ -186,7 +186,7 @@
 
 .UserReview{
     max-height: 12.396vw;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .UserReview p{
@@ -212,4 +212,14 @@
     backdrop-filter: blur(var(--blur));
     /* Note: backdrop-filter has minimal browser support */
     z-index: 10;
+}
+
+@media screen and (max-width: 480px) {
+    .app__review{
+        display: none;
+    }
+
+    .app__reviewphone{
+        display: flex!important;
+    }
 }

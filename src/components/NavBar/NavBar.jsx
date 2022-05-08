@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-scroll';
 
 import './NavBar.css';
 import images from '../../constants/images';
@@ -15,10 +16,10 @@ const NavBar = () => {
         <img src={images.logo} alt="Feed Motion Advertising Logo" />
       </div>
       <ul className='app__navbar-links'>
-        <li className='p__serif'><a href="#services">Послуги</a></li>
-        <li className='p__serif'><a href="#about-us">Про нас</a></li>
-        <li className='p__serif'><a href="#reviews">Відгуки</a></li>
-        <ol className='p__serif'><a href="#contacts">Контакти</a></ol>
+        <li className='p__serif'><Link to="services">Послуги</Link></li>
+        <li className='p__serif'><Link to="about-us">Про нас</Link></li>
+        <li className='p__serif'><Link to="reviews">Відгуки</Link></li>
+        <ol className='p__serif'><Link to="contacts">Контакти</Link></ol>
       </ul>
       <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu className="overlay__open" color='#343434' fontSize={18} onClick={() => setToggleMenu(true)}/>

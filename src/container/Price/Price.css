@@ -74,7 +74,26 @@
     color: var(--color-black);
 }
 
+.ProductDescription-max{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    
+    color: var(--color-black);
+}
+
 .ProductDescriptionBR{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    
+    margin-bottom: 1.2vw;
+    color: var(--color-black);
+}
+
+.ProductDescriptionBR-max{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -184,8 +203,8 @@
     height: 100%;
 }
 
-.Web-Maxima,
-.Web-Optima{
+.Main,
+.Additional{
     display: flex;
     justify-content: center;
     margin-right: 3.9vw;
@@ -200,7 +219,7 @@
     align-items: flex-start;
 }
 
-.Web-Maxima img{
+.Main img{
     width: 16.3vw;
     height: 24.42vw;
 
@@ -215,15 +234,8 @@
     filter: drop-shadow(var(--box-shadowforpicturesprice));
 }
 
-.Web-Optima{
-    display: flex;
-    justify-content: center;
-    margin-right: 3.9vw;
 
-    flex-direction: column;
-}
-
-.Web-Optima img{
+.Additional img{
     width: 14.21vw;
     height: 21.45vw;
 
@@ -319,25 +331,42 @@
 /* A LOT OF KEY FRAMES !!!!!!*/
 
 .NameDiv{
-    animation: slideLeftName 1.4s ease-in-out both;
+    animation: slideLeftName 1s ease-in-out both;
 }
 
 .NameDiv p{
     white-space: nowrap;
 }
 
+.NameDiv-max{
+    animation: slideLeftName-max 1s ease-in-out both;
+}
+
+.NameDiv-max p{
+    white-space: nowrap;
+}
+
 .PriceDiv{
-    animation: slideLeftPrice .3s ease-in-out both;
-    animation-delay: .4s;
+    animation: slideLeftPrice .25s ease-in-out both;
+    animation-delay: .2s;
 }
 
 .PriceDiv p{
     white-space: nowrap;
 }
 
+.PriceDiv-max{
+    animation: slideLeftPrice-max .25s ease-in-out both;
+    animation-delay: .2s;
+}
+
+.PriceDiv-max p{
+    white-space: nowrap;
+}
+
 .DescriptionDiv{
-    animation: slideLeftDescription 1s ease-in-out both;
-    animation-delay: .6s;
+    animation: slideLeftDescription .4s ease-in-out both;
+    animation-delay: .3s;
 }
 
 .DescriptionDiv p{
@@ -345,16 +374,25 @@
 }
 
 .DescriptionBRDiv{
-    animation: slideLeftDescriptionBR 1s ease-in-out both;
-    animation-delay: .8s;
+    animation: slideLeftDescriptionBR .5s ease-in-out both;
+    animation-delay: .4s;
+}
+
+.DescriptionBRDiv-max{
+    animation: slideLeftDescriptionBR-max .5s ease-in-out both;
+    animation-delay: .4s;
 }
 
 .DescriptionBRDiv p{
     white-space: nowrap;
 }
 
+.DescriptionBRDiv-max p{
+    white-space: nowrap;
+}
+
 .ProposeDiv{
-    animation: slideLeftPropose 1s ease-in-out both;
+    animation: slideLeftPropose .5s ease-in-out both;
     animation-delay: 1s;
 }
 
@@ -363,7 +401,7 @@
 }
 
 .ProductListElement{
-    animation: slideLeftList 1s ease-in-out both;
+    animation: slideLeftList .4s ease-in-out both;
     animation-delay: 1.2s;
 }
 
@@ -371,6 +409,7 @@
     white-space: nowrap;
 }
 
+/*
 .ListZero{ animation-delay: 1.2s; }
 .ListOne{ animation-delay: 1.4s; }
 .ListTwo{ animation-delay: 1.6s; }
@@ -378,7 +417,7 @@
 .ListFour{ animation-delay: 2s; }
 .ListFife{ animation-delay: 2s; }
 .ListSix{ animation-delay: 2.4s; }
-
+*/
 @keyframes slideLeftName {
     0%{
         width: 0px;
@@ -386,11 +425,28 @@
         width: 60%;
     }
 }
+
+@keyframes slideLeftName-max {
+    0%{
+        width: 0px;
+    }100%{
+        width: 65%;
+    }
+}
+
 @keyframes slideLeftPrice {
     0%{
         width: 0px;
     }100%{
         width: 16%;
+    }
+}
+
+@keyframes slideLeftPrice-max {
+    0%{
+        width: 0px;
+    }100%{
+        width: 20%;
     }
 }
 
@@ -410,6 +466,14 @@
     } 
 }
 
+@keyframes slideLeftDescriptionBR-max {
+    0%{
+        width: 0px;
+    }100%{
+        width: 70%;
+    } 
+}
+
 @keyframes slideLeftPropose {
     0%{
         width: 0px;
@@ -424,4 +488,14 @@
     }100%{
         width: 100%;
     } 
+}
+
+@media screen and (max-width: 480px) {
+    .app__price{
+        display: none;
+    }
+
+    .app__pricephone{
+        display: flex!important;
+    }
 }
