@@ -1,7 +1,21 @@
 
 
-.PositionTextArea{/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.PositionTextArea{
+    display: flex;
+    height: 15vw;
+    width: 23.438vw;
+    resize: none;
     
+    border: 1px solid var(--color-black);
+    
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;
+    background: transparent;
+    text-align: right;
+    color: var(--color-black);
 }
 
 .content-buttonandbutton{
@@ -16,7 +30,24 @@
     display: flex;
 }
 
+.buttoncontent{
+    
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;
 
+    color: var(--color-black);
+    
+    padding: 0.885vw 0.625vw 0.885vw 3.125vw;
+    margin-left: 1.302vw;
+    background: var(--color-transparent);
+  
+    border: 0.052vw solid var(--color-black);
+
+    cursor: pointer;
+    
+}
 
 .buttonandbutton-commitbutton{
     font-family: var(--font-main);

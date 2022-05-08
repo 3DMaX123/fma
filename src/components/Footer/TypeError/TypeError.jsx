@@ -100,15 +100,15 @@ class TypeError extends React.Component {
               <div className='form-field'>
                 <Number number='02' isRed={this.state.isRedP}/>
                 <form className='form-form'>
-                  <textarea type='text' title="Тут вашу посаду" onClick={this.isRedFalseP} className='PositionTextArea' value={this.state.positionInput} onChange={this.handleChangesPosition} required></textarea>
+                  <textarea type='text' title="Опишіть нам проблему" onClick={this.isRedFalseP} className='PositionTextArea' value={this.state.positionInput} onChange={this.handleChangesPosition} required></textarea>
                   <LabelP isRedP={this.state.isRedP} />
                 </form>
               </div>
           </div>
           <div className='content-buttonandbutton'>
             <div className='buttonandbutton-filebutton'>
-                <button >
-                    Додати Фото
+                <button className='buttoncontent' >
+                    Прикріпити Фото
                 </button>
             </div>
             <button className='buttonandbutton-commitbutton' onClick={this.useClickOnButton}>Відправити</button>
