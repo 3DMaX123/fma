@@ -1,3 +1,132 @@
 .app__footerphone{
     display: none;
+    height: 276.410vw;
+    background: #182828;
+    flex-direction: column;
+    
+}
+
+.footerphone-content-ads{
+    margin-left: 8.205vw;
+    margin-top: 14.615vw;
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    
+    color: #FAFAFA;
+}
+.footerphone-content-one{
+width: 83.590vw;
+
+    margin-top: 3.846vw;
+    margin-left: 8.205vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #B5BABA;
+}
+.footerphone-phone-label{
+    margin-top: 7.949vw;
+}
+.footerphone-phone-label2{
+    margin-top: 1.795vw;
+}
+.footerphone-phone-label, .footerphone-phone-label2{
+    display: flex;
+    flex-direction: row;
+}
+.footerphone-phone-label-email{
+    margin-left: 8.205vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #FAFAFA;
+}
+.footerphone-phone-label-phone{
+    margin-left: 28.974vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: #FAFAFA;
+}
+.footerphone-phone-email{
+    margin-left: 8.205vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: rgba(250, 250, 250, 0.69);
+}
+.footerphone-phone-phone{
+    margin-left: 9.231vw;
+   
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    
+    color: rgba(250, 250, 250, 0.69);   
+}
+.footerphone-content-about, .footerphone-content-support, .footerphone-content-social,
+.footerphone-content-product{
+    margin-left: 8.205vw;
+}
+ul{
+    list-style-type:none;
+}
+.footerphone-content-side-p{
+    margin-top: 7.949vw;
+    margin-bottom: 1.026vw;
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    
+    color: #FAFAFA;
+}
+.footerphone-content-side-p li{
+margin-top: 3.590vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: rgba(250, 250, 250, 0.69);
 }

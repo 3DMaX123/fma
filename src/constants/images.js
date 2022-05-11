@@ -1,7 +1,5 @@
 import bench from '../assets/Bench_With_CHair.jpg';
 import palm from '../assets/Palm.jpg';
-import circle from '../assets/Hell_Circle.jpg';
-import sakura from '../assets/Sakura.jpg';
 import stairs from '../assets/Spinned_Stairs.jpg';
 import logo from '../assets/Logo.svg';
 import arrowthree from '../assets/Head_Arrow3.png';
@@ -51,7 +49,5 @@ export default{
     logo,
     bench,
     palm,
-    circle,
-    sakura,
     stairs
 };

@@ -1,3 +1,121 @@
 .app__reviewphone{
     display: none;
+    background: white;
+    height: 249.487vw;
+    flex-direction: column;
+}
+.review-label{
+    display: flex;
+    flex-direction: row;
+}
+.review-label-review{
+    margin-top: 10.282vw;
+    margin-left: 4.359vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: rgba(52, 52, 52, 0.62);
+}
+.review-label-text{
+    display: flex;
+width: 31.026vw;
+height: 9.487vw;
+background: #343434;
+
+justify-content: center;
+margin-top: 8.205vw;
+margin-left: 6.154vw;
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 2.564vw;
+line-height: 3.590vw;
+
+}
+.review-label-text p{
+    margin-top: 3.077vw;
+    color: white;
+}
+.review-label-star{
+    width: 3.846vw;
+    height: 3.846vw;
+    margin-top: 11.082vw;
+    margin-left: 2.564vw;
+}
+.review-label-star-rate{
+    margin-top: 10.282vw;
+    margin-left: 0.513vw;
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: rgba(52, 52, 52, 0.62);
+}
+.review_palm{
+    position: absolute;
+    width: 101.305vw;
+    height: 142.669vw;
+    left: -59.790vw;
+    margin-top: 30vw;
+    transform: matrix(-0.99, -0.16, -0.16, 0.99, 0, 0);
+}
+.review_palm2{
+    position: absolute;
+    width: 101.305vw;
+    height: 142.669vw;
+    margin-top: 90vw;
+    margin-left: 46.790vw;
+    transform: rotate(-16.75deg);
+}
+.review_palm3{
+    position: absolute;
+    width: 68.923vw;
+    height: 65.654vw;
+    margin-top: 230vw;
+    margin-left: -19.790vw;
+    transform: matrix(-0.67, -0.75, -0.75, 0.67, 0, 0);
+}
+.reviewphone_fma_whiteBorder1{
+    position: absolute;
+    width: 3.718vw;
+    height: 0.854vw;
+    margin-top: 233.128vw;
+    left: 41.026vw;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+.reviewphone_fma_whiteBorder2{
+    position: absolute;
+    width: 3.718vw;
+    height: 0.854vw;
+    margin-top: 237.575vw;
+    left: 55.954vw;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+.reviewphone_fma{
+    margin-left: 41.538vw;
+    margin-top: 215.128vw;
+    width: 16.667vw;
+    border: 0.5px solid #343434;
+box-sizing: border-box;
+text-align: center;
+
+
+font-family: 'Source Serif Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 4.872vw;
+line-height: 6.154vw;
+color: #343434;
 }

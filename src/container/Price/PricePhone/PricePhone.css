@@ -1,3 +1,212 @@
 .app__pricephone{
     display: none;
+    background-color: white;
+    flex-direction: column;
+    height: 275.897vw;
+}
+.offer{
+    display: flex;
+    flex-direction: row;
+}
+.offer-label{
+margin-top: 1.446vw;
+margin-left: 3.077vw;
+
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 4.872vw;
+line-height: 6.667vw;
+/* identical to box height */
+
+
+color: rgba(52, 52, 52, 0.62);
+}
+.offer-Web-Maxima{
+width: 31.282vw;
+height: 8.974vw;
+text-align: center;
+margin-left: 4.872vw;
+
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.590vw;
+line-height: 4.872vw;
+
+background: #343434;
+color: #F8F8F8;
+}
+.offer-Web-Optima{
+width: 31.282vw;
+height: 8.974vw;
+text-align: center;
+margin-left: 2.821vw;
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.590vw;
+line-height: 4.872vw;
+    
+border: 0.5px solid #343434;    
+color: #343434;
+}
+.offer-Web-Maxima p, .offer-Web-Optima p{
+    margin-top: 2.051vw;
+}
+
+.Web-Maxima-Name, .Web-Optima-Name{
+    margin-top: 67.436vw;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.641vw;
+    line-height: 7.692vw;
+
+    margin-left: 6.154vw;
+    
+    color: var(--color-black);
+}
+.Web-Maxima-Price, .Web-Optima-Price{
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.590vw;
+line-height: 4.872vw;
+
+margin-left: 6.154vw;
+margin-top: 2.308vw;
+
+color: rgba(52, 52, 52, 0.7);
+
+}
+.Web-Maxima-Description, .Web-Optima-Description{
+width: 76.154vw;
+
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.590vw;
+line-height: 4.872vw;
+
+margin-left: 6.154vw;
+margin-top: 2.308vw;
+
+color: #343434;
+}
+
+.Web-Maxima-propose, .Web-Optima-propose{
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.333vw;
+line-height: 4.615vw;
+/* identical to box height */
+
+margin-left: 6.154vw;
+margin-top: 2.821vw;
+
+color: #343434;
+}
+
+.Web-Maxima-List, .Web-Optima-list{
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.333vw;
+line-height: 4.615vw;
+/* identical to box height */
+margin-left: 6.154vw;
+
+color: #343434;
+}
+.Web-Maxima-list li, .Web-Optima-list li{
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 3.333vw;
+line-height: 4.615vw;
+/* identical to box height */
+margin-left: 9.231vw;
+margin-top: 1.795vw;
+
+color: #343434;
+}
+.Button-Meeting{
+    display: flex;
+width: 31.026vw;
+height: 9.487vw;
+background: #343434;
+
+justify-content: center;
+margin-top: 8.205vw;
+margin-left: 6.154vw;
+font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 2.564vw;
+line-height: 3.590vw;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.Button-Meeting p{
+    margin-top: 3.077vw;
+}
+
+.PricePalm{
+    width: 86.667vw;
+    height: 82.692vw;
+    position: absolute;
+    transform: rotate(-40.62deg);
+    margin-left: 59.590vw;
+    margin-top: 158.282vw;
+}
+.PricePalm1{
+    width: 86.667vw;
+    height: 82.692vw;
+    position: absolute;
+    transform: rotate(147.56deg);
+    margin-left: -43.590vw;
+    margin-top: 193.282vw;
+}
+.pricephone_fma{
+    margin-left: 41.538vw;
+    margin-top: 14.615vw;
+    width: 16.667vw;
+    border: 0.5px solid #343434;
+box-sizing: border-box;
+text-align: center;
+
+
+font-family: 'Source Serif Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 4.872vw;
+line-height: 6.154vw;
+color: #343434;
+}
+.pricephone_fma_whiteBorder1{
+    position: absolute;
+    width: 3.718vw;
+    height: 0.854vw;
+    left: 41.026vw;
+    top: 444vw;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+.pricephone_fma_whiteBorder2{
+    position: absolute;
+    width: 3.718vw;
+    height: 0.854vw;
+    left: 55.954vw;
+    top: 448.447vw;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+.arrow_price{
+    width: 29.700vw;
+height: 65.613vw;
+margin-left: 46.154vw;
 }
