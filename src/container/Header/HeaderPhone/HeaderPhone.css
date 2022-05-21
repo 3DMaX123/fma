@@ -23,6 +23,7 @@ height: 81.062vw;
 left: 68.205vw;
 top: 14.897vw;
 transform: rotate(-131.1deg);
+overflow: hidden;
 }
 .Header-palm2{
     position: absolute;
@@ -32,6 +33,7 @@ left: -55.210vw;
 top: 1.197vw;
 
 transform: rotate(76.37deg);
+overflow: hidden;
 }
 .Header-palm3{
     position: absolute;
