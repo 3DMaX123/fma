@@ -168,6 +168,7 @@
     padding: 0.8vw 1.9vw;
     margin-top: 2.6vw;
     color: var(--color-white);
+    border-style: none;
     box-shadow: var(--box-shadow);
     background: var(--color-black);
     
