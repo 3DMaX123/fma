@@ -93,14 +93,14 @@ class TypeError extends React.Component {
               <div className='form-field'>
                 <Number number='01' isRed={this.state.isRedN}/>
                 <form className='form-form'>
-                  <input type='text' title="Сюди ім'я" onClick={this.isRedFalseN} value={this.state.nameInput} onChange={this.handleChangesName} required></input>
+                  <input type='text' title="Сюди ім'я" onClick={this.isRedFalseN} value={this.state.nameInput} onChange={this.handleChangesName} required>Ваші контакти</input>
                   <LabelN isRedN={this.state.isRedN} />
                 </form>
               </div>
               <div className='form-field'>
                 <Number number='02' isRed={this.state.isRedP}/>
                 <form className='form-form'>
-                  <textarea type='text' title="Опишіть нам проблему" onClick={this.isRedFalseP} className='PositionTextArea' value={this.state.positionInput} onChange={this.handleChangesPosition} required></textarea>
+                  <textarea type='text' title="Опишіть нам проблему" onClick={this.isRedFalseP} className='PositionTextArea' value={this.state.positionInput} onChange={this.handleChangesPosition} required>Опишіть проблему</textarea>
                   <LabelP isRedP={this.state.isRedP} />
                 </form>
               </div>
