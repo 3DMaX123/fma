@@ -7,6 +7,8 @@
     padding: 0.8vw 1.9vw;
 }
 
+
+
 .app__navbar-logo{
     display: flex;
     justify-content: flex-start;
@@ -25,7 +27,7 @@
     list-style: none;
 }
 
-.p__serif{
+.app__navbar-links li{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -34,16 +36,15 @@
 
 
     color: var(--color-black);
-}
 
-.app__navbar-links li{
+
     margin: 0 1.219vw;
     cursor: pointer;
 }
 
-.app__navbar-links ol{
+.app__navbar-links li:last-child{
     cursor: pointer;
-    margin-left: 1.219vw;
+    margin-right: 0px;
 }
 
 .app__navbar-smallscreen{
@@ -57,37 +58,23 @@
     width: 100%;
     height: 100vh;
     background: var(--blur);
+    -webkit-backdrop-filter: blur(35px);
     backdrop-filter: blur(var(--blur-smallscreen));
     z-index: 20;
 }
 
-.app__navbar-smallscreen .overlay__open{
-    cursor: pointer;
-}
-
-.app__navbar-smallscreen_overlaycontent-1150{
+.app-navbar-background{
+    position: absolute;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    z-index: 19;
+
+    object-fit: cover;
+    filter: blur(15px);
 }
 
-.app__navbar-smallscreen-links-1150{
-    width: 50%;
-}
-
-.app__navbar-smallscreen-links-1150 li{
-    margin-left: 6.667vw;
-
-    list-style: none;
-    margin-bottom: 1.406vw;
-}
-
-.app__navbar-smallscreen-links-1150 ol{
-    margin-left: 6.667vw;
-
-    list-style: none;
+.app__navbar-smallscreen .overlay__open{
+    cursor: pointer;
 }
 
 .app__navbar-smallscreen-palmimage{
@@ -118,11 +105,21 @@
     align-items: center;
 
     flex-direction: column;
+    z-index: 20;
 }
 
 .app__navbar-smallscreen-links-850 li{
     list-style: none;
-    margin-bottom: 1.042vw;
+    margin-bottom: 4.135vw;
+    cursor: pointer;
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.823vw;
+    letter-spacing: 0.29em;
+
+    color: var(--color-black);
 }
 
 .app__navbar-smallscreen-curveimage{
@@ -143,6 +140,9 @@
     .app__navbar-smallscreen{
         display: flex;
     }
+    .app__navbar-smallscreen_overlaycontent-850{
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 850px){
@@ -152,10 +152,6 @@
 
     .app__navbar-smallscreen{
         display: flex;
-    }
-
-    .app__navbar-smallscreen_overlaycontent-1150{
-        display: none;
     }
 
     .app__navbar-smallscreen_overlaycontent-850{
@@ -168,6 +164,14 @@
 }
 
 @media screen and (max-width: 450px){
+
+    .app__navbar{
+        padding: 3vw 3vw 0px 3vw;
+    }
+
+    .app__navbar-logo img{
+        width: 30vw;
+    }
     .app__navbar-links{
         display: none;
     }

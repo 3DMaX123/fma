@@ -2,13 +2,15 @@ import React from 'react'
 
 import './PricePhone.css';
 import images from '../../../constants/images';
+
+
 function WebMaximaPhone(){
   return(
     <div className='Text-Web-Maxima-Phone'>
       <div className='Web-Maxima-Name'>Web-Maxima</div>
       <div className='Web-Maxima-Price'> ₴ 10,000 </div>
       <div className='Web-Maxima-Description'>Це той самий випадок, коли довіритися професіоналам та розслабитися є найкращим з варіантів !</div>
-      <div className='Web-Maxima-propose'>Ми пропонуємо:</div>
+      <div className='Web-Maxima-propose'>Ми пропонуємо :</div>
       <div className='Web-Maxima-list'>
       <ul>
         <li>Аудит сайту та рекламного кабінету </li>
@@ -23,13 +25,14 @@ function WebMaximaPhone(){
     </div>
   );
 }
+
 function WebOptimaPhone(){
   return(
     <div className='Text-Web-Optima-Phone'>
     <div className='Web-Optima-Name'> Web-Optima</div>
     <div className='Web-Optima-Price'>₴ 4,000</div>
     <div className='Web-Optima-Description'>Створено спеціально для вас. Це ж у вас є сумніви щодо вженаявної рекламної кампанії ?</div>
-    <div className='Web-Optima-propose'>Ми пропонуємо:</div>
+    <div className='Web-Optima-propose'>Ми пропонуємо :</div>
     <div className='Web-Optima-list'>
       <ul>
         <li>Аудит сайту та рекламного кабінету</li>
@@ -44,6 +47,7 @@ function WebOptimaPhone(){
     </div>
   );
 }
+
 const PricePhone = () => {
   return (
     <div className='app__pricephone'>

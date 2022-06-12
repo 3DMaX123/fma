@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import './Price.css';
 import images from '../../constants/images';
 import PricePhone from './PricePhone/PricePhone';
+import OrderMeeting from './OrderMeeting/OrderMeeting';
+
 
 function WebMaxima(){
 
@@ -104,59 +106,43 @@ function WebOptima(){
   )
 }
 
-function FirstPanel(props){
-  if(props.whichOne === 'web-maxima'){
+
+
+class Price extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      whichOne: 'web-maxima',
+      isOpenOrderMeeting: false
+    }
+
+    this.handleChangeWhichOne = this.handleChangeWhichOne.bind(this);
+  }
+
+  handleChangeWhichOne(){
+    if(this.state.whichOne === 'web-maxima'){
+      this.setState({whichOne: 'web-optima'})
+    }else{
+      this.setState({whichOne: 'web-maxima'})
+    }
+  }
+
+  render(){
     return(
       <>
-        <div className='Web-Maxima Main' >
-          <img src={images.web_maxima} alt="Web-Maxima logo" />
-          <p className='ProductListName'>Web-Maxima</p>
-          <p className='ProductListPrice'>₴ 10,000</p>
-        </div>
-        <div className='Web-Optima Additional'>
-          <img src={images.web_optima} alt="Web-Optima logo" />
-          <p className='ProductListNameDecreased'>Web-Optima</p>
-          <p className='ProductListPriceDecreased'>₴ 4,000</p>
-        </div>
-      </>
-    )
-    }
-    if (props.whichOne === 'web-optima'){
-      return(
-        <>
-          <div className='Web-Optima Main'>
-            <img src={images.web_optima} alt="Web-Optima logo" />
-            <p className='ProductListName'>Web-Optima</p>
-            <p className='ProductListPrice  '>₴ 4,000</p>
-          </div>
-          <div className='Web-Maxima Additional' >
-            <img src={images.web_maxima} alt="Web-Maxima logo" />
-            <p className='ProductListNameDecreased'>Web-Maxima</p>
-            <p className='ProductListPriceDecreased'>₴ 10,000</p>
-          </div>
-        </>
-      )
-    }
-}
-
-const Price = () => {
-
-  const [ whichOne, setWhichOne ] = useState('web-optima');
-
-  return(
-    <>
       <div className="app__price" id='services'>
         <div className="app__price-leftline"></div>
         <div className='app__price-information'>
           <p className='ProductSign'>Послуги</p>
           <div className='ProductInformation'>
-            {whichOne === 'web-maxima' &&
+            {this.state.whichOne === 'web-maxima' &&
               <WebMaxima />
             }
-            {whichOne === 'web-optima' &&
+            {this.state.whichOne === 'web-optima' &&
               <WebOptima />
             }
-            <button onClick={() => whichOne === 'web-optima' ? setWhichOne('web-maxima') : setWhichOne('web-optima')} className='DateUs'>Назначити зустріч</button>
+            <button onClick={() => this.setState({isOpenOrderMeeting: true})} className='DateUs'>Назначити зустріч</button>
           </div>
 
         </div>
@@ -164,17 +150,50 @@ const Price = () => {
               <img src={images.arrowfour} alt="Arrow four" />
             </div>
         <div className='app__price-products'>
-              <FirstPanel whichOne={whichOne} />
+            {this.state.whichOne === 'web-maxima' && 
+              <>
+                <div className='Web-Maxima Main ' >
+                  <img src={images.web_maxima} alt="Web-Maxima logo" />
+                  <p className='ProductListName'>Web-Maxima</p>
+                  <p className='ProductListPrice'>₴ 10,000</p>
+                </div>
+                <div className='Web-Optima Additional ' onClick={this.handleChangeWhichOne}>
+                  <img src={images.web_optima} alt="Web-Optima logo" />
+                  <p className='ProductListNameDecreased'>Web-Optima</p>
+                  <p className='ProductListPriceDecreased'>₴ 4,000</p>
+                </div>
+              </>
+            }
+            {this.state.whichOne === 'web-optima' &&
+                <>
+                  <div className='Web-Optima Main'>
+                    <img src={images.web_optima} alt="Web-Optima logo" />
+                    <p className='ProductListName'>Web-Optima</p>
+                    <p className='ProductListPrice  '>₴ 4,000</p>
+                  </div>
+                  <div className='Web-Maxima Additional' onClick={this.handleChangeWhichOne}>
+                    <img src={images.web_maxima} alt="Web-Maxima logo" />
+                    <p className='ProductListNameDecreased'>Web-Maxima</p>
+                    <p className='ProductListPriceDecreased'>₴ 10,000</p>
+                  </div>
+                </>
+            }
             <div className='Web-Limitless'>
               <img src={images.web_limitless} alt="Web-Limitless logo" />
               <p className='ProductListNameWhite'>Web-Limitless</p>
               <p className='ProductListPriceWhite'>Від ₴ 10,000</p>
             </div>
         </div>
+        {this.state.isOpenOrderMeeting &&
+        <div className='app__review_typereview-blurSubstrate' onClick={() => this.setState({isOpenOrderMeeting: false})}>
+          <OrderMeeting />
+        </div>
+        }
       </div>
       <PricePhone />
     </>
-  )
+    )
+  }
 }
 
 export default Price

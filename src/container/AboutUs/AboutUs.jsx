@@ -2,7 +2,7 @@ import React from 'react'
 
 import './AboutUs.css';
 import images from '../../constants/images';
-import AboutUsPhone from './AboutUs/AboutUsPhone';
+import AboutUsPhone from './AboutUsPhone/AboutUsPhone';
 
 const AboutUs = () => (
     <>

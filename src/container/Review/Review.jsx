@@ -4,34 +4,14 @@ import images from '../../constants/images';
 import ReviewForm from '../../constants/userReview';
 import TypeReview from './Type Review/TypeReview';
 import ReviewPhone from './ReviewPhone/ReviewPhone';
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 import './Review.css';
-
-
-export function useHorizontalScroll() {
-  const elRef = useRef();
-  useEffect(() => {
-    const el = elRef.current;
-    if (el) {
-      const onWheel = e => {
-        if (e.deltaY === 0) return;
-        e.preventDefault();
-        el.scrollTo({
-          left: el.scrollLeft + e.deltaY * 5,
-        });
-      };
-      el.addEventListener("wheel", onWheel);
-      return () => el.removeEventListener("wheel", onWheel);
-    }
-  }, []);
-  return elRef;
-}
 
 
 
 const Review = () => {
   
-  const scrollRef = useHorizontalScroll();
   const [ isOpen, setIsOpen] = useState(false);
 
 
@@ -45,50 +25,50 @@ const Review = () => {
             <img src={images.starrate} alt="Star rate" />
             <p className='topbar-rate'>4</p>
           </div>
-          <div className='Reviews' ref={scrollRef}> 
-          <ReviewForm 
-            Name="Олександр"
-            PositionSign="Co-Ceo" 
-            NameOfCompany="Feed Motion ADS" 
-            Stars="5"
-            Review="Були проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиegegegegerggerger"
-          />
-          <ReviewForm 
-            Name="Олександр"
-            PositionSign="Co-Ceo" 
-            NameOfCompany="Feed Motion ADS" 
-            Stars="2"
-            Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
-          />
-          <ReviewForm 
-            Name="Олександр"
-            PositionSign="Co-Ceo" 
-            NameOfCompany="Feed Motion ADS" 
-            Stars="2"
-            Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
-          />
-          <ReviewForm 
-            Name="Олександр"
-            PositionSign="Co-Ceo" 
-            NameOfCompany="Feed Motion ADS" 
-            Stars="2"
-            Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
-          />
-          <ReviewForm 
-            Name="Олександр"
-            PositionSign="Co-Ceo" 
-            NameOfCompany="Feed Motion ADS" 
-            Stars="2"
-            Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
-          />
-          <ReviewForm 
-            Name="Олександр"
-            PositionSign="Co-Ceo" 
-            NameOfCompany="Feed Motion ADS" 
-            Stars="2"
-            Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
-          />
-          </div>
+          <ScrollContainer className='Reviews'> 
+            <ReviewForm 
+              Name="Олександр"
+              PositionSign="Co-Ceo" 
+              NameOfCompany="Feed Motion ADS" 
+              Stars="5"
+              Review="Були проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиБули проведені чудові роботи. Налаштували оптимізували та підказалиegegegegerggerger"
+            />
+            <ReviewForm 
+              Name="Олександр"
+              PositionSign="Co-Ceo" 
+              NameOfCompany="Feed Motion ADS" 
+              Stars="2"
+              Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+            />
+            <ReviewForm 
+              Name="Олександр"
+              PositionSign="Co-Ceo" 
+              NameOfCompany="Feed Motion ADS" 
+              Stars="2"
+              Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+            />
+            <ReviewForm 
+              Name="Олександр"
+              PositionSign="Co-Ceo" 
+              NameOfCompany="Feed Motion ADS" 
+              Stars="2"
+              Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+            />
+            <ReviewForm 
+              Name="Олександр"
+              PositionSign="Co-Ceo" 
+              NameOfCompany="Feed Motion ADS" 
+              Stars="2"
+              Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+            />
+            <ReviewForm 
+              Name="Олександр"
+              PositionSign="Co-Ceo" 
+              NameOfCompany="Feed Motion ADS" 
+              Stars="2"
+              Review="Були проведені чудові роботи. Налаштували оптимізували та підказали"
+            />
+          </ScrollContainer>
         </div>
         <div className='Arrowsix'>
           <img src={images.arrowsix} alt="Arrow six" />

@@ -4,7 +4,7 @@
 
     overflow: hidden;
     width: 100%;
-    height: 117vh;
+    height: 56.771vw;
     background: var(--color-white);
 }
 
@@ -20,6 +20,7 @@
 .app__price-information{
     display: flex;
     height: 100%;
+    width: 39.583vw;
     
     margin-top: 4vw;
     flex-direction: column;
@@ -179,7 +180,7 @@
     display: flex;
     position: absolute;
 
-    height: 117vh;
+    height: 55.990vw;
     right: 3.64vw;
 
 
@@ -210,6 +211,40 @@
     justify-content: center;
     margin-right: 3.9vw;
     flex-direction: column;
+}
+
+.Main{
+    opacity: 0;
+    animation: AppearMain 0.3s ease-in-out both;
+}
+
+.Main p{
+    white-space: nowrap;
+}
+.Additional p{
+    white-space: nowrap;
+}
+
+.Additional{
+    opacity: 0;
+    animation: AppearAdditional 0.3s ease-in-out both;
+    cursor: pointer;
+}
+
+@keyframes AppearMain {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+@keyframes AppearAdditional {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
 }
 
 .Text-Web-Maxima,
@@ -394,7 +429,7 @@
 
 .ProposeDiv{
     animation: slideLeftPropose .5s ease-in-out both;
-    animation-delay: 1s;
+    animation-delay: .6s;
 }
 
 .ProposeDiv p{
@@ -403,22 +438,22 @@
 
 .ProductListElement{
     animation: slideLeftList .4s ease-in-out both;
-    animation-delay: 1.2s;
+    animation-delay: .8s;
 }
 
 .ProductListElement p{
     white-space: nowrap;
 }
 
-/*
-.ListZero{ animation-delay: 1.2s; }
-.ListOne{ animation-delay: 1.4s; }
-.ListTwo{ animation-delay: 1.6s; }
-.ListThree{ animation-delay: 1.8s; }
-.ListFour{ animation-delay: 2s; }
-.ListFife{ animation-delay: 2s; }
-.ListSix{ animation-delay: 2.4s; }
-*/
+.ListZero{ animation-delay: .6s; }
+.ListOne{ animation-delay: .7s; }
+.ListTwo{ animation-delay: .8s; }
+.ListThree{ animation-delay: .9s; }
+.ListFour{ animation-delay: 1s; }
+.ListFife{ animation-delay: 1.1s; }
+.ListSix{ animation-delay: 1.2s; }
+
+
 @keyframes slideLeftName {
     0%{
         width: 0px;

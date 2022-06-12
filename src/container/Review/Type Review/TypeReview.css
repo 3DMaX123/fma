@@ -8,6 +8,8 @@
 
     background: var(--color-backgroundfortypereview);
     box-shadow: var(--box-shadow);
+
+    animation: OpenProblem 0.4s both;
 }
 
 .mainSubstrate-content{

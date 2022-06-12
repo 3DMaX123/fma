@@ -20,7 +20,7 @@ class CotactUs extends React.Component {
         <div className='app__contactUs' id='contacts' style={{backgroundImage: "url(" + this.state.backgroundImage + ")"}} >
           <div className='telephone'>
             <p>
-              Олесандр
+              Олександр
             </p>
             <a href='tel:0956201283'>
               +38(095)-620-1283

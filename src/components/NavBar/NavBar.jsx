@@ -16,40 +16,31 @@ const NavBar = () => {
         <img src={images.logo} alt="Feed Motion Advertising Logo" />
       </div>
       <ul className='app__navbar-links'>
-        <li className='p__serif'><Link to="services">Послуги</Link></li>
-        <li className='p__serif'><Link to="about-us">Про нас</Link></li>
-        <li className='p__serif'><Link to="reviews">Відгуки</Link></li>
-        <ol className='p__serif'><Link to="contacts">Контакти</Link></ol>
+        <li className='p__serif'><Link to="services" onClick={() => setToggleMenu(false)}>Послуги</Link></li>
+        <li className='p__serif'><Link to="about-us" onClick={() => setToggleMenu(false)}>Про нас</Link></li>
+        <li className='p__serif'><Link to="reviews" onClick={() => setToggleMenu(false)}>Відгуки</Link></li>
+        <li className='p__serif'><Link to="contacts" onClick={() => setToggleMenu(false)}>Контакти</Link></li>
       </ul>
       <div className='app__navbar-smallscreen'>
-        <GiHamburgerMenu className="overlay__open" color='#343434' fontSize={18} onClick={() => setToggleMenu(true)}/>
-        {toggleMenu && (
-        <div className='app__navbar-smallscreen_overlay'>
-          <div className='app__navbar-smallscreen-curveimage'>
-            <img src={images.toggle_curve} alt="Curve"/>
-          </div>
-          <div className="app__navbar-smallscreen_overlaycontent-1150">
-            <ul className='app__navbar-smallscreen-links-1150' onClick={() => setToggleMenu(false)}>
-              <li className='p__serifoverlay'><a href="#">Послуги</a></li>
-              <li className='p__serifoverlay'><a href="#">Про нас</a></li>
-              <li className='p__serifoverlay'><a href="#">Відгуки</a></li>
-              <ol className='p__serifoverlay'><a href="#">Контакти</a></ol>
-            </ul>
-            <div className="app__navbar-smallscreen-palmimage">
-              <img src={images.palm} alt="Palm image"/>
-            </div>
-          </div>
-          <div className="app__navbar-smallscreen_overlaycontent-850">
-            <ul className='app__navbar-smallscreen-links-850' onClick={() => setToggleMenu(false)}>
-              <li className='p__serifoverlay'><a href="#">Послуги</a></li>
-              <li className='p__serifoverlay'><a href="#">Про нас</a></li>
-              <li className='p__serifoverlay'><a href="#">Відгуки</a></li>
-              <li className='p__serifoverlay'><a href="#">Контакти</a></li>
-            </ul>
-          </div>
-        </div>
-        )}
+        <svg className="overlay__open" onClick={() => setToggleMenu(true)} width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="14" height="1" fill="#343434"/>
+          <rect y="5" width="14" height="1" fill="#343434"/>
+          <rect y="10" width="14" height="1" fill="#343434"/>
+        </svg>
 
+        {toggleMenu && (
+            <div className='app__navbar-smallscreen_overlay'>
+              <div className="app__navbar-smallscreen_overlaycontent-850">
+                <img className='app-navbar-background' src={images.bench} alt="Work bench"/>
+                <ul className='app__navbar-smallscreen-links-850'>
+                  <li><Link to="services" onClick={() => setToggleMenu(false)}>Послуги</Link></li>
+                  <li><Link to="about-us" onClick={() => setToggleMenu(false)}>Про нас</Link></li>
+                  <li><Link to="reviews" onClick={() => setToggleMenu(false)}>Відгуки</Link></li>
+                  <li><Link to="contacts" onClick={() => setToggleMenu(false)}>Контакти</Link></li>
+                </ul>
+              </div>
+            </div>
+        )}
       </div>
     </nav>
   )

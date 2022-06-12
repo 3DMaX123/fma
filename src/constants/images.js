@@ -15,7 +15,7 @@ import starrate from '../assets/Review_StarRate.svg';
 import greystarrate from '../assets/Review_StarRate_Grey.svg';
 import arrowsix from '../assets/Review_Arrow6.png';
 import tree from '../assets/White_Tree.jpg';
-import arrowseven from '../assets/TypeReview_Arrow7.svg';
+import arroweight from '../assets/TypeReview_Arrow8.svg';
 import cutpalm from '../assets/CutPalm.webp';
 import cutfullpalm from '../assets/CutPalmFull.webp';
 import phonearrowone from '../assets/Phone_Arrow1.svg';
@@ -23,8 +23,18 @@ import phonearrowtwo from '../assets/Phone_Arrow2.svg';
 import phonearrowthree from '../assets/Phone_Arrow3.svg';
 import phonearrowfour from '../assets/Phone_Arrow4.svg';
 import phonearrowfife from '../assets/Phone_Arrow5.svg';
+import printmachine from '../assets/PrintingMachine.jpg';
+import arrownine from '../assets/Problem_Arrow9.svg';
+import arrowten from '../assets/Propose_Arrow10.svg';
+import arrowseven from '../assets/OrderMeet_Arrow7.svg';
+import hellcircle from '../assets/RotatedCircle.webp';
 
 export default{
+    hellcircle,
+    arrowseven,
+    arrowten,
+    arrownine,
+    printmachine,
     phonearrowone,
     phonearrowtwo,
     phonearrowthree,
@@ -32,7 +42,7 @@ export default{
     phonearrowfife,
     cutfullpalm,
     cutpalm,
-    arrowseven,
+    arroweight,
     tree,
     arrowsix,
     greystarrate,

@@ -152,7 +152,7 @@ class TypeReview extends React.Component {
     <div className='app__review_mainSubstrate' onClick={(e) => e.stopPropagation()}>
       <div className='mainSubstrate-content'>
           <div className='content-form-arrowSeven'>
-            <img src={images.arrowseven} alt="Arrow seven" />
+            <img src={images.arroweight} alt="Arrow seven" />
           </div>
         <div className='content-form'>
           <div className='content-form-fields'>

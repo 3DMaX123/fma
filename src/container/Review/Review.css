@@ -4,7 +4,7 @@
 
     overflow: hidden;
     width: 100%;
-    height: 117vh;
+    height: 56.771vw;
     background: var(--color-pink);
 }
 
@@ -94,7 +94,7 @@
     display: grid;
     align-items: center;
     width: 95%;
-    height: 93.3vh;
+    height: 45.521vw;
 
 
     grid-template-rows: repeat(2, 1fr);
@@ -209,6 +209,7 @@
     height: 100vh;
 
     background: var(--blur-background);
+    -webkit-backdrop-filter: blur(35px);
     backdrop-filter: blur(var(--blur));
     /* Note: backdrop-filter has minimal browser support */
     z-index: 10;

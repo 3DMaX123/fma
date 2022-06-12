@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import TypeError from './TypeError/TypeError';
 import FooterPhone from './FooterPhone/FooterPhone';
+import TypePropose from './TypePropose/TypePropose';
 import { Link } from 'react-scroll';
 
 import './Footer.css';
 
+
 const Footer = () => {
 
   const [ isOpenTypeError, setIsOpenTypeError] = useState(false);
+  const [ isOpenTypePropose, setIsOpenTypePropose] = useState(false);
 
   return(
     <>
@@ -48,7 +51,7 @@ const Footer = () => {
               <a>Написати відгук</a>
               <a>Зателефонувати</a>
               <a onClick={() => setIsOpenTypeError(true)}>Повідомити про проблему</a>
-              <a>Є пропозиція</a>
+              <a onClick={() => setIsOpenTypePropose(true)}>Є пропозиція</a>
             
           </div>
           <div className='mainSusbstrate-content-social'>
@@ -72,6 +75,12 @@ const Footer = () => {
           {isOpenTypeError && (
               <div className='app__review_typereview-blurSubstrate' onClick={() => setIsOpenTypeError(false)}>
                 <TypeError />
+              </div>  
+            )
+          }
+          {isOpenTypePropose && (
+              <div className='app__review_typereview-blurSubstrate' onClick={() => setIsOpenTypePropose(false)}>
+                <TypePropose />
               </div>  
             )
           }

@@ -21,25 +21,25 @@
     }
 }
 
-.problem-mainSubstrate-content{
+.propose-mainSubstrate-content{
     display: flex;
     width: 100%;
     justify-content: right;
 }
 
-.problem-content-form-arrowSeven{
+.propose-content-form-arrowSeven{
     position: absolute;
     display: flex;
     position: absolute;
     top: 5.208vw;
 }
 
-.problem-content-form-arrowSeven img{
+.propose-content-form-arrowSeven img{
     width: 63.724vw;
     height: 9.635vw;
 }
 
-.problem-content-form{
+.propose-content-form{
     display: flex;
     justify-content: center;
     align-items: right;
@@ -48,29 +48,29 @@
     margin-right: 8.177vw;
 }
 
-.problem-content-form-fields{
+.propose-content-form-fields{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 4vw;
+    margin-top: 6.6vw;
     margin-bottom: 3.438vw;
 }
 
-.problem-form-field{
+.propose-form-field{
     display: flex;
     margin-bottom: 1.823vw;
 }
-.problem-form-fieldL{
+.propose-form-fieldL{
     display: flex;
 }
 
-.problem-form-form{
+.propose-form-form{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.problem-form-form input[type="text"]{
+.propose-form-form input[type="text"]{
     width: 23.438vw;
     border-style: none;
     padding-bottom: 0.521vw;
@@ -90,19 +90,19 @@
     color: var(--color-black);
 }
 
-.problem-form-form input:focus{
+.propose-form-form input:focus{
     outline: none;
 }
 
-.problem-form-form input:focus ~ .problem-field-lable,
-.problem-form-form input:valid ~ .problem-field-lable{
+.propose-form-form input:focus ~ .propose-field-lable,
+.propose-form-form input:valid ~ .propose-field-lable{
     transform: translateY(-1.823vw);
     font-size: 0.625vw;
 
     color: var(--color-fieldlable);
 }
 
-.problem-field-lable{
+.propose-field-lable{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -114,7 +114,7 @@
     transition: all 0.3s ease;
 }
 
-.problem-field-lable{
+.propose-field-lable{
     position: absolute;
     overflow: hidden;
     padding-bottom: 0.521vw;
@@ -122,11 +122,11 @@
     pointer-events: none;
 }
 
-.problem-field-lable p {
+.propose-field-lable p {
     opacity: 0;
 }
 
-.problem-field-lable-error{
+.propose-field-lable-error{
     position: absolute;
     overflow: hidden;
     pointer-events: none;
@@ -135,7 +135,7 @@
     padding-right: 0.208vw;
 }
 
-.problem-field-lable-error p{
+.propose-field-lable-error p{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -149,31 +149,13 @@
 
 }
 
-.problem-content-buttonandbutton{
+.propose-content-buttonandbutton{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
 }
 
-.problem-buttoninput{
-    position: relative;
-    display: inline-block;
-}
-
-.problem-buttoninput input[type="file"]{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-    opacity: 0;
-}
-
-
-
-.problem-filebutton,
-.problem-commitbutton{
+.propose-commitbutton{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -188,20 +170,10 @@
     cursor: pointer;
 }
 
-.problem-filebutton{
-    padding: 0.885vw 0.625vw 0.885vw 2.240vw;
-    color: var(--color-black);
-    box-shadow: none;
-    background: transparent;
-    border: 1px solid var(--color-black);
-
-    cursor: pointer;
-}
-
-.problem-content-image{
+.propose-content-image{
     display: flex;
 }
-.problem-content-image img{
+.propose-content-image img{
     width: 39.323vw;
     object-fit: cover;
 }

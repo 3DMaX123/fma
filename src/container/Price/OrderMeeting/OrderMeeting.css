@@ -1,12 +1,13 @@
-.app__footer_problem-mainSubstrate{
+.app__price_order-mainSubstrate{
     display: flex;
+    position: relative;
 
-    width: 86%;
-    height: 90%;
+    width: 75%;
+    height: 93.3%;
     margin: auto;
 
 
-    background: var(--color-problemsend);
+    background: var(--color-ordermeet);
     box-shadow: var(--box-shadow);
 
     animation: OpenProblem 0.4s both;
@@ -21,56 +22,63 @@
     }
 }
 
-.problem-mainSubstrate-content{
+.order-mainSubstrate-content{
     display: flex;
     width: 100%;
     justify-content: right;
 }
 
-.problem-content-form-arrowSeven{
+.order-content-form-arrowSeven{
     position: absolute;
     display: flex;
     position: absolute;
-    top: 5.208vw;
+    top: 0;  /* position the top  edge of the element at the middle of the parent */
+    left: 47%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, 0); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
 }
 
-.problem-content-form-arrowSeven img{
-    width: 63.724vw;
-    height: 9.635vw;
+.order-content-form-arrowSeven img{
+    width: 36.094vw;
+    height: 15.208vw;
 }
 
-.problem-content-form{
+.order-content-form{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: right;
 
+    margin-top: 6.250vw;
+    right: -1.458vw;
+
     flex-direction: column;
-    margin-right: 8.177vw;
 }
 
-.problem-content-form-fields{
+.order-content-form-fields{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 4vw;
+    margin-top: 6.6vw;
     margin-bottom: 3.438vw;
 }
 
-.problem-form-field{
+.order-form-field{
     display: flex;
     margin-bottom: 1.823vw;
 }
-.problem-form-fieldL{
+.order-form-fieldL{
     display: flex;
 }
 
-.problem-form-form{
+.order-form-form{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.problem-form-form input[type="text"]{
+.order-form-form input[type="text"]{
     width: 23.438vw;
     border-style: none;
     padding-bottom: 0.521vw;
@@ -90,19 +98,19 @@
     color: var(--color-black);
 }
 
-.problem-form-form input:focus{
+.order-form-form input:focus{
     outline: none;
 }
 
-.problem-form-form input:focus ~ .problem-field-lable,
-.problem-form-form input:valid ~ .problem-field-lable{
+.order-form-form input:focus ~ .order-field-lable,
+.order-form-form input:valid ~ .order-field-lable{
     transform: translateY(-1.823vw);
     font-size: 0.625vw;
 
     color: var(--color-fieldlable);
 }
 
-.problem-field-lable{
+.order-field-lable{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -114,7 +122,7 @@
     transition: all 0.3s ease;
 }
 
-.problem-field-lable{
+.order-field-lable{
     position: absolute;
     overflow: hidden;
     padding-bottom: 0.521vw;
@@ -122,11 +130,11 @@
     pointer-events: none;
 }
 
-.problem-field-lable p {
+.order-field-lable p {
     opacity: 0;
 }
 
-.problem-field-lable-error{
+.order-field-lable-error{
     position: absolute;
     overflow: hidden;
     pointer-events: none;
@@ -135,7 +143,7 @@
     padding-right: 0.208vw;
 }
 
-.problem-field-lable-error p{
+.order-field-lable-error p{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -149,31 +157,13 @@
 
 }
 
-.problem-content-buttonandbutton{
+.order-content-buttonandbutton{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
 }
 
-.problem-buttoninput{
-    position: relative;
-    display: inline-block;
-}
-
-.problem-buttoninput input[type="file"]{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-    opacity: 0;
-}
-
-
-
-.problem-filebutton,
-.problem-commitbutton{
+.order-commitbutton{
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -188,20 +178,13 @@
     cursor: pointer;
 }
 
-.problem-filebutton{
-    padding: 0.885vw 0.625vw 0.885vw 2.240vw;
-    color: var(--color-black);
-    box-shadow: none;
-    background: transparent;
-    border: 1px solid var(--color-black);
-
-    cursor: pointer;
-}
-
-.problem-content-image{
+.order-content-image{
     display: flex;
+    width: 50%;
+    height: 100%;
 }
-.problem-content-image img{
-    width: 39.323vw;
+.order-content-image img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }

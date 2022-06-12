@@ -20,16 +20,26 @@ function Number(props){
 
 function LabelN(props){
   if(!props.isRedN){
-    return <div className='field-lable'><p className='animOneNo'>Ваше ім'я</p></div>
+    return <div className='problem-field-lable'><p className='animSlideDownOne'>Ваше ім'я</p></div>
   }else{
-    return <div className='field-lable-error'><p className='animOne'>Не соромтесь</p></div>
+    return <div className='problem-field-lable-error'><p className='animSlideUp'>Не соромтесь</p></div>
+  }
+}
+function LabelE(props){
+  if(props.isValid){
+    return <div className='problem-field-lable'><p className='animSlideDownTwo'>Щось не так з поштою</p></div>
+  }
+  else if(!props.isRedE){
+    return <div className='problem-field-lable'><p className='animSlideDownTwo'>Ваша пошта</p></div>
+  }else if(props.isRedE){
+    return <div className='problem-field-lable-error'><p className='animSlideUp'>Це для зв'язку з вами</p></div>
   }
 }
 function LabelP(props){
   if(!props.isRedP){
-    return <div className='field-lable'><p className='animTwoNo'>Ваша посада</p></div>
+    return <div className='problem-field-lable'><p className='animSlideDownThree'>Вдих, видих вирішемо!</p></div>
   }else{
-    return <div className='field-lable-error'><p className='animTwo'>Ні, ми не з СБУ</p></div>
+    return <div className='problem-field-lable-error'><p className='animSlideUp'>Так... Чим вам допомогти?</p></div>
   }
 }
 
@@ -37,85 +47,107 @@ class TypeError extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      nameInput: '',
-      positionInput: '',
-      isRedN: false,
-      isRedP: false,
+      problemNameInput: '',
+      problemEmailInput: '',
+      problemProblemInput: '',
+      isRedProblemN: false,
+      isRedProblemE: false,
+      isRedProblemP: false,
+      isValidProblemEmail: false
     }
 
 
-    this.handleChangesName = this.handleChangesName.bind(this);
-    this.handleChangesPosition = this.handleChangesPosition.bind(this);
+    this.handleProblemChangesName = this.handleProblemChangesName.bind(this);
+    this.handleProblemChangesEmail = this.handleProblemChangesEmail.bind(this);
+    this.handleProblemChangesProblem = this.handleProblemChangesProblem.bind(this);
     this.useClickOnButton = this.useClickOnButton.bind(this);
-    this.isRedFalseN = this.isRedFalseN.bind(this);
-    this.isRedFalseP = this.isRedFalseP.bind(this);
+    this.isRedFalseProblemN = this.isRedFalseProblemN.bind(this);
+    this.isRedFalseProblemE = this.isRedFalseProblemE.bind(this);
+    this.isRedFalseProblemP = this.isRedFalseProblemP.bind(this);
   }
 
-  handleChangesName(e){
-    this.setState({nameInput: e.target.value});
+  handleProblemChangesName(e){
+    this.setState({problemNameInput: e.target.value});
   }
 
-  handleChangesPosition(e){
-    this.setState({positionInput: e.target.value});
+  handleProblemChangesEmail(e){
+    this.setState({problemEmailInput: e.target.value});
+  }
+
+  handleProblemChangesProblem(e){
+    this.setState({problemProblemInput: e.target.value});
   }
 
 
-  isRedFalseN(){ this.setState({isRedN: false});}
-  isRedFalseP(){ this.setState({isRedP: false});}
+  isRedFalseProblemN(){ this.setState({isRedProblemN: false});}
+  isRedFalseProblemE(){ this.setState({isRedProblemE: false}); this.setState({isValidProblemEmail: false})}
+  isRedFalseProblemP(){ this.setState({isRedProblemP: false});}
+  isValidProblemEmail(){ this.setState({isValidProblemEmail: false});}
 
   
   useClickOnButton(){
+    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    if(this.state.nameInput !== '' && this.state.positionInput !== ''){
+    if(this.state.problemNameInput !== '' && this.state.problemEmailInput !== '' && this.state.problemProblemInput !== '' && regex.test(this.state.problemEmailInput) === true){
       console.log('OKKKKK')
     }
-    if(this.state.nameInput === ''){
-      this.setState({isRedN: true,});
+    if(this.state.problemNameInput === ''){
+      this.setState({isRedProblemN: true,});
     }
-    if(this.state.positionInput === ''){
-      this.setState({isRedP: true});
+    if(this.state.problemEmailInput === ''){
+      this.setState({isRedProblemE: true});
+    }else if (regex.test(this.state.problemEmailInput) === false){
+      this.setState({isValidProblemEmail: true});
+      this.setState({isRedProblemE: true});
+    }
+    if(this.state.problemProblemInput === ''){
+      this.setState({isRedProblemP: true});
     }
   }
-
-  
 
   
   render(){
 
   return (
-    <div className='app__review_mainSubstrate' onClick={(e) => e.stopPropagation()}>
-      <div className='mainSubstrate-content'>
-          <div className='content-form-arrowSeven'>
-            <img src={images.arrowseven} alt="Arrow seven" />
+    <div className='app__footer_problem-mainSubstrate' onClick={(e) => e.stopPropagation()}>
+      <div className='problem-mainSubstrate-content'>
+          <div className='problem-content-form-arrowSeven'>
+            <img src={images.arrownine} alt="Arrow seven" />
           </div>
-        <div className='content-form'>
-          <div className='content-form-fields'>
-              <div className='form-field'>
-                <Number number='01' isRed={this.state.isRedN}/>
-                <form className='form-form'>
-                  <input type='text' title="Сюди ім'я" onClick={this.isRedFalseN} value={this.state.nameInput} onChange={this.handleChangesName} required></input>
-                  <LabelN isRedN={this.state.isRedN} />
+        <div className='problem-content-form'>
+          <div className='problem-content-form-fields'>
+              <div className='problem-form-field'>
+                <Number number='01' isRed={this.state.isRedProblemN}/>
+                <form className='problem-form-form'>
+                  <input type='text' title="Сюди ім'я" onClick={this.isRedFalseProblemN} value={this.state.problemNameInput} onChange={this.handleProblemChangesName} required></input>
+                  <LabelN isRedN={this.state.isRedProblemN} />
                 </form>
               </div>
-              <div className='form-field'>
-                <Number number='02' isRed={this.state.isRedP}/>
-                <form className='form-form'>
-                  <textarea type='text' title="Опишіть нам проблему" onClick={this.isRedFalseP} className='PositionTextArea' value={this.state.positionInput} onChange={this.handleChangesPosition} required></textarea>
-                  <LabelP isRedP={this.state.isRedP} />
+              <div className='problem-form-field'>
+                <Number number='02' isRed={this.state.isRedProblemE}/>
+                <form className='problem-form-form'>
+                  <input type='text' title="Опишіть нам проблему" onClick={this.isRedFalseProblemE} value={this.state.problemPositionInput} onChange={this.handleProblemChangesEmail} required></input>
+                  <LabelE isRedE={this.state.isRedProblemE} isValid={this.state.isValidProblemEmail}/>
+                </form>
+              </div>
+              <div className='problem-form-fieldL'>
+                <Number number='03' isRed={this.state.isRedProblemP}/>
+                <form className='problem-form-form'>
+                  <input type='text' title="Опишіть нам проблему" onClick={this.isRedFalseProblemP} value={this.state.problemProblemInput} onChange={this.handleProblemChangesProblem} required></input>
+                  <LabelP isRedP={this.state.isRedProblemP} />
                 </form>
               </div>
           </div>
-          <div className='content-buttonandbutton'>
-            <div className='buttonandbutton-filebutton'>
-                <button className='buttoncontent' >
-                    Прикріпити Фото
-                </button>
+          <div className='problem-content-buttonandbutton'>
+            <div className='problem-buttoninput'>
+              <button className='problem-filebutton'>Прикріпити файл</button>
+              <input type="file" />
             </div>
-            <button className='buttonandbutton-commitbutton' onClick={this.useClickOnButton}>Відправити</button>
+            <button className='problem-commitbutton' onClick={this.useClickOnButton}>Віправити</button>
           </div>
         </div>
-          <div className='content-image'>
-            <img src={images.tree} alt='Black tree with white background' />
+          <div className='problem-content-image'>
+            <img src={images.printmachine} alt='Black tree with white background' />
           </div>
       </div>
     </div>

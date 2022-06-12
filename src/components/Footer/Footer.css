@@ -4,7 +4,6 @@
 
     background-color: #112021;
     width: 100%;
-    height: 44.5297vh;   
 }
 .mainSubstrate-divs{
     display: flex;
@@ -125,6 +124,7 @@
     height: 100vh;
 
     background: var(--blur-background);
+    -webkit-backdrop-filter: blur(35px);
     backdrop-filter: blur(var(--blur));
     /* Note: backdrop-filter has minimal browser support */
     z-index: 10;
