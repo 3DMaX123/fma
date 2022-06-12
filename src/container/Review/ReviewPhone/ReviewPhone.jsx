@@ -12,8 +12,8 @@ const ReviewPhone = () => {
         <img className='review-label-star' src={images.starrate} alt="star"/>
         <div className='review-label-star-rate'>4</div>
       </div>
-        <img className='review_palm' src={images.cutpalm} alt="Full palm"/>
-        <img className='review_palm2' src={images.cutpalm} alt="Full palm"/>
+        <img className='review_palm' src={images.cutfullpalm} alt="Full palm"/>
+        <img className='review_palm2' src={images.cutfullpalm} alt="Full palm"/>
         <div className='reviewphone_fma'>
         FMA
         </div>

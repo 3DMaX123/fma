@@ -63,18 +63,20 @@ color: rgba(52, 52, 52, 0.62);
 }
 .review_palm{
     position: absolute;
-    width: 101.305vw;
-    height: 142.669vw;
-    left: -59.790vw;
-    margin-top: 30vw;
+    width: 395.09px;
+    height: 556.41px;
+    left: -150.11px;
+    top: 2875.9px;
+
     transform: matrix(-0.99, -0.16, -0.16, 0.99, 0, 0);
 }
 .review_palm2{
     position: absolute;
-    width: 101.305vw;
-    height: 142.669vw;
-    margin-top: 90vw;
-    margin-left: 46.790vw;
+    width: 395.09px;
+    height: 556.41px;
+    left: 114.88px;
+    top: 3065.96px;
+    
     transform: rotate(-16.75deg);
 }
 .review_palm3{
@@ -84,6 +86,7 @@ color: rgba(52, 52, 52, 0.62);
     margin-top: 230vw;
     margin-left: -19.790vw;
     transform: matrix(-0.67, -0.75, -0.75, 0.67, 0, 0);
+    overflow: hidden;
 }
 .reviewphone_fma_whiteBorder1{
     position: absolute;
