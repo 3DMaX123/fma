@@ -1,0 +1,177 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    width: 36.615vw;
+    height: 22.135vw;
+
+    background: var(--color-white);
+}
+
+.ReviewContent{
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.823vw 2.604vw;
+}
+
+.NamePositionCompanyAndStars{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1.563vw;
+}
+
+.NameAndPosition{
+    display: flex;
+    flex-direction: column;
+}
+
+.Stars{
+    display: flex;
+}
+
+.Stars img{
+    width: 1.42vw;
+    height: 1.42vw;
+
+    padding-right: 0.521vw;
+}
+
+.Name{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.563vw;
+    /* identical to box height */
+
+
+    margin-bottom: 0.365vw;
+    color: var(--color-black);
+}
+
+.Position{
+    display: flex;
+}
+
+.Position p{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;
+    /* identical to box height */
+
+
+    color: var(--review-positionandcompany);
+}
+
+.OfSign{
+    padding: 0vw 0.313vw;
+}
+
+.NameOfCompany{
+    text-decoration-line: underline;
+}
+
+.UserReview{
+    max-height: 12.396vw;
+    overflow-y: auto;
+}
+
+.UserReview p{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.302vw;
+
+    color: var(--color-black);
+}
+
+.userReview-Phone{
+    display: none;
+}
+
+.NamePosition-Phone{
+    display: none;
+}
+
+.starsReview-Phone{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .review{
+        width: 65.049vw;
+        height: 93.932vw;    
+
+    }
+
+    .ReviewContent{
+        justify-content: space-between;
+        height: 100%;
+
+        padding: 4.612vw;
+    }
+
+    .UserReview{
+        display: none;
+    }
+
+    .userReview-Phone{
+        display: flex!important;
+    }
+
+    .Stars{
+        display: none;
+    }
+
+    .NamePositionCompanyAndStars{
+        display: none!important;
+    }
+    
+    .NamePosition-Phone{
+        display: flex!important;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-bottom: 0px;
+
+        flex-direction: column;
+    }
+    
+    .NameAndPosition{
+        margin-bottom: 2.427vw;
+    }
+
+    .starsReview-Phone{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .starsReview-Phone img{
+        width: 2.8vw;
+        height: 2.8vw;
+        margin-right: .8vw;
+    }
+
+    .Name{
+        font-size: 4.126vw;
+    }
+
+    .Position p{
+        font-size: 2.913vw  ;
+    }
+
+    .OfSign{
+        padding: 0 1vw;
+    }
+
+    .UserReview{
+        max-height: 65.049vw;
+    }
+
+    .UserReview p {
+        font-size: 3.398vw;
+    }
+}

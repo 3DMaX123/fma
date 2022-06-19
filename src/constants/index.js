@@ -1,4 +1,4 @@
-import images from './image.js';
+import images from './images.js';
 
 export{
     images

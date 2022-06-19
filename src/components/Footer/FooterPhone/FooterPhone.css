@@ -1,0 +1,91 @@
+.app__footerphone{
+    display: flex;
+    flex-direction: column;
+
+    padding: 13.835vw 7.767vw;
+    background: var(--color-footerbackgroundcolor);
+}
+
+.footerphone-name{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.612vw;
+
+    color: var(--color-white);
+
+    margin-bottom: 3.641vw;
+}
+
+.footerphone-description{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.398vw;
+
+    color: var(--color-additionaltext);
+}
+
+.footerphone-EmailAndPhone{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 7.524vw;
+    margin-bottom: 7.524vw;
+}
+
+.footerphone-emailSign,
+.footerphone-phoneSign{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.126vw;
+
+
+    color: var(--color-white);
+}
+
+.footerphone-email,
+.footerphone-phone{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.126vw;
+
+    color: var(--color-additionaltext);
+}
+
+.footerphone-content-MainSign{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.612vw;
+
+
+    color: var(--color-white);
+    margin-bottom: 4.369vw;
+}
+
+.footerphone-content-lists{
+    margin-bottom: 7.524vw;
+}
+
+.footerphone-content-lists li{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.398vw;
+
+
+    color: var(--color-additionaltext);
+    list-style: none;
+    margin-bottom: 3.398vw;
+}
+
+.footerphone-content-lists li:last-child{
+    margin-bottom: 0px;
+}
+
+.footerphone-content-product{
+    margin-bottom: 0px;
+}

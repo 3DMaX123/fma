@@ -1,0 +1,103 @@
+.app__headerphone{
+    display: none;
+    position: relative;
+    height: 229.6vw;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+.headerphone_service_text{
+    font-family: var(--font-header);
+font-style: normal;
+font-weight: 400;
+font-size: 8.974vw;
+line-height: 11.282vw;
+width: 51.795vw;
+margin-left:18.718vw;
+margin-top: 22.051vw;
+
+color: #343434;
+}
+.Header-palm{
+    position: absolute;
+width: 77.851vw;
+height: 81.062vw;
+right: -38vw;
+top: 14.897vw;
+transform: rotate(-131.1deg);
+overflow: hidden;
+}
+.Header-palm2{
+    position: absolute;
+width: 80.141vw;
+height: 83.195vw;
+left: -55.210vw;
+top: 1.197vw;
+
+transform: rotate(76.37deg);
+overflow: hidden;
+}
+.Header-palm3{
+    position: absolute;
+    width: 86.813vw;
+    height: 82.692vw;
+    left: -45.210vw;
+    bottom: 15.256vw;
+
+transform: rotate(42.12deg);
+}
+.Header-palm4{
+    position: absolute;
+
+    width: 86.813vw;
+    height: 82.692vw;
+
+    left: 50.846vw;
+    top: 105vw;
+
+    transform: rotate(-53.06deg);
+}
+.headerphone_utp{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    top: -43px;
+
+
+    font-family: var(--font-header);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.410vw;
+    line-height: 7.949vw;
+    margin-left: 13.077vw;
+    color: rgba(52, 52, 52, 0.64);
+}
+.headerphone_utp li{
+    margin-top: 3.333vw;
+    font-family: var(--font-header);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.103vw;
+    line-height: 5.128vw;
+    /* identical to box height */
+    width: 75.128vw;
+    
+    color: var(--color-black);
+}
+
+.arrow_header{
+    position: relative;
+
+    top: -23px;
+
+    width: 27.154vw;
+    height: 25.397vw;
+    margin-left: 29.487vw;
+}
+.arrow_header2{
+    position: absolute;
+    width: 45vw;
+    left: 16.795vw;
+    bottom: 0;
+}

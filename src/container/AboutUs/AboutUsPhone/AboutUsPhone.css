@@ -1,0 +1,66 @@
+.app__aboutusphone{
+    display: none;
+    position: relative;
+
+    height: 145.5vw;
+
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.aboutus-title{
+
+    margin-left: 6.154vw;
+
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.923vw;
+
+    color: var(--color-black);
+}
+.aboutus-description{
+    width: 86.923vw;
+    
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.103vw;
+    line-height: 5.641vw;
+    
+    color: var(--color-black);
+
+    
+    margin-left: 6.154vw;
+    margin-top: 4.103vw;
+}
+.aboutus-palm{
+    width: 88.531vw;
+    height: 84.328vw;
+    position: absolute;
+    transform: rotate(-38.65deg);
+    top: 39vw;
+    left: 51vw;
+    
+}
+.aboutus-palm2{
+    position: absolute;
+
+    width: 89.010vw;
+    height: 84.785vw;
+
+    transform: rotate(29.24deg);
+
+    left: -43vw;
+    top: 48vw;
+}
+
+.phonearrow_aboutus{
+    display: flex;
+    position: absolute;
+
+    width: 38vw;
+    left: 27vw;
+    bottom: 4vw;
+}

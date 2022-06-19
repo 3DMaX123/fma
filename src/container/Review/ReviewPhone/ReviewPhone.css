@@ -1,0 +1,92 @@
+.app__reviewphone{
+    display: none;
+    position: relative;
+    overflow: hidden;
+
+
+    height: 288vw;
+    flex-direction: column;
+}
+.review-label{
+    display: flex;
+    align-items: center;
+}
+.review-label-review{
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+
+    margin-right: 10px;
+    color: rgba(52, 52, 52, 0.62);
+}
+
+.review-label-button{
+    border: none; 
+    outline: none;
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.564vw;
+
+    padding: 3.5vw 5.5vw;
+    margin-left: 24px;
+    margin-right: 17px;
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    background: var(--color-black);
+}
+.review-label-star{
+    width: 3.846vw;
+    height: 3.846vw;
+
+    margin-right: 5px;
+}
+.review-label-star-rate{
+    font-family: 'Prata';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 26px;
+/* identical to box height */
+
+
+color: rgba(52, 52, 52, 0.62);
+}
+.review_palm{
+    position: absolute;
+    width: 150vw;
+    top: 10vw;
+    left: -60vw;
+
+    object-fit: cover;
+    transform: matrix(-0.99, -0.16, -0.16, 0.99, 0, 0);
+}
+.review_palm2{
+    position: absolute;
+    width: 140vw;
+    top: 79vw;
+    right: -42vw;
+
+    object-fit: cover;
+    transform: rotate(-16.75deg);
+}
+.review_palm3{
+    position: absolute;
+    width: 68.923vw;
+    height: 65.654vw;
+    bottom: 4vw;
+    margin-left: -19.790vw;
+    transform: matrix(-0.67, -0.75, -0.75, 0.67, 0, 0);
+}
+
+.arrowphone_contactus{
+    display: flex;
+    position: absolute;
+    width: 50vw;
+
+    left: 43vw;
+    bottom: 3vw;
+}

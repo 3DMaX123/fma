@@ -1,0 +1,189 @@
+.app__footer_problem-mainSubstrate{
+    display: flex;
+    position: relative;
+
+    width: 86%;
+    height: 90%;
+    margin: auto;
+
+
+    background: var(--color-problemsend);
+    box-shadow: var(--box-shadow);
+
+    animation: OpenProblem 0.4s both;
+}
+
+@keyframes OpenProblem {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.propose-mainSubstrate-content{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.propose-content-form-arrowSeven{
+    position: absolute;
+    display: flex;
+    position: absolute;
+    top: 5.208vw;
+}
+
+.propose-content-form-arrowSeven img{
+    width: 63.724vw;
+    height: 9.635vw;
+}
+
+.propose-content-form{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+
+    flex-direction: column;
+    margin-right: 8.177vw;
+}
+
+.propose-content-form-fields{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 6.6vw;
+    margin-bottom: 3.438vw;
+}
+
+.propose-form-field{
+    display: flex;
+    margin-bottom: 1.823vw;
+}
+.propose-form-fieldL{
+    display: flex;
+}
+
+.propose-form-form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.propose-form-form input[type="text"]{
+    width: 23.438vw;
+    border-style: none;
+    padding-bottom: 0.521vw;
+    padding-right: 0.208vw;
+    border-bottom: 1px solid var(--color-black);
+
+
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;    
+    /* identical to box height */
+
+    background: transparent;
+    text-align: right;
+
+    color: var(--color-black);
+}
+
+.propose-form-form input:focus{
+    outline: none;
+}
+
+.propose-form-form input:focus ~ .propose-field-lable,
+.propose-form-form input:valid ~ .propose-field-lable{
+    transform: translateY(-1.823vw);
+    font-size: 0.625vw;
+
+    color: var(--color-fieldlable);
+}
+
+.propose-field-lable{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;
+
+    text-align: right;
+
+    color: var(--color-black);
+    transition: all 0.3s ease;
+}
+
+.propose-field-lable{
+    position: absolute;
+    overflow: hidden;
+    padding-bottom: 0.521vw;
+    padding-right: 0.208vw;
+    pointer-events: none;
+}
+
+.propose-field-lable p {
+    opacity: 0;
+}
+
+.propose-field-lable-error{
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+
+    padding-bottom: 0.521vw;
+    padding-right: 0.208vw;
+}
+
+.propose-field-lable-error p{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;
+    /* identical to box height */
+
+    text-align: right;
+    pointer-events: none;
+    opacity: 0;
+    color: var(--color-errorlablefortypereview);
+
+}
+
+.propose-content-buttonandbutton{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.propose-commitbutton{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.042vw;
+
+    padding: 0.885vw 0.625vw 0.885vw 5.469vw;
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    background: var(--color-black);
+
+    border-style: none;
+    cursor: pointer;
+}
+
+.propose-content-image{
+    display: flex;
+}
+.propose-content-image img{
+    width: 39.323vw;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1300px){
+    .app__footer_problem-mainSubstrate{
+        height: 60%;
+    }
+    .propose-content-form-arrowSeven{
+        top: 9vw;
+    }
+}

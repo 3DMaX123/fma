@@ -1,0 +1,44 @@
+.app__contactusphone{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top: 10px;
+    padding-bottom: 17px;
+}
+
+.contactusphone-nameEmail,
+.contactusphone-namePhone{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+    color: var(--color-nameofsections);
+
+    margin-bottom: 10px;
+}
+
+.contactusphodne-verticalline{
+    width: 1px;
+    height: 15px;
+    background: var(--color-black);
+}
+
+.contactusphone-contact{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: var(--color-black);
+}
+
+.contactusphone-email{
+    margin-left: 22px;
+}
+
+.contactusphone-phone{
+    margin-right: 22px;
+}

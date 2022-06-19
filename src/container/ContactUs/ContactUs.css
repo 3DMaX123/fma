@@ -1,0 +1,56 @@
+.app__contactUs{
+    display: flex;
+    justify-content: space-between;
+    background-position: bottom;
+
+    width: 100%;
+    height: 26.927vw;
+    overflow: hidden;
+}
+
+.telephone, .email{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+
+    
+}
+
+.email{
+    align-items: flex-start; 
+    margin-right: 12.448vw;
+}
+
+.telephone{
+    margin-left: 9.688vw;
+}
+
+.telephone p, .email p{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.938vw;
+
+    color: var(--color-nameofsections);
+}
+
+.telephone a, .email a{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.938vw;
+
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 480px) {
+    .app__contactUs{
+        display: none;
+    }
+
+    .app__contactusphone{
+        display: flex!important;
+    }
+}

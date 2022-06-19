@@ -1,0 +1,159 @@
+.app__pricephone{
+    display: none;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+
+    height: 100.897vw;
+}
+
+.pricephone-productsChoosen{
+    display: flex;
+    align-items: center;
+
+    margin-left: 12px;
+}
+
+.pricephone-priceSign{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+
+
+    color: rgba(52, 52, 52, 0.62);
+
+    margin-right: 19px;
+}
+
+.pricephone-productsChoosen-buttons{
+    display: grid;
+
+    grid-auto-flow: column;
+    gap: 11px;
+}
+.pricephone-productsChoosen-buttons button{
+    margin-right: 11px;
+}
+.pricephone-productsChoosen-buttons button:last-child{
+    margin-right: 0px;
+}
+
+.productsChoosen-mainButton{
+    width: 122px;
+    height: 35px;
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: var(--color-white);
+
+    outline: none;
+    border: none;
+
+    background-color: var(--color-black);
+}
+
+.productChoosen-additionalButton{
+    width: 122px;
+    height: 35px;
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: var(--color-black);
+
+    outline: none;
+    border: 1px solid var(--color-black);
+    
+    padding: 8px 15px;
+
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PricePalm{
+    width: 86.667vw;
+    height: 82.692vw;
+    position: absolute;
+    transform: rotate(-40.62deg);
+    left: 59.590vw;
+    top: 155vw;
+}
+.PricePalm1{
+    width: 86.667vw;
+    height: 82.692vw;
+    position: absolute;
+    transform: rotate(147.56deg);
+    left: -43.590vw;
+    top: 182.282vw;
+}
+.arrow_price{
+    position: absolute;
+    
+    width: 37vw;
+
+    left: 39vw;
+    bottom: 3vw;
+}
