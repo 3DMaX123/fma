@@ -71,7 +71,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 0.885vw;
-    color: var(--color-footersections);
+    color: var(--color-additionaltext);
     
 }
 .mainSusbstrate-content-mail-label{
@@ -110,7 +110,7 @@
 
     cursor: pointer;
     
-    color: var(--color-footersections);
+    color: var(--color-additionaltext);
 }
 
 .app__review_typereview-blurSubstrate{

@@ -88,6 +88,18 @@
     color: var(--color-black);
 }
 
+.userReview-Phone{
+    display: none;
+}
+
+.NamePosition-Phone{
+    display: none;
+}
+
+.starsReview-Phone{
+    display: none;
+}
+
 @media screen and (max-width: 450px) {
     .review{
         width: 65.049vw;
@@ -96,9 +108,51 @@
     }
 
     .ReviewContent{
+        justify-content: space-between;
         height: 100%;
 
         padding: 4.612vw;
+    }
+
+    .UserReview{
+        display: none;
+    }
+
+    .userReview-Phone{
+        display: flex!important;
+    }
+
+    .Stars{
+        display: none;
+    }
+
+    .NamePositionCompanyAndStars{
+        display: none!important;
+    }
+    
+    .NamePosition-Phone{
+        display: flex!important;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-bottom: 0px;
+
+        flex-direction: column;
+    }
+    
+    .NameAndPosition{
+        margin-bottom: 2.427vw;
+    }
+
+    .starsReview-Phone{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .starsReview-Phone img{
+        width: 2.8vw;
+        height: 2.8vw;
+        margin-right: .8vw;
     }
 
     .Name{

@@ -17,6 +17,7 @@
     --color-red: #FF5C5C;
     --color-pink: #EEEBEB;
     --color-darkgreen: #112021;
+    --color-footerbackgroundcolor: #182828;
     --color-white: #FFFF;
     --color-icewhite: #f5ececfa;
     --color-bigfmasignandgreystars: #DCDCDC;
@@ -30,7 +31,7 @@
     --color-nameactiveproductinsequence: rgba(52, 52, 52, 0.9);
     --color-priceinothersequenceprice: rgba(52, 52, 52, 0.5);
     --color-errorlablefortypereview: rgba(52, 52, 52, 0.73);
-    --color-footersections: rgba(250, 250, 250, 0.69);
+    --color-additionaltext: rgba(250, 250, 250, 0.69);
     --color-backgroundfortypereview: linear-gradient(236.62deg, #F6F6F6 9.64%, #FFFFFF 98.35%);
     --color-greysubstrateaboutus: linear-gradient(180.43deg, #F1F1F1 1.47%, #F2F2F2 98.04%);
     --color-whiteback: linear-gradient(89.32deg, #F2F2F2 0.44%, #EFEFF1 99.27%);

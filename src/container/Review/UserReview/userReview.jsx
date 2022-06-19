@@ -47,22 +47,41 @@ function Stars(){
   // !!!! ATTENTION !!!!                                                                                                                              // !!!! ATTENTION !!!!
 
   return(
-    <div className='Stars'>
-      {countYellowStars.map( (countYellowStars, index) => (<Fragment key={index}>{countYellowStars}</Fragment>))}
-      {countGreyStars.map( (countGreyStars, index) => (<Fragment key={index}>{countGreyStars}</Fragment>))}
-    </div>
+    <>
+      <div className='Stars'>
+        {countYellowStars.map( (countYellowStars, index) => (<Fragment key={index}>{countYellowStars}</Fragment>))}
+        {countGreyStars.map( (countGreyStars, index) => (<Fragment key={index}>{countGreyStars}</Fragment>))}
+      </div>
+
+      <div className='Stars starsReview-Phone'>
+        {countYellowStars.map( (countYellowStars, index) => (<Fragment key={index}>{countYellowStars}</Fragment>))}
+        {countGreyStars.map( (countGreyStars, index) => (<Fragment key={index}>{countGreyStars}</Fragment>))}
+      </div>
+    </>
   )
 }
 
 
 function NamePositionCompanyAndStars(){
+
+  const { review } = useContext(ReviewData);
+
   return (
+    <>
       <div className='NamePositionCompanyAndStars'>
         <NameAndPosition />
         <ShortErrorBoundary>
         <Stars />
         </ShortErrorBoundary>
       </div>
+
+      <div className='NamePositionCompanyAndStars NamePosition-Phone'>
+        <NameAndPosition />
+        <div className='UserReview userReview-Phone'>
+          <p>{review}</p>
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -80,7 +99,7 @@ function NameAndPosition(){
 function Name(){
   const { name } = useContext(ReviewData);
 
-  return <p className='Name'>{name}</p>; ///////////////////////////////////////////////////////////////////////////////////////
+  return <p className='Name'>{name}</p>;
 }
 
 function Position(){  
@@ -114,12 +133,20 @@ function UserReview(){
   const { review } = useContext(ReviewData);
 
   return ( 
-    <div className='UserReview'>
-      <p>{review}</p>
-    </div>
+      <div className='UserReview'>
+        <p>{review}</p>
+      </div>
   )
 }
 
+
+/*     
+      <div className='starsReview-Phone'>
+          <ShortErrorBoundary>
+          <Stars />
+          </ShortErrorBoundary>
+      </div>
+ */
 
 class userReviews extends React.Component {
 
@@ -141,6 +168,11 @@ class userReviews extends React.Component {
           <ShortErrorBoundary>
               <UserReview />
           </ShortErrorBoundary>
+          <div className='starsReview-Phone'>
+            <ShortErrorBoundary>
+            <Stars />
+            </ShortErrorBoundary>
+          </div>
         </ReviewData.Provider>
       </div>
     </div>

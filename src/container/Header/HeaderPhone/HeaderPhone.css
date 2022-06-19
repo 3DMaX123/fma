@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 .headerphone_service_text{
-    font-family: 'Source Serif Pro';
+    font-family: var(--font-header);
 font-style: normal;
 font-weight: 400;
 font-size: 8.974vw;
@@ -65,7 +65,7 @@ transform: rotate(42.12deg);
     top: -43px;
 
 
-    font-family: 'Source Serif Pro';
+    font-family: var(--font-header);
     font-style: normal;
     font-weight: 400;
     font-size: 6.410vw;
@@ -75,7 +75,7 @@ transform: rotate(42.12deg);
 }
 .headerphone_utp li{
     margin-top: 3.333vw;
-    font-family: 'Source Serif Pro';
+    font-family: var(--font-header);
     font-style: normal;
     font-weight: 400;
     font-size: 4.103vw;
@@ -83,7 +83,7 @@ transform: rotate(42.12deg);
     /* identical to box height */
     width: 75.128vw;
     
-    color: #343434;
+    color: var(--color-black);
 }
 
 .arrow_header{

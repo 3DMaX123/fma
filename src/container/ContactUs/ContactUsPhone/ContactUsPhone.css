@@ -23,7 +23,7 @@
 .contactusphodne-verticalline{
     width: 1px;
     height: 15px;
-    background: #343434;
+    background: var(--color-black);
 }
 
 .contactusphone-contact{

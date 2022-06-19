@@ -9,29 +9,31 @@
 }
 
 .aboutus-title{
-margin-left: 6.154vw;
-font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 6.923vw;
-line-height: 9.487vw;
-/* identical to box height */
+
+    margin-left: 6.154vw;
 
 
-color: #343434;
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.923vw;
+
+    color: var(--color-black);
 }
 .aboutus-description{
-width: 86.923vw;
-margin-left: 6.154vw;
-margin-top: 4.103vw;
+    width: 86.923vw;
+    
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.103vw;
+    line-height: 5.641vw;
+    
+    color: var(--color-black);
 
-font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 4.103vw;
-line-height: 5.641vw;
-
-color: #343434;
+    
+    margin-left: 6.154vw;
+    margin-top: 4.103vw;
 }
 .aboutus-palm{
     width: 88.531vw;
