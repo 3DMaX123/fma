@@ -1,11 +1,15 @@
 .app__pricephone{
     display: none;
+    position: relative;
     flex-direction: column;
+    overflow: hidden;
+
     height: 275.897vw;
 }
 .offer{
     display: flex;
-    flex-direction: row;
+
+    margin-top: 1.5vw;
 }
 .offer-label{
 margin-top: 1.446vw;
@@ -159,53 +163,22 @@ color: #FFFFFF;
     height: 82.692vw;
     position: absolute;
     transform: rotate(-40.62deg);
-    margin-left: 59.590vw;
-    margin-top: 158.282vw;
+    left: 59.590vw;
+    top: 155vw;
 }
 .PricePalm1{
     width: 86.667vw;
     height: 82.692vw;
     position: absolute;
     transform: rotate(147.56deg);
-    margin-left: -43.590vw;
-    margin-top: 193.282vw;
-}
-.pricephone_fma{
-    margin-left: 41.538vw;
-    margin-top: 14.615vw;
-    width: 16.667vw;
-    border: 0.5px solid #343434;
-box-sizing: border-box;
-text-align: center;
-
-
-font-family: 'Source Serif Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 4.872vw;
-line-height: 6.154vw;
-color: #343434;
-}
-.pricephone_fma_whiteBorder1{
-    position: absolute;
-    width: 3.718vw;
-    height: 0.854vw;
-    left: 41.026vw;
-    top: 444vw;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
-.pricephone_fma_whiteBorder2{
-    position: absolute;
-    width: 3.718vw;
-    height: 0.854vw;
-    left: 55.954vw;
-    top: 448.447vw;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
+    left: -43.590vw;
+    top: 182.282vw;
 }
 .arrow_price{
-    width: 29.700vw;
-height: 65.613vw;
-margin-left: 46.154vw;
+    position: absolute;
+    
+    width: 37vw;
+
+    left: 39vw;
+    bottom: 8vw;
 }

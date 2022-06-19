@@ -1,7 +1,10 @@
 .app__headerphone{
     display: none;
-    height: 244.615vw;
+    position: relative;
+    height: 229.6vw;
     flex-direction: column;
+
+    overflow: hidden;
 }
 .headerphone_service_text{
     font-family: 'Source Serif Pro';
@@ -19,7 +22,7 @@ color: #343434;
     position: absolute;
 width: 77.851vw;
 height: 81.062vw;
-left: 68.205vw;
+right: -38vw;
 top: 14.897vw;
 transform: rotate(-131.1deg);
 overflow: hidden;
@@ -37,30 +40,38 @@ overflow: hidden;
 .Header-palm3{
     position: absolute;
     width: 86.813vw;
-height: 82.692vw;
-left: -55.210vw;
-/* top: 136.923vw; */
-bottom: 15.256vw;
+    height: 82.692vw;
+    left: -45.210vw;
+    bottom: 15.256vw;
 
 transform: rotate(42.12deg);
 }
 .Header-palm4{
     position: absolute;
-width: 86.813vw;
-height: 82.692vw;
-left: 50.846vw;
-top: 126.054vw;
 
-transform: rotate(-53.06deg);
+    width: 86.813vw;
+    height: 82.692vw;
+
+    left: 50.846vw;
+    top: 105vw;
+
+    transform: rotate(-53.06deg);
 }
 .headerphone_utp{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    top: -43px;
+
+
     font-family: 'Source Serif Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 6.410vw;
-line-height: 7.949vw;
-margin-left: 13.077vw;
-color: rgba(52, 52, 52, 0.64);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.410vw;
+    line-height: 7.949vw;
+    margin-left: 13.077vw;
+    color: rgba(52, 52, 52, 0.64);
 }
 .headerphone_utp li{
     margin-top: 3.333vw;
@@ -74,49 +85,19 @@ color: rgba(52, 52, 52, 0.64);
     
     color: #343434;
 }
-.headerphone_fma{
-    margin-left: 42.308vw;
-    margin-top: 67.179vw;
-    width: 16.667vw;
-    border: 0.5px solid #343434;
-box-sizing: border-box;
-text-align: center;
 
-
-font-family: 'Source Serif Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 4.872vw;
-line-height: 6.154vw;
-color: #343434;
-}
-.headerphone_fma_whiteBorder1{
-    position: absolute;
-width: 3.718vw;
-height: 0.854vw;
-left: 41.126vw;
-top: 205.188vw;
-
-background: white;
-transform: rotate(-45deg);
-}
-.headerphone_fma_whiteBorder2{
-    position: absolute;
-width: 3.718vw;
-height: 0.854vw;
-left: 56.154vw;
-top: 209.723vw;
-
-background: #FFFFFF;
-transform: rotate(-45deg);
-}
 .arrow_header{
-width: 27.154vw;
-height: 25.397vw;
-margin-left: 29.487vw;
+    position: relative;
+
+    top: -23px;
+
+    width: 27.154vw;
+    height: 25.397vw;
+    margin-left: 29.487vw;
 }
 .arrow_header2{
-width: 37.921vw;
-height: 35.128vw;
-margin-left: 16.795vw;
+    position: absolute;
+    width: 45vw;
+    left: 16.795vw;
+    bottom: 0;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRef, useEffect, useState } from "react";
 import images from '../../constants/images';
-import ReviewForm from '../../constants/userReview';
+import ReviewForm from './UserReview/userReview';
 import TypeReview from './Type Review/TypeReview';
 import ReviewPhone from './ReviewPhone/ReviewPhone';
 import ScrollContainer from 'react-indiana-drag-scroll'

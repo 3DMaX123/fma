@@ -1,6 +1,10 @@
 .app__aboutusphone{
     display: none;
-    height: 141.538vw;
+    position: relative;
+
+    height: 145.5vw;
+
+    overflow: hidden;
     flex-direction: column;
 }
 
@@ -34,46 +38,27 @@ color: #343434;
     height: 84.328vw;
     position: absolute;
     transform: rotate(-38.65deg);
-    margin-top: 38.333vw;
-    margin-left: 53.641vw;
+    top: 39vw;
+    left: 51vw;
     
 }
 .aboutus-palm2{
+    position: absolute;
+
     width: 89.010vw;
     height: 84.785vw;
-    position: absolute;
+
     transform: rotate(29.24deg);
-    margin-left: -39.941vw;
-    margin-top: 50.333vw;
-}
-.aboutusphone_fma{
-    margin-left: 42.308vw;
-    margin-top: 29.487vw;
-    width: 16.667vw;
-    border: 0.5px solid #343434;
-box-sizing: border-box;
-text-align: center;
 
+    left: -43vw;
+    top: 48vw;
+}
 
-font-family: 'Source Serif Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 4.872vw;
-line-height: 6.154vw;
-color: #343434;
-}
-.aboutusphone_fma_whiteBorder2{
-    position: absolute;
-    width: 3.718vw;
-    height: 0.854vw;
-    left: 55.954vw;
-    top: 614.711vw;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
 .phonearrow_aboutus{
-    width: 33.995vw;
-    height: 38.974vw;
-    margin-left: 30.549vw;
-    margin-top: 4.718vw;
+    display: flex;
+    position: absolute;
+
+    width: 38vw;
+    left: 27vw;
+    bottom: 4vw;
 }

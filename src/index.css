@@ -8,6 +8,7 @@
     --box-shadow: 7px 0px 40px rgba(112, 144, 176, 0.2);
     --box-shadowforpicturesprice: 0px 16px 20px rgba(112, 144, 176, 0.2); 
     --box-shadowforunactivepicture: 0px 16px 20px rgba(255, 255, 255, 0.2);
+    --box-shadowforusereviewphone: 0px 16px 40px rgba(112, 144, 176, 0.2);
     --blur: 7px;
     --blur-smallscreen: 20px;
     --blur-background: rgba(196, 196, 196, 0.15);
@@ -17,6 +18,7 @@
     --color-pink: #EEEBEB;
     --color-darkgreen: #112021;
     --color-white: #FFFF;
+    --color-icewhite: #f5ececfa;
     --color-bigfmasignandgreystars: #DCDCDC;
     --color-star: #FFC165;
     --color-starhover: #ffdca8;
@@ -59,7 +61,7 @@ a {
 
 @media screen and (max-width: 688px) {
   body {
-    background: var(--color-white);
+    background: #FAFAFA;
   }
   
 }

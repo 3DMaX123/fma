@@ -1,56 +1,50 @@
 .app__reviewphone{
     display: none;
-    background: white;
-    height: 249.487vw;
+    position: relative;
+    overflow: hidden;
+
+
+    height: 299vw;
     flex-direction: column;
 }
 .review-label{
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 .review-label-review{
-    margin-top: 10.282vw;
-    margin-left: 4.359vw;
 
     font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 26px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
 
-
-color: rgba(52, 52, 52, 0.62);
+    margin-right: 10px;
+    color: rgba(52, 52, 52, 0.62);
 }
-.review-label-text{
-    display: flex;
-width: 31.026vw;
-height: 9.487vw;
-background: #343434;
 
-justify-content: center;
-margin-top: 8.205vw;
-margin-left: 6.154vw;
-font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 2.564vw;
-line-height: 3.590vw;
+.review-label-button{
+    border: none; 
+    outline: none;
 
-}
-.review-label-text p{
-    margin-top: 3.077vw;
-    color: white;
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.564vw;
+
+    padding: 3.5vw 5.5vw;
+    margin-left: 24px;
+    margin-right: 17px;
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    background: var(--color-black);
 }
 .review-label-star{
     width: 3.846vw;
     height: 3.846vw;
-    margin-top: 11.082vw;
-    margin-left: 2.564vw;
+
+    margin-right: 5px;
 }
 .review-label-star-rate{
-    margin-top: 10.282vw;
-    margin-left: 0.513vw;
     font-family: 'Prata';
 font-style: normal;
 font-weight: 400;
@@ -63,20 +57,20 @@ color: rgba(52, 52, 52, 0.62);
 }
 .review_palm{
     position: absolute;
-    width: 395.09px;
-    height: 556.41px;
-    left: -150.11px;
-    top: 2875.9px;
+    width: 150vw;
+    top: 10vw;
+    left: -60vw;
 
+    object-fit: cover;
     transform: matrix(-0.99, -0.16, -0.16, 0.99, 0, 0);
 }
 .review_palm2{
     position: absolute;
-    width: 395.09px;
-    height: 556.41px;
-    left: 114.88px;
-    top: 3065.96px;
-    
+    width: 140vw;
+    top: 79vw;
+    right: -42vw;
+
+    object-fit: cover;
     transform: rotate(-16.75deg);
 }
 .review_palm3{
@@ -86,39 +80,13 @@ color: rgba(52, 52, 52, 0.62);
     margin-top: 230vw;
     margin-left: -19.790vw;
     transform: matrix(-0.67, -0.75, -0.75, 0.67, 0, 0);
-    overflow: hidden;
 }
-.reviewphone_fma_whiteBorder1{
-    position: absolute;
-    width: 3.718vw;
-    height: 0.854vw;
-    margin-top: 233.128vw;
-    left: 41.026vw;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
-.reviewphone_fma_whiteBorder2{
-    position: absolute;
-    width: 3.718vw;
-    height: 0.854vw;
-    margin-top: 237.575vw;
-    left: 55.954vw;
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
-.reviewphone_fma{
-    margin-left: 41.538vw;
-    margin-top: 215.128vw;
-    width: 16.667vw;
-    border: 0.5px solid #343434;
-box-sizing: border-box;
-text-align: center;
 
+.arrowphone_contactus{
+    display: flex;
+    position: absolute;
+    width: 50vw;
 
-font-family: 'Source Serif Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 4.872vw;
-line-height: 6.154vw;
-color: #343434;
+    left: 43vw;
+    bottom: 2vw;
 }

@@ -11,11 +11,7 @@ const AboutUsPhone = () => {
 
           <img className="aboutus-palm" src={images.cutpalm} alt="Palm" /> 
           <img className="aboutus-palm2" src={images.cutpalm} alt="Palm" /> 
-        <div className='aboutusphone_fma'>
-            FMA
-        </div>
-        <div className='aboutusphone_fma_whiteBorder2'></div> 
-        <img className='phonearrow_aboutus' src={images.phonearrowfour} alt="arrow"/>
+          <img className='phonearrow_aboutus' src={images.phonearrowfour} alt="arrow"/>
     </div>
   )
 }

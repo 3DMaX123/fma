@@ -60,11 +60,6 @@ const PricePhone = () => {
       <div className='Button-Meeting'><p>Назначити зустріч</p></div>
       <img className="PricePalm" src={images.cutpalm} alt="Palm" /> 
       <img className="PricePalm1" src={images.cutpalm} alt="Palm" />
-      <div className='pricephone_fma'>
-        FMA
-        </div>
-        <div className='pricephone_fma_whiteBorder1'></div>
-        <div className='pricephone_fma_whiteBorder2'></div> 
         <img className='arrow_price' src={images.phonearrowthree} alt="arrow"/>
     </div>
   )

@@ -1,5 +1,6 @@
 .app__footer_problem-mainSubstrate{
     display: flex;
+    position: relative;
 
     width: 86%;
     height: 90%;
@@ -176,4 +177,13 @@
 .propose-content-image img{
     width: 39.323vw;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1300px){
+    .app__footer_problem-mainSubstrate{
+        height: 60%;
+    }
+    .propose-content-form-arrowSeven{
+        top: 9vw;
+    }
 }

@@ -23,11 +23,6 @@ const HeaderPhone = () => {
               <p> бюджет<strong> ₴ 3000/міс </strong> </p></li>
           </ul>
         </div>
-        <div className='headerphone_fma'>
-            FMA
-        </div>
-        <div className='headerphone_fma_whiteBorder1'></div>
-        <div className='headerphone_fma_whiteBorder2'></div>
         <img className='arrow_header2' src={images.phonearrowtwo} alt="arrow2"/>
     </div>
   )

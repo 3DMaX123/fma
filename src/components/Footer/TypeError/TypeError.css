@@ -205,3 +205,9 @@
     width: 39.323vw;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1300px){
+    .problem-content-form-arrowSeven{
+        top: 9vw;
+    }
+}

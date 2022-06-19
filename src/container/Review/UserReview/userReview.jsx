@@ -1,6 +1,8 @@
 import React, { useContext, Fragment } from 'react'
-import images from './images';
-import ShortErrorBoundary from './ErrorsBoundary/shortErrorBoundary';
+import images from '../../../constants/images';
+import ShortErrorBoundary from '../../../constants/ErrorsBoundary/shortErrorBoundary';
+
+import './userReview.css';
 
 const ReviewData = React.createContext();
 
@@ -55,12 +57,12 @@ function Stars(){
 
 function NamePositionCompanyAndStars(){
   return (
-    <div className='NamePositionCompanyAndStars'>
-    <NameAndPosition />
-    <ShortErrorBoundary>
-    <Stars />
-    </ShortErrorBoundary>
-  </div>
+      <div className='NamePositionCompanyAndStars'>
+        <NameAndPosition />
+        <ShortErrorBoundary>
+        <Stars />
+        </ShortErrorBoundary>
+      </div>
   );
 }
 

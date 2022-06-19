@@ -55,12 +55,6 @@
 .ArrowFife img{
     width: 52.135vw;
 
-    image-rendering: -moz-crisp-edges;         /* Firefox */
-    image-rendering:   -o-crisp-edges;         /* Opera */
-    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
-
 }
 
 .Review{
@@ -104,7 +98,7 @@
     margin-right: 0.521vw;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .app__aboutus{
         display: none;
     }

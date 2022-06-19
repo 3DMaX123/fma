@@ -1,76 +1,44 @@
 .app__contactusphone{
     display: none;
-    height: 68.718vw;
-    background: white;
-    flex-direction: column;
-}
-.contactusphone-label1, .contactusphone-label2{
-    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    margin-top: 2.564vw;
-}
-.label1-Email{
-    margin-left: 5.385vw;
 
-    font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-
-color: rgba(52, 52, 52, 0.62);
-}
-.label1-Name{
-    margin-left: 36.154vw;
-
-    font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-
-color: rgba(52, 52, 52, 0.62);
-}
-.label2-Email{
-    margin-left: 5.385vw;
-
-    font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-
-color: #343434;
-}
-.label2-Name{
-    margin-left: 10.256vw;
-
-    font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-
-color: #343434;
+    padding-top: 10px;
+    padding-bottom: 17px;
 }
 
-.arrowphone_contactus{
-    width: 30.595vw;
-    height: 47.708vw;
-    margin-left: 48.313vw;
+.contactusphone-nameEmail,
+.contactusphone-namePhone{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+    color: var(--color-nameofsections);
+
+    margin-bottom: 10px;
 }
-.contactusphone_meet-us{
-    position: absolute;
-    width: 25.128vw;
-    height: 12.308vw;
-    margin-left: 68.974vw;
-    margin-top: 23.846vw;
 
-    font-family: 'Prata';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
+.contactusphodne-verticalline{
+    width: 1px;
+    height: 15px;
+    background: #343434;
+}
 
-color: rgba(52, 52, 52, 0.62);
+.contactusphone-contact{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: var(--color-black);
+}
+
+.contactusphone-email{
+    margin-left: 22px;
+}
+
+.contactusphone-phone{
+    margin-right: 22px;
 }
