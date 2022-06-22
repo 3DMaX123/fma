@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 import './PricePhone.css';
 import images from '../../../constants/images';
@@ -8,30 +9,34 @@ const PricePhone = () => {
     <div className='app__pricephone'>
       <div className='pricephone-productsChoosen'>
         <p className='pricephone-priceSign'>Послуги</p>
-        <div className='pricephone-productsChoosen-buttons'>
+        <ScrollContainer className='pricephone-productsChoosen-buttons'>
           <button className='productsChoosen-mainButton'>Web-Maxima</button>
           <button className='productChoosen-additionalButton'>Web-Optima</button>
           <button className='productChoosen-additionalButton'>Web-Optima</button>
-        </div>
+        </ScrollContainer>
+      </div>
+
+      <div className='pricephone-prices'>
+      <div className='pricephone-web-Limitless'>
+        <img className='phonepriceAdditionalLeft' src={images.web_limitless} alt='Web-Limitless logo'/>
+        <p className='pricephone-priceWeb-Limitless'>від ₴8,000</p>
+      </div>
+      <div className='pricephone-web-Maxima'>
+        <img className='phonepriceMain' src={images.web_maxima} alt='Web-Maxima logo'/>
+        <p className='pricephone-priceWeb-Maxima'>₴10,000</p>
+      </div>
+      <div className='pricephone-web-Optima'>
+        <img className='phonepriceAdditionalRight' src={images.web_optima} alt='Web-Optima logo'/>
+        <p className='pricephone-priceWeb-Optima'>₴4,000</p>
+      </div>
       </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-      <div className='pricephone-palms'>
         <img className="PricePalm" src={images.cutpalm} alt="Palm" /> 
         <img className="PricePalm1" src={images.cutpalm} alt="Palm" />
         <img className='arrow_price' src={images.phonearrowthree} alt="arrow"/>
-      </div>
     </div>
   )
 }

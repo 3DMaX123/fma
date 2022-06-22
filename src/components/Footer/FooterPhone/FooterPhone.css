@@ -1,5 +1,5 @@
 .app__footerphone{
-    display: flex;
+    display: none;
     flex-direction: column;
 
     padding: 13.835vw 7.767vw;

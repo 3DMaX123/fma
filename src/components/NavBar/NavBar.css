@@ -189,11 +189,14 @@
     }
 
     .app__navbar-smallscreen_overlaycontent-850 li{
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .app__navbar-smallscreen-curveimage{
         display: none;
+    }
+    .app__navbar-smallscreen-links-850 li{
+        font-size: 5vw;
     }
 }
 
