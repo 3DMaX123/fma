@@ -31,6 +31,21 @@ const PricePhone = () => {
       </div>
       </div>
 
+      <div className='pricephone-informationAboutService'>
+        <p className='pricephone-prices-header'>Web-Maxima</p>
+        <p className='pricephone-prices-price'>₴ 10,000</p>
+        <p className='pricephone-prices-description'>Це той самий випадок, коли довіритися <br />професіоналам та розслабитися є<br />найкращим з варіантів</p>
+        <p className='pricephone-prices-propose'>Ми пропонуємо :</p>
+        <ul>
+          <li><div className='pricephone-prices-square'></div>Аудит сайту та рекламного кабінету</li>
+          <li><div className='pricephone-prices-square'></div>Розробка портрету цільової аудиторії, Mind карта</li>
+          <li><div className='pricephone-prices-square'></div>SEO оптимізація сайту</li>
+          <li><div className='pricephone-prices-square'></div>Налаштування контекстної реклами</li>
+          <li><div className='pricephone-prices-square'></div>Налаштування аналітики відстежування</li>
+          <li><div className='pricephone-prices-square'></div>Щотижневі звіти протягом місяця</li>
+          <li><div className='pricephone-prices-square'></div>Тісний взаємозв’язок з командою напротязі місяця</li>
+        </ul>
+      </div>
 
 
 

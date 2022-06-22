@@ -5,7 +5,7 @@
     overflow: hidden;
 
     background-color: #FAFAFA;
-    height: 170.897vw;
+    height: 280.897vw;
 }
 
 .pricephone-productsChoosen{
@@ -79,6 +79,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 40px;
 }
 
 .pricephone-prices p{
@@ -105,10 +107,11 @@
     object-fit: cover;
 }
 
+
 .phonepriceMain{
     width: 114px;
     height: 172px;
-
+    
     object-fit: cover;
     filter: drop-shadow(0px 16px 40px rgba(112, 144, 176, 0.2));
     -webkit-filter: drop-shadow(0px 16px 40px rgba(112, 144, 176, 0.2));
@@ -116,13 +119,89 @@
     transform: translateZ(0);
 }
 
+.phonepriceAdditionalRight{
+    right: -19px;
+}
+
 .phonepriceAdditionalLeft{
     left: -19px;
 }
 
+.pricephone-priceWeb-Limitless{
+    left: -19px;
+}
 
+.pricephone-priceWeb-Optima{
+    right: -19px;
+}
 
+.pricephone-informationAboutService{
+    margin-top: 31px;
+    margin-left: 24px;
+}
 
+.pricephone-prices-header{  
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+
+    color: #343434;
+
+    margin-bottom: 9px;
+}
+
+.pricephone-prices-price{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: rgba(52, 52, 52, 0.7);
+    margin-bottom: 9px;
+}
+
+.pricephone-prices-description{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #343434;
+    margin-bottom: 11px;
+}
+
+.pricephone-prices-propose{
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    
+    color: #343434;
+    margin-bottom: 7px;
+}
+
+.pricephone-informationAboutService ul li{
+    display: flex;
+    align-items: center;
+
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+
+    color: #343434;
+    margin-bottom: 9px;
+    margin-left: 5px;
+}
+
+.pricephone-prices-square{
+    width: 2px;
+    height: 2px;
+
+    background-color: var(--color-black);
+    margin-right: 5px;
+}
 
 
 
