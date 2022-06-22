@@ -1,36 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 import './PricePhone.css';
 import images from '../../../constants/images';
 
-const PricePhone = () => {
-  return (
-    <div className='app__pricephone'>
-      <div className='pricephone-productsChoosen'>
-        <p className='pricephone-priceSign'>Послуги</p>
-        <ScrollContainer className='pricephone-productsChoosen-buttons'>
-          <button className='productsChoosen-mainButton'>Web-Maxima</button>
-          <button className='productChoosen-additionalButton'>Web-Optima</button>
-          <button className='productChoosen-additionalButton'>Web-Optima</button>
-        </ScrollContainer>
-      </div>
+function PhoneWebMaxima(){
 
-      <div className='pricephone-prices'>
-      <div className='pricephone-web-Limitless'>
-        <img className='phonepriceAdditionalLeft' src={images.web_limitless} alt='Web-Limitless logo'/>
-        <p className='pricephone-priceWeb-Limitless'>від ₴8,000</p>
-      </div>
-      <div className='pricephone-web-Maxima'>
-        <img className='phonepriceMain' src={images.web_maxima} alt='Web-Maxima logo'/>
-        <p className='pricephone-priceWeb-Maxima'>₴10,000</p>
-      </div>
-      <div className='pricephone-web-Optima'>
-        <img className='phonepriceAdditionalRight' src={images.web_optima} alt='Web-Optima logo'/>
-        <p className='pricephone-priceWeb-Optima'>₴4,000</p>
-      </div>
-      </div>
-
+  return(
       <div className='pricephone-informationAboutService'>
         <p className='pricephone-prices-header'>Web-Maxima</p>
         <p className='pricephone-prices-price'>₴ 10,000</p>
@@ -46,6 +22,47 @@ const PricePhone = () => {
           <li><div className='pricephone-prices-square'></div>Тісний взаємозв’язок з командою напротязі місяця</li>
         </ul>
       </div>
+  )
+}
+
+const PricePhone = () => {
+
+  const [ phoneWhichOne, setPhoneWhichOne ] = useState('web-maxima');
+
+  return (
+    <div className='app__pricephone'>
+      <div className='pricephone-productsChoosen'>
+        <p className='pricephone-priceSign'>Послуги</p>
+        <ScrollContainer className='pricephone-productsChoosen-buttons'>
+          <button className='productsChoosen-mainButton'>Web-Maxima</button>
+          <button className='productChoosen-additionalButton'>Web-Optima</button>
+          <button className='productChoosen-additionalButton'>Web-Optima</button>
+        </ScrollContainer>
+      </div>
+      {phoneWhichOne === 'web-maxima' &&
+        <div className='pricephone-prices'>
+        <div className='pricephone-web-Limitless'>
+          <img className='phonepriceAdditionalLeft' src={images.web_limitless} alt='Web-Limitless logo'/>
+          <p className='pricephone-priceWeb-LimitlessSign'>Web-Limitless</p>
+          <p className='pricephone-priceWeb-LimitlessPrice'>від ₴5,000</p>
+        </div>
+        <div className='pricephone-web-Maxima'>
+          <img className='phonepriceMain' src={images.web_maxima} alt='Web-Maxima logo'/>
+          <p className='pricephone-priceWeb-MaximaSign'>Web-Maxima</p>
+          <p className='pricephone-priceWeb-MaximaPrice'>₴10,000</p>
+        </div>
+        <div className='pricephone-web-Optima'>
+          <img className='phonepriceAdditionalRight' src={images.web_optima} alt='Web-Optima logo'/>
+          <p className='pricephone-priceWeb-OptimaSign'>Web-Optima</p>
+          <p className='pricephone-priceWeb-OptimaPrice'>₴4,000</p>
+        </div>
+      </div>
+      }
+      
+      {phoneWhichOne === 'web-maxima' &&
+        <PhoneWebMaxima />
+      }
+    
 
 
 
