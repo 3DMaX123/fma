@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-scroll';
 
 import './NavBar.css';
@@ -37,6 +36,15 @@ const NavBar = () => {
                   <li><Link to="about-us" onClick={() => setToggleMenu(false)}>Про нас</Link></li>
                   <li><Link to="reviews" onClick={() => setToggleMenu(false)}>Відгуки</Link></li>
                   <li><Link to="contacts" onClick={() => setToggleMenu(false)}>Контакти</Link></li>
+                </ul>
+              </div>
+              <div className="app__navbar-smallscreen_overlaycontent-450">
+                <img className='app-navbar-background' src={images.bench} alt="Work bench"/>
+                <ul className='app__navbar-smallscreen-links-450'>
+                  <li><Link to="servicesphone" onClick={() => setToggleMenu(false)}>Послуги</Link></li>
+                  <li><Link to="about-usphone" onClick={() => setToggleMenu(false)}>Про нас</Link></li>
+                  <li><Link to="reviewsphone" onClick={() => setToggleMenu(false)}>Відгуки</Link></li>
+                  <li><Link to="contactsphone" onClick={() => setToggleMenu(false)}>Контакти</Link></li>
                 </ul>
               </div>
             </div>

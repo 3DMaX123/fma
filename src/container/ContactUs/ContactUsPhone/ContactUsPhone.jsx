@@ -5,7 +5,7 @@ import images from '../../../constants/images';
 
 const ContactUsPhone = () => {
   return (
-    <div className='app__contactusphone'>
+    <div className='app__contactusphone' id='contactsphone'>
       <div className='contactusphone-email'>
         <div className='contactusphone-nameEmail'>E-mail</div>
         <div className='contactusphone-contact'>fma@gmail.com</div>

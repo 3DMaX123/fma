@@ -11,8 +11,8 @@ function PhoneWebMaxima(){
         <div className='animationDiv NameDiv'><p className='pricephone-prices-header'>Web-Maxima</p></div>
         <div className='animationDiv PriceDiv'><p className='pricephone-prices-price'>₴ 10,000</p></div>
         <div className='animationDiv DescriptionDiv'><p className='pricephone-prices-description'>Це той самий випадок, коли довіритися</p></div>
-        <div className='animationDiv DescriptionBRDiv'><p className='pricephone-prices-description'>професіоналам та розслабитися є</p></div>
-        <div className='animationDiv DescriptionBRDiv'><p className='pricephone-prices-description'>найкращим з варіантів</p></div>
+        <div className='animationDiv DescriptionBRDiv'><p className='pricephone-prices-description'>професіоналам та розслабитися є </p></div>
+        <div className='animationDiv DescriptionBRDiv pricePhoneLastDiv'><p className='pricephone-prices-description'>найкращим з варіантів</p></div>
         <div className='animationDiv ProposeDiv'><p className='pricephone-prices-propose'>Ми пропонуємо :</p></div>
         <div className='pricephone-prices-list'>
           <div className='ListZero animationDiv'><span className='pricephone-prices-square'></span><p>Аудит сайту та рекламного кабінету</p></div>
@@ -34,7 +34,7 @@ function PhoneWebOptima(){
     <div className='animationDiv NameDiv'><p className='pricephone-prices-header'>Web-Optima</p></div>
     <div className='animationDiv PriceDiv'><p className='pricephone-prices-price'>₴ 4,000</p></div>
     <div className='animationDiv DescriptionDiv'><p className='pricephone-prices-description'>Створено спеціально для вас. Це ж у вас є сумніви</p></div>
-    <div className='animationDiv DescriptionBRDiv'><p className='pricephone-prices-description'>щодо вже наявної рекламної кампанії</p></div>
+    <div className='animationDiv DescriptionBRDiv pricePhoneLastDiv'><p className='pricephone-prices-description'>щодо вже наявної рекламної кампанії</p></div>
     <div className='animationDiv ProposeDiv'><p className='pricephone-prices-propose'>Ми пропонуємо :</p></div>
     <div className='pricephone-prices-list'>
       <div className='ListZero animationDiv'><span className='pricephone-prices-square'></span><p>Аудит сайту та рекламного кабінету</p></div>
@@ -54,18 +54,27 @@ const PricePhone = () => {
   const [ phoneWhichOne, setPhoneWhichOne ] = useState('web-maxima');
 
   return (
-    <div className='app__pricephone'>
+    <div className='app__pricephone' id='servicesphone'>
       <div className='pricephone-productsChoosen'>
         <p className='pricephone-priceSign'>Послуги</p>
-        <ScrollContainer className='pricephone-productsChoosen-buttons'>
-          <button className='productsChoosen-mainButton'>Web-Maxima</button>
-          <button className='productChoosen-additionalButton'>Web-Optima</button>
-          <button className='productChoosen-additionalButton'>Web-Optima</button>
-        </ScrollContainer>
+        {phoneWhichOne === 'web-maxima' &&
+          <ScrollContainer className='pricephone-productsChoosen-buttons'>
+            <button className='productChoosen-mainButton phonePriceMain'>Web-Maxima</button>
+            <button className='productChoosen-additionalButton phonePriceAdditional' onClick={() => setPhoneWhichOne('web-optima')}>Web-Optima</button>
+            <button className='productChoosen-additionalButton phonePriceAdditional'>Web-Limitless</button>
+          </ScrollContainer>
+        }
+        {phoneWhichOne === 'web-optima' &&
+          <ScrollContainer className='pricephone-productsChoosen-buttons '>
+            <button className='productChoosen-mainButton phonePriceMain'>Web-Optima</button>
+            <button className='productChoosen-additionalButton phonePriceAdditional' onClick={() => setPhoneWhichOne('web-maxima')}>Web-Maxima</button>
+            <button className='productChoosen-additionalButton phonePriceAdditional'>Web-Limitless</button>
+          </ScrollContainer>
+        }
       </div>
       {phoneWhichOne === 'web-maxima' &&
         <div className='pricephone-prices'>
-        <div className='pricephone-Left'>
+        <div className='pricephone-Left phonePriceAdditional'>
           <img className='phonepriceAdditionalLeft' src={images.web_limitless} alt='Web-Limitless logo'/>
         </div>
         <div className='pricephone-Main phonePriceMain'>
@@ -73,7 +82,7 @@ const PricePhone = () => {
           <p className='pricephone-priceWeb-MaximaSign'>Web-Maxima</p>
           <p className='pricephone-priceWeb-MaximaPrice'>₴ 10,000</p>
         </div>
-        <div className='pricephone-Right phonePriceAdditional' onClick={() => setPhoneWhichOne('web-optima')}>
+        <div className='pricephone-Right phonePriceAdditional'>
           <img className='phonepriceAdditionalRight' src={images.web_optima} alt='Web-Optima logo'/>
           <p className='pricephone-priceWeb-OptimaSign'>Web-Optima</p>
           <p className='pricephone-priceWeb-OptimaPrice'>₴ 4,000</p>
@@ -82,7 +91,7 @@ const PricePhone = () => {
       }
       {phoneWhichOne === 'web-optima' &&
         <div className='pricephone-prices'>
-        <div className='pricephone-Left'>
+        <div className='pricephone-Left phonePriceAdditional'>
           <img className='phonepriceAdditionalLeft' src={images.web_limitless} alt='Web-Limitless logo'/>
         </div>
         <div className='pricephone-Main phonePriceMain'>
@@ -90,7 +99,7 @@ const PricePhone = () => {
           <p className='pricephone-priceWeb-OptimaSign'>Web-Optima</p>
           <p className='pricephone-priceWeb-OptimaPrice'>₴ 4,000</p>
         </div>
-        <div className='pricephone-Right phonePriceAdditional' onClick={() => setPhoneWhichOne('web-maxima')}>
+        <div className='pricephone-Right phonePriceAdditional'>
           <img className='phonepriceAdditionalRight' src={images.web_maxima} alt='Web-Maxima logo'/>
           <p className='pricephone-priceWeb-MaximaSign'>Web-Maxima</p>
           <p className='pricephone-priceWeb-MaximaPrice'>₴ 10,000</p>

@@ -8,7 +8,7 @@ import './ReviewPhone.css';
 
 const ReviewPhone = () => {
   return (
-    <div className='app__reviewphone'>
+    <div className='app__reviewphone' id='reviewsphone'>
       <div className='review-label'>
         <button className='review-label-button'>Написати відгук</button>
         <p className='review-label-review'>Відгуки</p>
