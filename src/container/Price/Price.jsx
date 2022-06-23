@@ -152,12 +152,12 @@ class Price extends React.Component {
         <div className='app__price-products'>
             {this.state.whichOne === 'web-maxima' && 
               <>
-                <div className='Web-Maxima Main ' >
+                <div className='Web-Maxima priceMain ' >
                   <img src={images.web_maxima} alt="Web-Maxima logo" />
                   <p className='ProductListName'>Web-Maxima</p>
                   <p className='ProductListPrice'>₴ 10,000</p>
                 </div>
-                <div className='Web-Optima Additional ' onClick={this.handleChangeWhichOne}>
+                <div className='Web-Optima priceAdditional ' onClick={this.handleChangeWhichOne}>
                   <img src={images.web_optima} alt="Web-Optima logo" />
                   <p className='ProductListNameDecreased'>Web-Optima</p>
                   <p className='ProductListPriceDecreased'>₴ 4,000</p>
@@ -166,12 +166,12 @@ class Price extends React.Component {
             }
             {this.state.whichOne === 'web-optima' &&
                 <>
-                  <div className='Web-Optima Main'>
+                  <div className='Web-Optima priceMain'>
                     <img src={images.web_optima} alt="Web-Optima logo" />
                     <p className='ProductListName'>Web-Optima</p>
                     <p className='ProductListPrice  '>₴ 4,000</p>
                   </div>
-                  <div className='Web-Maxima Additional' onClick={this.handleChangeWhichOne}>
+                  <div className='Web-Maxima priceAdditional' onClick={this.handleChangeWhichOne}>
                     <img src={images.web_maxima} alt="Web-Maxima logo" />
                     <p className='ProductListNameDecreased'>Web-Maxima</p>
                     <p className='ProductListPriceDecreased'>₴ 10,000</p>

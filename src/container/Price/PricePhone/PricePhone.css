@@ -2,6 +2,7 @@
     display: none;
     position: relative;
     flex-direction: column;
+    align-items: baseline;
     overflow: hidden;
 
     background-color: #FAFAFA;
@@ -80,6 +81,8 @@
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
+
     margin-top: 40px;
 }
 
@@ -94,17 +97,15 @@
     color: rgba(52, 52, 52, 0.5);
 }
 
-.pricephone-priceWeb-LimitlessSign,
 .pricephone-priceWeb-MaximaSign,
 .pricephone-priceWeb-OptimaSign{
     margin-top: 5px;
     margin-bottom: 2px;
 }
 
-.pricephone-priceWeb-LimitlessPrice,
 .pricephone-priceWeb-MaximaPrice,
 .pricephone-priceWeb-OptimaPrice{
-    font-size: 7px!important;
+    font-size: 8px!important;
 }
 
 .phonepriceAdditionalLeft,
@@ -129,8 +130,22 @@
     transform: translateZ(0);
 }
 
-.pricephone-priceWeb-OptimaSign{
+.pricephone-ordermeeting{
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    
+    padding: 3.5vw 5.5vw;
+    margin-top: 32px;
+    margin-left: 24px;
 
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    background: var(--color-black);
+    
+    border-style: none;
+    cursor: pointer;
 }
 
 .pricephone-informationAboutService{
@@ -166,7 +181,6 @@
     font-size: 14px;
 
     color: #343434;
-    margin-bottom: 11px;
 }
 
 .pricephone-prices-propose{
@@ -179,7 +193,7 @@
     margin-bottom: 7px;
 }
 
-.pricephone-informationAboutService ul li{
+.pricephone-prices-list div{
     display: flex;
     align-items: center;
 
@@ -193,6 +207,14 @@
     margin-left: 5px;
 }
 
+.pricephone-prices-list div{
+    animation: slideLeftList .4s ease-in-out both;
+}
+
+.pricephone-prices-list p{
+    white-space: nowrap;
+}
+
 .pricephone-prices-square{
     width: 2px;
     height: 2px;
@@ -201,57 +223,73 @@
     margin-right: 5px;
 }
 
+.PriceDiv{
+    animation: slideLeftPrice .6s ease-in-out both;
+    animation-delay: .4s;
+}
 
+.ListZero{ animation-delay: .6s!important; }
+.ListOne{ animation-delay: .7s!important; }
+.ListTwo{ animation-delay: .8s!important; }
+.ListThree{ animation-delay: .9s!important; }
+.ListFour{ animation-delay: 1s!important; }
+.ListFife{ animation-delay: 1.1s!important; }
+.ListSix{ animation-delay: 1.2s!important; }
 
+.phonePriceMain,
+.phonePriceAdditional{
+    animation: AppearMain 0.3s ease-in-out both;
+}
 
+@keyframes slideLeftPrice {
+    0%{
+        width: 0px;
+    }100%{
+        width: 100%;
+    }
+}
 
+@keyframes slideLeftDescriptionBR {
+    0%{
+        width: 0px;
+    }100%{
+        width: 100%;
+    } 
+}
 
+@keyframes slideLeftList {
+    0%{
+        width: 0px;
+    }100%{
+        width: 100%;
+    } 
+}
 
+@media screen and (max-width: 480px) {
+    .app__price{
+        display: none;
+    }
 
+    .app__pricephone{
+        display: flex!important;
+    }
+}
 
+.pricephone-Right{
+    display: flex;
+    position: relative;
+    flex-direction: column;
 
+    right: -19px;
+}
 
+.pricephone-Left{
+    display: flex;
+    position: relative;
+    flex-direction: column;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    left: -19px;
+}
 
 .PricePalm{
     width: 86.667vw;
