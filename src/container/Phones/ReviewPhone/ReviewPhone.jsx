@@ -1,5 +1,5 @@
 import React from 'react'
-import ReviewForm from '../UserReview/userReview';
+import ReviewForm from '../../Review/UserReview/userReview';
 import images from '../../../constants/images';
 import ScrollContainer from 'react-indiana-drag-scroll'
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TypeError from './TypeError/TypeError';
-import FooterPhone from './FooterPhone/FooterPhone';
+import FooterPhone from '../../container/Phones/FooterPhone/FooterPhone';
 import TypePropose from './TypePropose/TypePropose';
 import { Link } from 'react-scroll';
 
@@ -85,7 +85,6 @@ const Footer = () => {
             )
           }
       </div>
-      <FooterPhone />
     </>
   )
 }

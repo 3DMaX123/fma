@@ -1,5 +1,5 @@
 .app__headerphone{
-    display: none;
+    display: flex;
     position: relative;
     height: 229.6vw;
     flex-direction: column;

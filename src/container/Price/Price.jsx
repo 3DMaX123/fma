@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import './Price.css';
 import images from '../../constants/images';
-import PricePhone from './PricePhone/PricePhone';
+import PricePhone from '../Phones/PricePhone/PricePhone';
 import OrderMeeting from './OrderMeeting/OrderMeeting';
 
 
@@ -190,7 +190,6 @@ class Price extends React.Component {
         </div>
         }
       </div>
-      <PricePhone />
     </>
     )
   }

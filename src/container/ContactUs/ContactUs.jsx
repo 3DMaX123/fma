@@ -1,6 +1,6 @@
 import React from 'react'
 import images from '../../constants/images';
-import ContactUsPhone from './ContactUsPhone/ContactUsPhone';
+import ContactUsPhone from '../Phones/ContactUsPhone/ContactUsPhone';
 
 import './ContactUs.css';
 
@@ -35,7 +35,6 @@ class CotactUs extends React.Component {
             </a>
           </div>
         </div>
-        <ContactUsPhone />
       </>
     )
   }

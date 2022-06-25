@@ -97,13 +97,3 @@
     color: var(--color-bigfmasignandgreystars);
     margin-right: 0.521vw;
 }
-
-@media screen and (max-width: 500px) {
-    .app__aboutus{
-        display: none;
-    }
-
-    .app__aboutusphone{
-        display: flex!important;
-    }
-}

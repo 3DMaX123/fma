@@ -2,7 +2,7 @@ import React from 'react'
 
 import './AboutUs.css';
 import images from '../../constants/images';
-import AboutUsPhone from './AboutUsPhone/AboutUsPhone';
+import AboutUsPhone from '../Phones/AboutUsPhone/AboutUsPhone';
 
 const AboutUs = () => (
     <>
@@ -24,7 +24,6 @@ const AboutUs = () => (
           <img src={images.stairs} alt="Spinned Stairs" />
         </div>
       </div>
-      <AboutUsPhone />
     </>
 );
 

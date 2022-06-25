@@ -1,5 +1,5 @@
 .app__aboutusphone{
-    display: none;
+    display: flex;
     position: relative;
 
     height: 145.5vw;

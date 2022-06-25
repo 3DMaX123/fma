@@ -44,13 +44,3 @@
 
     color: var(--color-black);
 }
-
-@media screen and (max-width: 480px) {
-    .app__contactUs{
-        display: none;
-    }
-
-    .app__contactusphone{
-        display: flex!important;
-    }
-}

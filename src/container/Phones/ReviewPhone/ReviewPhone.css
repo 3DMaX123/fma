@@ -1,5 +1,5 @@
 .app__reviewphone{
-    display: none;
+    display: flex;
     position: relative;
     overflow: hidden;
 

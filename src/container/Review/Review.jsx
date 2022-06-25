@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import images from '../../constants/images';
 import ReviewForm from './UserReview/userReview';
 import TypeReview from './Type Review/TypeReview';
-import ReviewPhone from './ReviewPhone/ReviewPhone';
+import ReviewPhone from '../Phones/ReviewPhone/ReviewPhone';
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 import './Review.css';
@@ -81,7 +81,6 @@ const Review = () => {
         )
         }
       </div>
-      <ReviewPhone />
     </>
   )
 }

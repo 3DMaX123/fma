@@ -197,13 +197,3 @@
 
     background-color: var(--color-black);
 }
-
-@media screen and (max-width: 480px) {
-    .app__header{
-        display: none;
-    }
-
-    .app__headerphone{
-        display: flex!important;
-    }
-}

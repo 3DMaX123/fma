@@ -2,7 +2,6 @@ import React from 'react'
 
 import images from '../../constants/images';
 import './Header.css';
-import HeaderPhone from './HeaderPhone/HeaderPhone';
 
 const Header = () => (
   <>
@@ -51,7 +50,6 @@ const Header = () => (
         </div>
       </div>
     </div>
-    <HeaderPhone />
   </>
 );
 

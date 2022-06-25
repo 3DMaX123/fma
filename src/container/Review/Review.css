@@ -120,14 +120,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .app__review{
-        display: none;
-    }
-
-    .app__reviewphone{
-        display: flex!important;
-    }
-
     .Reviews{
         width: 100%;
         height: auto;
