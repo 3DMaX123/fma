@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fma/static/css/main.94770c11.css",
+    "main.css": "/fma/static/css/main.6b0088ea.css",
     "main.js": "/fma/static/js/main.584e0158.js",
     "static/media/Spinned_Stairs.jpg": "/fma/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
     "static/media/PrintingMachine.jpg": "/fma/static/media/PrintingMachine.7a51c2848c0207e1f2fc.jpg",
@@ -28,11 +28,11 @@
     "static/media/Review_StarRate.svg": "/fma/static/media/Review_StarRate.780b92fb78932344d52968ebc3dbfcf7.svg",
     "static/media/Review_StarRate_Grey.svg": "/fma/static/media/Review_StarRate_Grey.2b0de19a13138e094507f7a8adf6aeb5.svg",
     "index.html": "/fma/index.html",
-    "main.94770c11.css.map": "/fma/static/css/main.94770c11.css.map",
+    "main.6b0088ea.css.map": "/fma/static/css/main.6b0088ea.css.map",
     "main.584e0158.js.map": "/fma/static/js/main.584e0158.js.map"
   },
   "entrypoints": [
-    "static/css/main.94770c11.css",
+    "static/css/main.6b0088ea.css",
     "static/js/main.584e0158.js"
   ]
 }
