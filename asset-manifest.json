@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fma/static/css/main.9ecaf946.css",
-    "main.js": "/fma/static/js/main.4e2fedaf.js",
+    "main.css": "/fma/static/css/main.08555873.css",
+    "main.js": "/fma/static/js/main.c0f9f045.js",
     "static/media/Spinned_Stairs.jpg": "/fma/static/media/Spinned_Stairs.cbf7aaef2ca4f4345c6d.jpg",
     "static/media/PrintingMachine.jpg": "/fma/static/media/PrintingMachine.7a51c2848c0207e1f2fc.jpg",
     "static/media/Web-Optima.webp": "/fma/static/media/Web-Optima.be79ffb02cb5ee9edc4a.webp",
@@ -28,11 +28,11 @@
     "static/media/Review_StarRate.svg": "/fma/static/media/Review_StarRate.780b92fb78932344d52968ebc3dbfcf7.svg",
     "static/media/Review_StarRate_Grey.svg": "/fma/static/media/Review_StarRate_Grey.2b0de19a13138e094507f7a8adf6aeb5.svg",
     "index.html": "/fma/index.html",
-    "main.9ecaf946.css.map": "/fma/static/css/main.9ecaf946.css.map",
-    "main.4e2fedaf.js.map": "/fma/static/js/main.4e2fedaf.js.map"
+    "main.08555873.css.map": "/fma/static/css/main.08555873.css.map",
+    "main.c0f9f045.js.map": "/fma/static/js/main.c0f9f045.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ecaf946.css",
-    "static/js/main.4e2fedaf.js"
+    "static/css/main.08555873.css",
+    "static/js/main.c0f9f045.js"
   ]
 }
